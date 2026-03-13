@@ -1,0 +1,1359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LaafWeb – Affordable Website Design West Coast South Africa | Saldanha, Vredenburg, Langebaan</title>
+<meta name="description" content="LaafWeb builds professional, affordable business websites for small businesses on the West Coast of South Africa – Saldanha, Vredenburg, Langebaan. Websites from R1500.">
+<meta name="keywords" content="website design West Coast, web design Saldanha, business websites Vredenburg, affordable websites Langebaan, small business website South Africa, LaafWeb, LaafStyl">
+<meta property="og:title" content="LaafWeb – Affordable Websites for West Coast Businesses">
+<meta property="og:description" content="Professional websites built for local businesses. From R1500.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+:root{
+  --bg:#04080f;
+  --bg2:#080e1a;
+  --card:#0c1526;
+  --border:#162035;
+  --border2:#1e3050;
+  --muted:#4a6380;
+  --body:#7a9ab8;
+  --light:#b8d0e8;
+  --white:#e8f2fc;
+  --blue:#1a7fe8;
+  --blue2:#1567c0;
+  --bluef:#3d9fff;
+  --cyan:#00d4ff;
+  --cyan2:#00b8e0;
+  --green:#00e5a0;
+  --green2:#00c488;
+  --accent:#ff6b35;
+  --gold:#f5c842;
+  --fh:'Syne',sans-serif;
+  --fb:'Outfit',sans-serif;
+  --r:4px;--r2:10px;--r3:18px;
+}
+
+::-webkit-scrollbar{width:4px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:var(--blue);border-radius:2px}
+
+html{scroll-behavior:smooth}
+
+body{
+  background:var(--bg);
+  color:var(--body);
+  font-family:var(--fb);
+  font-size:16px;
+  line-height:1.6;
+  overflow-x:hidden;
+  cursor:none;
+}
+
+/* ── CURSOR ── */
+#cd{position:fixed;width:7px;height:7px;background:var(--cyan);border-radius:50%;transform:translate(-50%,-50%);pointer-events:none;z-index:9999}
+#cr{position:fixed;width:32px;height:32px;border:1.5px solid rgba(0,212,255,.45);border-radius:50%;transform:translate(-50%,-50%);pointer-events:none;z-index:9998;transition:width .3s,height .3s,border-color .3s}
+#cr.big{width:56px;height:56px;border-color:rgba(0,212,255,.2)}
+@media(max-width:768px){body{cursor:auto}#cd,#cr{display:none}}
+
+/* ── NOISE OVERLAY ── */
+body::before{
+  content:'';position:fixed;inset:0;z-index:0;pointer-events:none;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+  opacity:.4;
+}
+
+/* ── NAV ── */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  height:64px;display:flex;align-items:center;
+  padding:0 48px;
+  background:rgba(4,8,15,0);
+  backdrop-filter:blur(0);
+  border-bottom:1px solid transparent;
+  transition:background .4s,backdrop-filter .4s,border-color .4s;
+}
+nav.solid{
+  background:rgba(4,8,15,.95);
+  backdrop-filter:blur(20px);
+  border-bottom-color:var(--border);
+}
+.nav-logo{
+  display:flex;align-items:center;gap:10px;
+  text-decoration:none;flex-shrink:0;
+  opacity:0;animation:fadeUp .6s .3s forwards;
+}
+.logo-icon{
+  width:34px;height:34px;
+  background:linear-gradient(135deg,var(--blue),var(--cyan));
+  border-radius:8px;
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--fh);font-weight:800;font-size:14px;
+  color:#fff;letter-spacing:-.02em;
+  box-shadow:0 0 20px rgba(0,212,255,.25);
+  transition:transform .3s,box-shadow .3s;
+}
+.nav-logo:hover .logo-icon{transform:scale(1.1) rotate(-5deg);box-shadow:0 0 32px rgba(0,212,255,.45)}
+.logo-text{font-family:var(--fh);font-weight:700;font-size:18px;color:var(--white);letter-spacing:-.01em}
+.logo-text span{color:var(--cyan)}
+
+.nav-links{display:flex;align-items:center;gap:28px;margin-left:auto;list-style:none}
+.nav-links li{opacity:0;animation:fadeUp .5s forwards}
+.nav-links li:nth-child(1){animation-delay:.4s}.nav-links li:nth-child(2){animation-delay:.5s}
+.nav-links li:nth-child(3){animation-delay:.6s}.nav-links li:nth-child(4){animation-delay:.7s}
+.nav-links li:nth-child(5){animation-delay:.8s}.nav-links li:nth-child(6){animation-delay:.9s}
+.nav-links a{
+  font-size:13px;font-weight:500;letter-spacing:.05em;
+  text-transform:uppercase;color:var(--body);
+  text-decoration:none;transition:color .2s;position:relative;
+}
+.nav-links a:not(.ncta)::after{
+  content:'';position:absolute;bottom:-3px;left:0;
+  width:0;height:1.5px;background:var(--cyan);transition:width .3s;
+}
+.nav-links a:not(.ncta):hover::after{width:100%}
+.nav-links a:hover{color:var(--white)}
+.ncta{
+  background:linear-gradient(135deg,var(--blue),var(--cyan))!important;
+  color:#fff!important;padding:8px 20px;border-radius:6px;
+  font-weight:600!important;transition:transform .2s,box-shadow .2s!important;
+  box-shadow:0 4px 16px rgba(26,127,232,.3);
+}
+.ncta:hover{transform:translateY(-2px)!important;box-shadow:0 8px 24px rgba(0,212,255,.35)!important}
+.nav-mob{display:none;background:none;border:none;color:var(--white);cursor:pointer;margin-left:auto;padding:4px}
+
+/* MOBILE MENU */
+.mob-menu{
+  display:none;position:fixed;inset:0;z-index:300;
+  background:var(--bg2);flex-direction:column;padding:28px 32px;
+  transform:translateX(100%);transition:transform .4s cubic-bezier(.77,0,.18,1);
+}
+.mob-menu.open{display:flex;transform:translateX(0)}
+.mob-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:48px}
+.mob-x{background:none;border:none;color:var(--white);font-size:28px;cursor:pointer;line-height:1}
+.mob-menu a{
+  display:block;padding:16px 0;border-bottom:1px solid var(--border);
+  font-family:var(--fh);font-size:26px;font-weight:700;
+  color:var(--white);text-decoration:none;text-transform:uppercase;
+  transition:color .2s,padding-left .2s;
+}
+.mob-menu a:hover{color:var(--cyan);padding-left:10px}
+
+/* ── SHARED ── */
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeIn{to{opacity:1}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes pulse{0%,100%{opacity:.6;transform:scale(1)}50%{opacity:1;transform:scale(1.05)}}
+@keyframes shimmer{0%{background-position:200% center}100%{background-position:-200% center}}
+@keyframes ticker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+.ru{opacity:0;transform:translateY(36px);transition:opacity .75s cubic-bezier(.16,1,.3,1),transform .75s cubic-bezier(.16,1,.3,1)}
+.ru.in{opacity:1;transform:translateY(0)}
+.rl{opacity:0;transform:translateX(-36px);transition:opacity .75s cubic-bezier(.16,1,.3,1),transform .75s cubic-bezier(.16,1,.3,1)}
+.rl.in{opacity:1;transform:translateX(0)}
+.rr{opacity:0;transform:translateX(36px);transition:opacity .75s cubic-bezier(.16,1,.3,1),transform .75s cubic-bezier(.16,1,.3,1)}
+.rr.in{opacity:1;transform:translateX(0)}
+.rs{opacity:0;transform:scale(.93);transition:opacity .75s cubic-bezier(.16,1,.3,1),transform .75s cubic-bezier(.16,1,.3,1)}
+.rs.in{opacity:1;transform:scale(1)}
+.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}
+.d4{transition-delay:.4s}.d5{transition-delay:.5s}.d6{transition-delay:.6s}
+
+section{padding:110px 0;position:relative;z-index:1}
+.container{max-width:1180px;margin:0 auto;padding:0 48px}
+
+.tag{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:10px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--cyan);margin-bottom:16px;
+}
+.tag::before{content:'';width:16px;height:1.5px;background:var(--cyan)}
+
+.sec-title{
+  font-family:var(--fh);font-size:clamp(36px,4vw,58px);
+  font-weight:800;line-height:.95;letter-spacing:-.02em;
+  color:var(--white);text-transform:uppercase;margin-bottom:16px;
+}
+.sec-title em{font-style:normal;color:transparent;
+  -webkit-text-stroke:1px var(--cyan);background:linear-gradient(135deg,var(--cyan),var(--blue));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+}
+.sec-sub{font-size:16px;line-height:1.8;color:var(--body);max-width:520px}
+
+/* ── HERO ── */
+#home{
+  min-height:100vh;display:flex;align-items:center;
+  padding-top:64px;overflow:hidden;position:relative;
+}
+
+/* Animated grid background */
+.hero-grid{
+  position:absolute;inset:0;z-index:0;
+  background-image:
+    linear-gradient(rgba(26,127,232,.07) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(26,127,232,.07) 1px,transparent 1px);
+  background-size:60px 60px;
+  mask-image:radial-gradient(ellipse 80% 70% at 60% 50%,black 30%,transparent 100%);
+  animation:gridPan 20s linear infinite;
+}
+@keyframes gridPan{0%{background-position:0 0}100%{background-position:60px 60px}}
+
+/* Glow orbs */
+.orb{position:absolute;border-radius:50%;filter:blur(80px);pointer-events:none;z-index:0}
+.orb1{width:500px;height:500px;background:rgba(26,127,232,.15);top:-100px;right:-100px;animation:float 8s ease-in-out infinite}
+.orb2{width:350px;height:350px;background:rgba(0,212,255,.08);bottom:100px;left:-80px;animation:float 10s ease-in-out infinite reverse}
+.orb3{width:200px;height:200px;background:rgba(0,229,160,.06);top:40%;right:20%;animation:float 6s ease-in-out infinite 2s}
+
+.hero-wrap{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;position:relative;z-index:2}
+
+.h-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:10px;font-weight:600;letter-spacing:.25em;text-transform:uppercase;
+  color:var(--cyan);margin-bottom:20px;
+  opacity:0;animation:fadeUp .6s .8s forwards;
+}
+.h-eyebrow .dot{width:6px;height:6px;background:var(--cyan);border-radius:50%;animation:pulse 2s infinite}
+
+.hero-title{
+  font-family:var(--fh);font-size:clamp(46px,5.5vw,80px);
+  font-weight:800;line-height:.9;letter-spacing:-.03em;
+  color:var(--white);text-transform:uppercase;
+  margin-bottom:8px;
+}
+.hero-title .line{display:block;overflow:hidden}
+.hero-title .word{
+  display:inline-block;
+  opacity:0;transform:translateY(105%);
+  animation:wordUp .85s cubic-bezier(.16,1,.3,1) forwards;
+}
+.hero-title .grad{
+  background:linear-gradient(135deg,var(--cyan) 0%,var(--blue) 50%,var(--cyan) 100%);
+  background-size:200% auto;
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+  animation:shimmer 4s linear infinite 1.8s;
+}
+@keyframes wordUp{to{opacity:1;transform:translateY(0)}}
+.w1{animation-delay:.9s}.w2{animation-delay:1.05s}.w3{animation-delay:1.2s}
+
+.hero-sub{
+  font-size:18px;line-height:1.7;color:var(--light);
+  max-width:460px;margin:20px 0 40px;font-weight:300;
+  opacity:0;animation:fadeUp .6s 1.5s forwards;
+}
+
+.hero-btns{
+  display:flex;gap:14px;flex-wrap:wrap;
+  opacity:0;animation:fadeUp .6s 1.7s forwards;
+}
+
+.btn-primary{
+  display:inline-flex;align-items:center;gap:10px;
+  background:linear-gradient(135deg,var(--blue),var(--cyan));
+  color:#fff;padding:14px 32px;border-radius:8px;
+  font-family:var(--fh);font-size:14px;font-weight:700;
+  letter-spacing:.08em;text-transform:uppercase;text-decoration:none;
+  border:none;cursor:none;position:relative;overflow:hidden;
+  box-shadow:0 8px 32px rgba(26,127,232,.35);
+  transition:transform .2s,box-shadow .2s;
+}
+.btn-primary::before{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(135deg,var(--cyan),var(--blue));
+  opacity:0;transition:opacity .3s;
+}
+.btn-primary:hover::before{opacity:1}
+.btn-primary:hover{transform:translateY(-3px);box-shadow:0 12px 40px rgba(0,212,255,.4)}
+.btn-primary span,.btn-primary svg{position:relative;z-index:1}
+
+.btn-wa{
+  display:inline-flex;align-items:center;gap:10px;
+  background:transparent;color:var(--white);
+  padding:14px 32px;border-radius:8px;
+  font-family:var(--fh);font-size:14px;font-weight:700;
+  letter-spacing:.08em;text-transform:uppercase;text-decoration:none;
+  border:1.5px solid rgba(255,255,255,.2);cursor:none;
+  transition:border-color .2s,background .2s,transform .2s;
+}
+.btn-wa:hover{border-color:#25D366;background:rgba(37,211,102,.08);transform:translateY(-3px)}
+
+.hero-badges{
+  display:flex;gap:10px;margin-top:40px;flex-wrap:wrap;
+  opacity:0;animation:fadeUp .6s 1.9s forwards;
+}
+.badge{
+  display:inline-flex;align-items:center;gap:6px;
+  padding:6px 14px;border-radius:20px;
+  background:rgba(26,127,232,.1);border:1px solid rgba(26,127,232,.25);
+  font-size:12px;font-weight:500;color:var(--light);
+}
+.badge svg{width:13px;height:13px;color:var(--cyan)}
+
+/* HERO VISUAL */
+.hero-visual{
+  position:relative;
+  opacity:0;animation:fadeIn .8s 1.2s forwards;
+}
+.browser-mock{
+  background:var(--card);border:1px solid var(--border2);
+  border-radius:14px;overflow:hidden;
+  box-shadow:0 40px 100px rgba(0,0,0,.6),0 0 0 1px rgba(0,212,255,.05);
+  transform:perspective(1000px) rotateY(-8deg) rotateX(4deg);
+  transition:transform .5s ease;
+  animation:float 6s ease-in-out infinite 2s;
+}
+.hero-visual:hover .browser-mock{transform:perspective(1000px) rotateY(-4deg) rotateX(2deg)}
+.browser-bar{
+  display:flex;align-items:center;gap:8px;padding:12px 16px;
+  background:rgba(255,255,255,.04);border-bottom:1px solid var(--border);
+}
+.bdots{display:flex;gap:5px}
+.bdots span{width:10px;height:10px;border-radius:50%}
+.bdots .r{background:#ff5f57}.bdots .y{background:#ffbd2e}.bdots .g{background:#28ca41}
+.burl{flex:1;background:rgba(255,255,255,.06);border-radius:4px;padding:5px 12px;font-size:11px;color:var(--muted)}
+.browser-body{padding:20px}
+.brow{height:10px;background:rgba(255,255,255,.04);border-radius:3px;margin-bottom:8px}
+.brow.w80{width:80%}.brow.w60{width:60%}.brow.w90{width:90%}.brow.w40{width:40%}
+.bcards{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:16px 0}
+.bcard{height:60px;border-radius:6px;background:rgba(26,127,232,.12);border:1px solid rgba(26,127,232,.2);position:relative;overflow:hidden}
+.bcard::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(26,127,232,.08),transparent);transform:translateX(-100%);animation:cardShine 3s infinite}
+@keyframes cardShine{to{transform:translateX(100%)}}
+.bcard:nth-child(2)::after{animation-delay:.5s}
+.bcard:nth-child(3)::after{animation-delay:1s}
+.bcard:nth-child(4)::after{animation-delay:1.5s}
+.bprice{
+  background:linear-gradient(135deg,rgba(26,127,232,.15),rgba(0,212,255,.08));
+  border:1px solid rgba(0,212,255,.2);border-radius:6px;padding:12px;
+  display:flex;justify-content:space-between;align-items:center;
+}
+.bp-label{font-size:10px;color:var(--muted)}
+.bp-val{font-family:var(--fh);font-weight:700;color:var(--cyan);font-size:18px}
+.bprice2{margin-top:8px;background:rgba(0,229,160,.08);border:1px solid rgba(0,229,160,.2);border-radius:6px;padding:12px;display:flex;justify-content:space-between;align-items:center}
+.bp-val2{font-family:var(--fh);font-weight:700;color:var(--green);font-size:18px}
+
+/* Floating labels on hero visual */
+.float-label{
+  position:absolute;background:var(--card);border:1px solid var(--border2);
+  border-radius:8px;padding:8px 14px;
+  display:flex;align-items:center;gap:8px;
+  box-shadow:0 8px 32px rgba(0,0,0,.4);
+  font-size:12px;font-weight:500;color:var(--white);
+  white-space:nowrap;
+}
+.fl1{top:-16px;right:-20px;animation:float 5s ease-in-out infinite}
+.fl2{bottom:30px;left:-30px;animation:float 7s ease-in-out infinite reverse}
+.fl-dot{width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 8px var(--green)}
+.fl-dot.blue{background:var(--cyan);box-shadow:0 0 8px var(--cyan)}
+
+/* SCROLL HINT */
+.scroll-hint{
+  position:absolute;bottom:28px;left:50%;transform:translateX(-50%);
+  z-index:3;display:flex;flex-direction:column;align-items:center;gap:8px;
+  opacity:0;animation:fadeIn .7s 2.5s forwards;
+}
+.scroll-mouse{
+  width:22px;height:34px;border:1.5px solid rgba(0,212,255,.4);
+  border-radius:11px;display:flex;justify-content:center;padding-top:6px;
+}
+.scroll-wheel{
+  width:3px;height:8px;background:var(--cyan);border-radius:2px;
+  animation:scrollW 1.5s ease-in-out infinite;
+}
+@keyframes scrollW{0%{transform:translateY(0);opacity:1}100%{transform:translateY(8px);opacity:0}}
+.scroll-hint span{font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+
+/* TICKER */
+.ticker-wrap{background:linear-gradient(135deg,var(--blue),var(--cyan));padding:1px 0;overflow:hidden}
+.ticker-inner{background:rgba(4,8,15,.7);backdrop-filter:blur(8px)}
+.ticker-track{display:flex;animation:ticker 22s linear infinite;white-space:nowrap}
+.ticker-track:hover{animation-play-state:paused}
+.tick-item{
+  display:inline-flex;align-items:center;gap:10px;
+  padding:11px 32px;
+  font-family:var(--fh);font-size:11px;font-weight:600;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--light);
+  white-space:nowrap;
+}
+.tick-dot{display:inline-block;width:4px;height:4px;background:var(--cyan);border-radius:50%;opacity:.6}
+
+/* ABOUT */
+#about{background:var(--bg2)}
+.about-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:80px;align-items:center}
+.about-stats{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:36px}
+.astat{
+  padding:22px;background:var(--card);
+  border:1px solid var(--border);border-radius:var(--r2);
+  transition:border-color .3s,transform .3s,box-shadow .3s;
+}
+.astat:hover{border-color:rgba(0,212,255,.3);transform:translateY(-4px);box-shadow:0 12px 36px rgba(0,0,0,.3)}
+.astat-num{
+  font-family:var(--fh);font-size:40px;font-weight:800;
+  line-height:1;margin-bottom:4px;
+  background:linear-gradient(135deg,var(--cyan),var(--blue));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+}
+.astat-label{font-size:12px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.about-visual{position:relative}
+.av-card{
+  background:var(--card);border:1px solid var(--border2);
+  border-radius:var(--r3);padding:32px;
+  box-shadow:0 24px 64px rgba(0,0,0,.5);
+}
+.av-steps{display:flex;flex-direction:column;gap:0}
+.av-step{
+  display:flex;align-items:flex-start;gap:14px;padding:16px 0;
+  border-bottom:1px solid var(--border);position:relative;
+}
+.av-step:last-child{border-bottom:none}
+.step-num{
+  width:32px;height:32px;flex-shrink:0;
+  background:linear-gradient(135deg,var(--blue),var(--cyan));
+  border-radius:8px;display:flex;align-items:center;justify-content:center;
+  font-family:var(--fh);font-size:13px;font-weight:700;color:#fff;
+}
+.step-title{font-size:14px;font-weight:600;color:var(--white);margin-bottom:2px}
+.step-desc{font-size:12.5px;line-height:1.5}
+.av-bar{
+  margin-top:24px;background:rgba(255,255,255,.04);
+  border-radius:4px;height:6px;overflow:hidden;
+}
+.av-fill{
+  height:100%;border-radius:4px;
+  background:linear-gradient(90deg,var(--blue),var(--cyan),var(--green));
+  background-size:200% auto;
+  animation:shimmer 3s linear infinite,barGrow 2s 1.5s cubic-bezier(.16,1,.3,1) both;
+}
+@keyframes barGrow{from{width:0}to{width:78%}}
+.av-fill{width:78%}
+
+/* SERVICES */
+#services{background:var(--bg)}
+.sec-hd{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:end;margin-bottom:56px}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border);border-radius:var(--r2);overflow:hidden}
+.svc-card{
+  background:var(--card);padding:32px 26px;
+  display:flex;flex-direction:column;gap:12px;
+  position:relative;overflow:hidden;cursor:none;
+  transition:background .3s;
+}
+.svc-card::before{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(135deg,rgba(26,127,232,.06),transparent);
+  opacity:0;transition:opacity .3s;
+}
+.svc-card:hover::before{opacity:1}
+.svc-card::after{
+  content:'';position:absolute;top:0;left:0;right:0;height:2px;
+  background:linear-gradient(90deg,var(--blue),var(--cyan));
+  transform:scaleX(0);transform-origin:left;transition:transform .4s ease;
+}
+.svc-card:hover::after{transform:scaleX(1)}
+.svc-card:hover{background:#0f1c2e}
+.svc-ico{
+  width:48px;height:48px;
+  background:rgba(26,127,232,.1);border:1px solid rgba(26,127,232,.2);
+  border-radius:10px;display:flex;align-items:center;justify-content:center;
+  color:var(--blue);
+  transition:background .3s,transform .3s,border-color .3s;
+}
+.svc-card:hover .svc-ico{
+  background:var(--blue);color:#fff;border-color:var(--blue);
+  transform:scale(1.1) rotate(-5deg);
+}
+.svc-ico svg{width:22px;height:22px}
+.svc-card h3{font-family:var(--fh);font-size:18px;font-weight:700;color:var(--white);letter-spacing:-.01em}
+.svc-card p{font-size:13.5px;line-height:1.65;flex:1}
+.svc-badge{
+  display:inline-flex;align-items:center;gap:5px;
+  padding:3px 10px;border-radius:20px;font-size:10px;font-weight:600;
+  letter-spacing:.08em;text-transform:uppercase;width:fit-content;
+}
+.badge-new{background:rgba(0,229,160,.1);border:1px solid rgba(0,229,160,.25);color:var(--green)}
+.badge-pop{background:rgba(0,212,255,.1);border:1px solid rgba(0,212,255,.25);color:var(--cyan)}
+
+/* PRICING */
+#pricing{background:var(--bg2)}
+.pricing-hd{text-align:center;margin-bottom:52px}
+.pricing-hd .sec-label,.pricing-hd .tag{justify-content:center}
+.pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.price-card{
+  background:var(--card);border:1px solid var(--border);
+  border-radius:var(--r3);padding:36px 30px;
+  position:relative;overflow:hidden;cursor:none;
+  transition:transform .3s,border-color .3s,box-shadow .3s;
+}
+.price-card.featured{
+  background:#0a1628;
+  border-color:rgba(0,212,255,.35);
+  box-shadow:0 0 0 1px rgba(0,212,255,.1),0 32px 80px rgba(0,0,0,.5);
+}
+.price-card.featured::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:3px;
+  background:linear-gradient(90deg,var(--blue),var(--cyan));
+}
+.price-card:hover{transform:translateY(-8px);border-color:rgba(0,212,255,.3);box-shadow:0 24px 60px rgba(0,0,0,.4)}
+.price-tag-label{
+  display:inline-flex;align-items:center;gap:5px;padding:4px 12px;
+  border-radius:20px;background:rgba(0,212,255,.1);
+  border:1px solid rgba(0,212,255,.2);
+  font-size:10px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--cyan);margin-bottom:20px;
+}
+.price-name{font-family:var(--fh);font-size:24px;font-weight:800;color:var(--white);margin-bottom:6px}
+.price-desc{font-size:13.5px;line-height:1.6;margin-bottom:28px}
+.price-amount{
+  font-family:var(--fh);font-size:52px;font-weight:800;line-height:1;
+  color:var(--white);letter-spacing:-.03em;margin-bottom:4px;
+}
+.price-amount .currency{font-size:24px;vertical-align:top;margin-top:8px;display:inline-block;color:var(--cyan)}
+.price-amount .period{font-size:16px;font-weight:400;color:var(--muted)}
+.price-note{font-size:12px;color:var(--muted);margin-bottom:28px}
+.price-divider{height:1px;background:var(--border);margin-bottom:24px}
+.price-features{list-style:none;display:flex;flex-direction:column;gap:10px}
+.price-features li{
+  display:flex;align-items:center;gap:10px;
+  font-size:13.5px;color:var(--light);
+}
+.price-features li svg{width:15px;height:15px;color:var(--cyan);flex-shrink:0}
+.price-btn{
+  display:flex;align-items:center;justify-content:center;gap:8px;
+  margin-top:28px;padding:13px;border-radius:8px;
+  font-family:var(--fh);font-size:13px;font-weight:700;
+  letter-spacing:.1em;text-transform:uppercase;text-decoration:none;
+  cursor:none;transition:all .25s;border:none;width:100%;
+}
+.price-btn.primary{background:linear-gradient(135deg,var(--blue),var(--cyan));color:#fff;box-shadow:0 4px 20px rgba(26,127,232,.3)}
+.price-btn.primary:hover{box-shadow:0 8px 32px rgba(0,212,255,.45);transform:translateY(-2px)}
+.price-btn.ghost{background:transparent;border:1.5px solid var(--border2);color:var(--light)}
+.price-btn.ghost:hover{border-color:var(--cyan);color:var(--white)}
+.featured-badge{
+  position:absolute;top:16px;right:16px;
+  background:linear-gradient(135deg,var(--cyan),var(--blue));
+  color:#fff;font-size:9px;font-weight:700;
+  letter-spacing:.14em;text-transform:uppercase;
+  padding:4px 10px;border-radius:20px;
+}
+
+/* PORTFOLIO */
+#portfolio{background:var(--bg)}
+.port-hd{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:end;margin-bottom:52px}
+.port-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.port-card{
+  position:relative;overflow:hidden;border-radius:var(--r2);cursor:none;
+  background:var(--card);border:1px solid var(--border);
+  transition:transform .1s ease;
+}
+.port-mock{
+  height:220px;overflow:hidden;position:relative;
+  background:var(--bg);
+}
+.pm-bar{
+  display:flex;align-items:center;gap:6px;
+  padding:8px 12px;background:rgba(255,255,255,.04);
+  border-bottom:1px solid var(--border);
+}
+.pm-dots{display:flex;gap:4px}
+.pm-dots span{width:7px;height:7px;border-radius:50%}
+.pm-dots .pr{background:#ff5f57}.pm-dots .py{background:#ffbd2e}.pm-dots .pg{background:#28ca41}
+.pm-url{flex:1;background:rgba(255,255,255,.05);border-radius:3px;height:14px}
+.pm-content{padding:12px}
+.pm-h{height:8px;background:rgba(255,255,255,.08);border-radius:3px;margin-bottom:6px}
+.pm-h.w70{width:70%}.pm-h.w50{width:50%}.pm-h.w85{width:85%}
+.pm-row{display:flex;gap:8px;margin-bottom:6px}
+.pm-box{height:36px;border-radius:4px;flex:1}
+.pm-box.b1{background:rgba(26,127,232,.15)}.pm-box.b2{background:rgba(0,212,255,.1)}.pm-box.b3{background:rgba(0,229,160,.1)}
+.pm-line{height:6px;background:rgba(255,255,255,.05);border-radius:3px;margin-bottom:4px}
+.pm-btn{height:22px;width:60%;background:linear-gradient(135deg,rgba(26,127,232,.3),rgba(0,212,255,.2));border-radius:4px;margin-top:8px}
+
+.port-ov{
+  position:absolute;inset:0;
+  background:linear-gradient(to top,rgba(4,8,15,.97) 0%,rgba(4,8,15,.4) 50%,transparent 100%);
+  display:flex;flex-direction:column;justify-content:flex-end;padding:20px;
+  opacity:0;transition:opacity .35s;
+}
+.port-card:hover .port-ov{opacity:1}
+.port-card:hover{transform:translateY(-4px)}
+.port-tag{
+  display:inline-block;padding:3px 10px;
+  background:linear-gradient(135deg,var(--blue),var(--cyan));
+  font-size:9px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;
+  color:#fff;border-radius:3px;margin-bottom:6px;width:fit-content;
+}
+.port-name{font-family:var(--fh);font-size:17px;font-weight:700;color:var(--white)}
+.port-tech{font-size:11px;color:var(--body);margin-top:2px}
+.port-info{padding:16px}
+.port-title{font-family:var(--fh);font-size:15px;font-weight:700;color:var(--white);margin-bottom:4px}
+.port-desc{font-size:12.5px;line-height:1.5}
+
+/* WHY */
+#why{background:var(--bg2)}
+.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.why-points{display:flex;flex-direction:column;gap:0}
+.why-point{
+  display:flex;align-items:flex-start;gap:16px;
+  padding:20px 0;border-bottom:1px solid var(--border);
+  transition:padding-left .2s;cursor:default;
+}
+.why-point:first-child{padding-top:0}
+.why-point:last-child{border-bottom:none}
+.why-point:hover{padding-left:8px}
+.wp-ico{
+  width:42px;height:42px;flex-shrink:0;
+  background:rgba(26,127,232,.1);border:1px solid rgba(26,127,232,.2);
+  border-radius:10px;display:flex;align-items:center;justify-content:center;
+  color:var(--blue);transition:background .3s,transform .3s;
+}
+.why-point:hover .wp-ico{background:var(--blue);color:#fff;transform:scale(1.1)}
+.wp-ico svg{width:19px;height:19px}
+.wp-title{font-size:15px;font-weight:600;color:var(--white);margin-bottom:3px}
+.wp-desc{font-size:13.5px;line-height:1.6}
+
+/* Glowing card on right */
+.why-right{position:relative}
+.glow-card{
+  background:var(--card);border:1px solid var(--border2);
+  border-radius:var(--r3);padding:36px;
+  box-shadow:0 0 60px rgba(26,127,232,.08);
+  position:relative;overflow:hidden;
+}
+.glow-card::before{
+  content:'';position:absolute;top:-40px;right:-40px;
+  width:200px;height:200px;
+  background:radial-gradient(circle,rgba(0,212,255,.12),transparent 70%);
+  pointer-events:none;
+}
+.gc-title{font-family:var(--fh);font-size:22px;font-weight:800;color:var(--white);margin-bottom:6px}
+.gc-sub{font-size:13.5px;margin-bottom:28px}
+.gc-item{
+  display:flex;align-items:center;gap:12px;
+  padding:12px 0;border-bottom:1px solid var(--border);
+  transition:padding-left .2s;
+}
+.gc-item:last-child{border-bottom:none}
+.gc-item:hover{padding-left:6px}
+.gc-ico{color:var(--cyan)}
+.gc-ico svg{width:16px;height:16px}
+.gc-text{font-size:14px;font-weight:500;color:var(--light)}
+.gc-price{
+  font-family:var(--fh);font-size:13px;font-weight:700;
+  color:var(--green);margin-left:auto;flex-shrink:0;
+}
+
+/* ECOSYSTEM */
+#ecosystem{background:var(--bg);position:relative;overflow:hidden}
+.eco-bg{
+  position:absolute;inset:0;
+  background:radial-gradient(ellipse 60% 50% at 50% 50%,rgba(26,127,232,.06),transparent);
+}
+.eco-hd{text-align:center;margin-bottom:56px}
+.eco-hd .tag{justify-content:center}
+.eco-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.eco-card{
+  background:var(--card);border:1px solid var(--border);
+  border-radius:var(--r3);padding:36px 30px;
+  text-align:center;position:relative;overflow:hidden;cursor:none;
+  transition:transform .3s,border-color .3s,box-shadow .3s;
+}
+.eco-card:hover{transform:translateY(-8px);border-color:rgba(0,212,255,.3);box-shadow:0 24px 60px rgba(0,0,0,.4)}
+.eco-card.active{border-color:rgba(0,212,255,.35);background:#0a1628}
+.eco-card.active::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--blue),var(--cyan))}
+.eco-icon{
+  width:64px;height:64px;margin:0 auto 18px;
+  background:linear-gradient(135deg,rgba(26,127,232,.15),rgba(0,212,255,.08));
+  border:1px solid rgba(26,127,232,.25);border-radius:16px;
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--fh);font-size:11px;font-weight:800;
+  letter-spacing:.05em;color:var(--cyan);
+  transition:background .3s,transform .3s;
+}
+.eco-card:hover .eco-icon{background:linear-gradient(135deg,var(--blue),var(--cyan));color:#fff;transform:scale(1.1) rotate(-5deg)}
+.eco-name{font-family:var(--fh);font-size:26px;font-weight:800;color:var(--white);margin-bottom:6px;letter-spacing:-.01em}
+.eco-name span{color:var(--cyan)}
+.eco-tag{
+  display:inline-block;padding:3px 10px;border-radius:20px;
+  background:rgba(0,229,160,.1);border:1px solid rgba(0,229,160,.2);
+  font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--green);margin-bottom:14px;
+}
+.eco-tag.blue{background:rgba(0,212,255,.1);border-color:rgba(0,212,255,.2);color:var(--cyan)}
+.eco-tag.acc{background:rgba(255,107,53,.1);border-color:rgba(255,107,53,.2);color:var(--accent)}
+.eco-desc{font-size:13.5px;line-height:1.7}
+.eco-arrow{
+  display:inline-flex;align-items:center;gap:6px;
+  margin-top:18px;font-size:11px;font-weight:600;
+  letter-spacing:.1em;text-transform:uppercase;color:var(--cyan);
+  text-decoration:none;transition:gap .2s;
+}
+.eco-arrow:hover{gap:12px}
+
+/* CONTACT */
+#contact{background:var(--bg2)}
+.contact-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:80px;align-items:start}
+.contact-left p{font-size:15px;line-height:1.85;margin-bottom:32px}
+.cinfo{display:flex;flex-direction:column;gap:0}
+.ci-row{
+  display:flex;align-items:center;gap:14px;
+  padding:14px 0;border-bottom:1px solid var(--border);
+  transition:padding-left .2s;
+}
+.ci-row:first-child{border-top:1px solid var(--border)}
+.ci-row:hover{padding-left:6px}
+.ci-ico{
+  width:36px;height:36px;flex-shrink:0;
+  background:rgba(26,127,232,.1);border-radius:8px;
+  display:flex;align-items:center;justify-content:center;
+  color:var(--cyan);transition:background .3s,transform .3s;
+}
+.ci-row:hover .ci-ico{background:var(--blue);transform:scale(1.1)}
+.ci-ico svg{width:16px;height:16px}
+.ci-label{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:1px}
+.ci-val{font-size:14px;font-weight:500;color:var(--white)}
+
+.areas-chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}
+.area-chip{
+  padding:6px 14px;border-radius:20px;
+  background:rgba(26,127,232,.1);border:1px solid rgba(26,127,232,.2);
+  font-size:12px;font-weight:500;color:var(--cyan);
+  transition:background .2s,transform .2s;
+}
+.area-chip:hover{background:rgba(26,127,232,.2);transform:scale(1.05)}
+
+.form-card{
+  background:var(--card);border:1px solid var(--border);
+  border-radius:var(--r3);padding:40px;
+}
+.fg{display:flex;flex-direction:column;gap:7px;margin-bottom:14px}
+.fg label{font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.fg input,.fg select,.fg textarea{
+  background:var(--bg);border:1px solid var(--border);
+  border-radius:var(--r);padding:12px 15px;
+  font-family:var(--fb);font-size:15px;color:var(--white);
+  outline:none;transition:border-color .25s,box-shadow .25s;width:100%;
+}
+.fg input:focus,.fg select:focus,.fg textarea:focus{
+  border-color:var(--blue);
+  box-shadow:0 0 0 3px rgba(26,127,232,.12);
+}
+.fg select{
+  appearance:none;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='7' fill='none'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%234a6380' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:right 14px center;padding-right:38px;
+}
+.fg select option{background:var(--bg2)}
+.fg textarea{resize:vertical;min-height:100px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.form-submit{
+  width:100%;padding:14px;
+  background:linear-gradient(135deg,var(--blue),var(--cyan));
+  color:#fff;border:none;border-radius:8px;
+  font-family:var(--fh);font-size:14px;font-weight:700;
+  letter-spacing:.12em;text-transform:uppercase;cursor:none;
+  transition:transform .2s,box-shadow .2s;
+  box-shadow:0 4px 20px rgba(26,127,232,.3);
+  display:flex;align-items:center;justify-content:center;gap:10px;
+}
+.form-submit:hover{transform:translateY(-2px);box-shadow:0 8px 32px rgba(0,212,255,.4)}
+
+/* FOOTER */
+footer{
+  background:var(--bg);border-top:1px solid var(--border);
+  padding:28px 0;
+}
+.foot-inner{
+  display:flex;justify-content:space-between;align-items:center;
+  flex-wrap:wrap;gap:16px;
+}
+.foot-left{font-size:13px;color:var(--muted)}
+.foot-left strong{color:var(--cyan)}
+.foot-copy{font-size:12px;color:var(--muted)}
+.foot-links{display:flex;gap:20px}
+.foot-links a{font-size:12px;color:var(--muted);text-decoration:none;transition:color .2s}
+.foot-links a:hover{color:var(--cyan)}
+
+/* WA FLOAT */
+.wa-float{
+  position:fixed;bottom:28px;right:28px;z-index:90;
+  width:56px;height:56px;background:#25D366;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  text-decoration:none;
+  box-shadow:0 4px 20px rgba(37,211,102,.4);
+  transition:transform .25s,box-shadow .25s;
+  animation:waRing 3s 4s infinite;
+}
+.wa-float:hover{transform:scale(1.12);box-shadow:0 6px 32px rgba(37,211,102,.6);animation:none}
+.wa-float svg{width:28px;height:28px}
+@keyframes waRing{
+  0%,100%{box-shadow:0 4px 20px rgba(37,211,102,.4)}
+  50%{box-shadow:0 4px 32px rgba(37,211,102,.6),0 0 0 10px rgba(37,211,102,.08)}
+}
+
+/* RESPONSIVE */
+@media(max-width:1100px){
+  .svc-grid{grid-template-columns:repeat(2,1fr)}
+  .eco-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:900px){
+  nav{padding:0 20px}
+  .nav-links{display:none}
+  .nav-mob{display:flex}
+  .hero-wrap{grid-template-columns:1fr}
+  .hero-visual{display:none}
+  .about-grid,.why-grid,.contact-grid{grid-template-columns:1fr;gap:40px}
+  .sec-hd,.port-hd{grid-template-columns:1fr;gap:20px}
+  .pricing-grid{grid-template-columns:1fr}
+  .price-card.featured{order:-1}
+  .svc-grid{grid-template-columns:1fr}
+  .port-grid{grid-template-columns:1fr}
+  .eco-grid{grid-template-columns:1fr}
+  .container{padding:0 20px}
+  section{padding:72px 0}
+  .form-row{grid-template-columns:1fr}
+  .foot-inner{flex-direction:column;text-align:center}
+  .about-stats{grid-template-columns:1fr 1fr}
+}
+</style>
+</head>
+<body>
+
+<div id="cd"></div>
+<div id="cr"></div>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <a href="#home" class="nav-logo">
+    <div class="logo-icon">LW</div>
+    <div class="logo-text">Laaf<span>Web</span></div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#pricing">Pricing</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="https://wa.me/27766714406" class="ncta" target="_blank">WhatsApp Us</a></li>
+  </ul>
+  <button class="nav-mob" onclick="openMob()" aria-label="Menu">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+      <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+    </svg>
+  </button>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mob-menu" id="mobMenu">
+  <div class="mob-head">
+    <div class="logo-text" style="font-family:var(--fh);font-size:20px;font-weight:700">Laaf<span style="color:var(--cyan)">Web</span></div>
+    <button class="mob-x" onclick="closeMob()">&times;</button>
+  </div>
+  <a href="#about" onclick="closeMob()">About</a>
+  <a href="#services" onclick="closeMob()">Services</a>
+  <a href="#pricing" onclick="closeMob()">Pricing</a>
+  <a href="#portfolio" onclick="closeMob()">Portfolio</a>
+  <a href="#contact" onclick="closeMob()">Contact</a>
+  <a href="https://wa.me/27766714406" target="_blank" style="color:var(--cyan);margin-top:12px" onclick="closeMob()">WhatsApp Us →</a>
+</div>
+
+<!-- HERO -->
+<section id="home">
+  <div class="hero-grid"></div>
+  <div class="orb orb1"></div>
+  <div class="orb orb2"></div>
+  <div class="orb orb3"></div>
+
+  <div class="container">
+    <div class="hero-wrap">
+      <div class="hero-left">
+        <div class="h-eyebrow">
+          <span class="dot"></span>
+          West Coast Web Design · Saldanha · Vredenburg · Langebaan
+        </div>
+
+        <h1 class="hero-title">
+          <span class="line"><span class="word w1">Affordable</span></span>
+          <span class="line"><span class="word w2 grad">Websites</span></span>
+          <span class="line"><span class="word w3">for Local Biz</span></span>
+        </h1>
+
+        <p class="hero-sub">Professional websites built for businesses on the West Coast. Get found online, generate leads, and grow — without breaking the bank.</p>
+
+        <div class="hero-btns">
+          <a href="#pricing" class="btn-primary">
+            <span>Get a Website</span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+          <a href="https://wa.me/27766714406?text=Hi%20LaafWeb%2C%20I%27m%20interested%20in%20a%20website" class="btn-wa" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            WhatsApp Us
+          </a>
+        </div>
+
+        <div class="hero-badges">
+          <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>From R1 500</span>
+          <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Live in 7 days</span>
+          <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Mobile-first</span>
+          <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>WhatsApp ready</span>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="float-label fl1">
+          <span class="fl-dot green"></span> Website Live ✓
+        </div>
+        <div class="browser-mock">
+          <div class="browser-bar">
+            <div class="bdots"><span class="r"></span><span class="y"></span><span class="g"></span></div>
+            <div class="burl">mybusiness.co.za</div>
+          </div>
+          <div class="browser-body">
+            <div class="brow w80"></div>
+            <div class="brow w60"></div>
+            <div class="bcards">
+              <div class="bcard"></div>
+              <div class="bcard"></div>
+              <div class="bcard"></div>
+              <div class="bcard"></div>
+            </div>
+            <div class="bprice">
+              <div><div class="bp-label">Starter Website</div></div>
+              <div class="bp-val">R1 500</div>
+            </div>
+            <div class="bprice2">
+              <div><div class="bp-label">Monthly Care</div></div>
+              <div class="bp-val2">R200/mo</div>
+            </div>
+            <div class="brow w90" style="margin-top:12px"></div>
+            <div class="brow w40"></div>
+          </div>
+        </div>
+        <div class="float-label fl2">
+          <span class="fl-dot blue"></span> 3 leads today
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-hint">
+    <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker-wrap">
+  <div class="ticker-inner">
+    <div class="ticker-track">
+      <span class="tick-item">Website Design West Coast <span class="tick-dot"></span></span>
+      <span class="tick-item">Web Design Saldanha <span class="tick-dot"></span></span>
+      <span class="tick-item">Business Websites Vredenburg <span class="tick-dot"></span></span>
+      <span class="tick-item">Affordable Websites Langebaan <span class="tick-dot"></span></span>
+      <span class="tick-item">WhatsApp Automation <span class="tick-dot"></span></span>
+      <span class="tick-item">Mobile-First Design <span class="tick-dot"></span></span>
+      <span class="tick-item">LaafConnect · LaafShuttle · LaafWeb <span class="tick-dot"></span></span>
+      <span class="tick-item">Website Design West Coast <span class="tick-dot"></span></span>
+      <span class="tick-item">Web Design Saldanha <span class="tick-dot"></span></span>
+      <span class="tick-item">Business Websites Vredenburg <span class="tick-dot"></span></span>
+      <span class="tick-item">Affordable Websites Langebaan <span class="tick-dot"></span></span>
+      <span class="tick-item">WhatsApp Automation <span class="tick-dot"></span></span>
+      <span class="tick-item">Mobile-First Design <span class="tick-dot"></span></span>
+      <span class="tick-item">LaafConnect · LaafShuttle · LaafWeb <span class="tick-dot"></span></span>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div>
+        <div class="tag ru">About LaafWeb</div>
+        <h2 class="sec-title ru">We Get Local <em>Businesses</em> Online</h2>
+        <p class="sec-sub ru" style="margin-bottom:18px">LaafWeb helps small businesses on the West Coast of South Africa get a professional online presence — quickly, affordably, and without the tech headaches.</p>
+        <p class="sec-sub ru d1">We build clean, fast websites that actually generate leads. No bloated templates, no overpriced agencies — just focused, purposeful websites built for your market.</p>
+        <div class="about-stats">
+          <div class="astat ru d1"><div class="astat-num counter" data-target="7">0</div><div class="astat-label">Days to Launch</div></div>
+          <div class="astat ru d2"><div class="astat-num counter" data-target="100">0</div><div class="astat-label" style="font-size:11px">% Mobile Optimised</div></div>
+          <div class="astat ru d3"><div class="astat-num" style="font-size:32px">R1.5k</div><div class="astat-label">Starting Price</div></div>
+          <div class="astat ru d4"><div class="astat-num counter" data-target="3">0</div><div class="astat-label">Towns Served</div></div>
+        </div>
+      </div>
+      <div class="rr">
+        <div class="av-card">
+          <div style="font-family:var(--fh);font-size:15px;font-weight:700;color:var(--white);margin-bottom:4px">How We Work</div>
+          <div style="font-size:13px;color:var(--muted);margin-bottom:20px">Simple 4-step process to get you live</div>
+          <div class="av-steps">
+            <div class="av-step"><div class="step-num">01</div><div><div class="step-title">Discovery Call</div><div class="step-desc">We chat on WhatsApp to understand your business and goals.</div></div></div>
+            <div class="av-step"><div class="step-num">02</div><div><div class="step-title">Design & Build</div><div class="step-desc">We design your site — clean, modern, and built to convert.</div></div></div>
+            <div class="av-step"><div class="step-num">03</div><div><div class="step-title">Review & Refine</div><div class="step-desc">You review the draft and we tweak until it's perfect.</div></div></div>
+            <div class="av-step"><div class="step-num">04</div><div><div class="step-title">Launch 🚀</div><div class="step-desc">We go live with domain, hosting, and WhatsApp connected.</div></div></div>
+          </div>
+          <div style="margin-top:20px;font-size:12px;color:var(--muted);margin-bottom:6px">Typical project completion</div>
+          <div class="av-bar"><div class="av-fill"></div></div>
+          <div style="font-size:11px;color:var(--cyan);margin-top:5px;text-align:right">~7 days from brief to live</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="container">
+    <div class="sec-hd">
+      <div><div class="tag ru">Services</div><h2 class="sec-title ru">What We <em>Build</em></h2></div>
+      <p class="sec-sub ru">Everything your business needs to get found online and generate enquiries — without the agency price tag.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc-card ru"><div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div><h3>Business Website Development</h3><p>Custom multi-page websites for your business — services, about, gallery, contact, and quote forms built in.</p><span class="svc-badge badge-pop">★ Most Popular</span></div>
+      <div class="svc-card ru d1"><div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div><h3>One Page Business Websites</h3><p>Everything a visitor needs on a single, scroll-driven page. Fast, focused, and great for local services.</p></div>
+      <div class="svc-card ru d2"><div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg></div><h3>Website Setup & Hosting</h3><p>Domain registration, reliable South African hosting, SSL certificate, and professional email setup.</p></div>
+      <div class="svc-card ru"><div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg></div><h3>Website Maintenance</h3><p>Monthly updates, security checks, content changes, and performance monitoring — so you never have to worry.</p><span class="svc-badge badge-new">R200/month</span></div>
+      <div class="svc-card ru d1"><div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg></div><h3>WhatsApp Automation</h3><p>Powered by LaafConnect — automated responses, appointment booking, and lead capture straight to WhatsApp.</p><span class="svc-badge badge-new">LaafConnect</span></div>
+      <div class="svc-card ru d2"><div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13" rx="2"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></div><h3>Shuttle Booking Systems</h3><p>Powered by LaafShuttle — online booking, route management, and payment integration for shuttle operators.</p><span class="svc-badge badge-new">LaafShuttle</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing">
+  <div class="container">
+    <div class="pricing-hd">
+      <div class="tag ru" style="justify-content:center;display:flex">Pricing</div>
+      <h2 class="sec-title ru" style="text-align:center">Transparent <em>Pricing</em></h2>
+      <p class="sec-sub ru" style="text-align:center;margin:0 auto">No hidden fees. No confusing packages. Just honest pricing for West Coast businesses.</p>
+    </div>
+    <div class="pricing-grid">
+
+      <div class="price-card rs d1">
+        <div class="price-tag-label">One-Time</div>
+        <div class="price-name">Starter Website</div>
+        <div class="price-desc">A clean, professional one-page or basic multi-page website to get your business online.</div>
+        <div class="price-amount"><span class="currency">R</span>1 500</div>
+        <div class="price-note">Once-off payment · No monthly contract</div>
+        <div class="price-divider"></div>
+        <ul class="price-features">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Up to 3 pages</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Mobile responsive</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Contact form</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>WhatsApp button</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Basic SEO setup</li>
+        </ul>
+        <a href="#contact" class="price-btn ghost">Get Started</a>
+      </div>
+
+      <div class="price-card featured rs d2">
+        <div class="featured-badge">Best Value</div>
+        <div class="price-tag-label">One-Time</div>
+        <div class="price-name">Setup & Launch</div>
+        <div class="price-desc">Website plus full domain registration, SA hosting, SSL, professional email, and go-live support.</div>
+        <div class="price-amount"><span class="currency">R</span>1 200</div>
+        <div class="price-note">Add-on to any website · Once-off</div>
+        <div class="price-divider"></div>
+        <ul class="price-features">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>.co.za domain (1 year)</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>SA-based hosting</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>SSL certificate</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Business email setup</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Launch day support</li>
+        </ul>
+        <a href="https://wa.me/27766714406?text=Hi%2C%20I%27m%20interested%20in%20the%20Setup%20%26%20Launch%20package" class="price-btn primary" target="_blank">WhatsApp to Order</a>
+      </div>
+
+      <div class="price-card rs d3">
+        <div class="price-tag-label">Monthly</div>
+        <div class="price-name">Website Care</div>
+        <div class="price-desc">Hands-free website management. Updates, security, backups, and small content changes included.</div>
+        <div class="price-amount"><span class="currency">R</span>200<span class="period">/mo</span></div>
+        <div class="price-note">Cancel anytime · No commitment</div>
+        <div class="price-divider"></div>
+        <ul class="price-features">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Monthly updates</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Security monitoring</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Weekly backups</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Content tweaks</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>WhatsApp support</li>
+        </ul>
+        <a href="#contact" class="price-btn ghost">Sign Up</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio">
+  <div class="container">
+    <div class="port-hd">
+      <div><div class="tag ru">Portfolio</div><h2 class="sec-title ru">Example <em>Work</em></h2></div>
+      <p class="sec-sub ru">The types of websites we build for local businesses on the West Coast.</p>
+    </div>
+    <div class="port-grid">
+
+      <div class="port-card rs">
+        <div class="port-mock">
+          <div class="pm-bar"><div class="pm-dots"><span class="pr"></span><span class="py"></span><span class="pg"></span></div><div class="pm-url"></div></div>
+          <div class="pm-content">
+            <div class="pm-h w70"></div><div class="pm-h w50" style="margin-bottom:10px"></div>
+            <div class="pm-row"><div class="pm-box b1"></div><div class="pm-box b2"></div></div>
+            <div class="pm-line"></div><div class="pm-line" style="width:70%"></div><div class="pm-line" style="width:85%"></div>
+            <div class="pm-btn"></div>
+          </div>
+        </div>
+        <div class="port-ov"><span class="port-tag">Construction</span><div class="port-name">Construction Company</div><div class="port-tech">Services · Gallery · Quote Form</div></div>
+        <div class="port-info"><div class="port-title">Construction Company Website</div><div class="port-desc">Full site with services, project gallery, testimonials, and WhatsApp quote request — like our Izwe 2 Projects build.</div></div>
+      </div>
+
+      <div class="port-card rs d1">
+        <div class="port-mock">
+          <div class="pm-bar"><div class="pm-dots"><span class="pr"></span><span class="py"></span><span class="pg"></span></div><div class="pm-url"></div></div>
+          <div class="pm-content">
+            <div class="pm-h w85"></div><div class="pm-h w60" style="margin-bottom:10px"></div>
+            <div class="pm-row"><div class="pm-box b2"></div><div class="pm-box b3"></div><div class="pm-box b1"></div></div>
+            <div class="pm-line"></div><div class="pm-line" style="width:90%"></div>
+            <div class="pm-btn" style="background:linear-gradient(135deg,rgba(0,229,160,.25),rgba(0,212,255,.15))"></div>
+          </div>
+        </div>
+        <div class="port-ov"><span class="port-tag">Service Biz</span><div class="port-name">Local Service Business</div><div class="port-tech">One-pager · Lead Generation</div></div>
+        <div class="port-info"><div class="port-title">Local Service Business Website</div><div class="port-desc">Plumbers, electricians, cleaners — a fast one-page site with booking form and Google Maps integration.</div></div>
+      </div>
+
+      <div class="port-card rs d2">
+        <div class="port-mock">
+          <div class="pm-bar"><div class="pm-dots"><span class="pr"></span><span class="py"></span><span class="pg"></span></div><div class="pm-url"></div></div>
+          <div class="pm-content">
+            <div class="pm-h w50"></div><div class="pm-h w85" style="margin-bottom:12px"></div>
+            <div class="pm-row"><div class="pm-box b3"></div><div class="pm-box b1"></div></div>
+            <div class="pm-line"></div><div class="pm-line" style="width:75%"></div><div class="pm-line" style="width:60%"></div>
+            <div class="pm-btn" style="background:linear-gradient(135deg,rgba(0,229,160,.3),rgba(0,212,255,.2));width:80%"></div>
+          </div>
+        </div>
+        <div class="port-ov"><span class="port-tag">Landing Page</span><div class="port-name">Small Business Landing</div><div class="port-tech">Single Page · Fast · Affordable</div></div>
+        <div class="port-info"><div class="port-title">Small Business Landing Page</div><div class="port-desc">A focused, conversion-optimised single page for new businesses or promotional campaigns. Live in 3 days.</div></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section id="why">
+  <div class="container">
+    <div class="why-grid">
+      <div>
+        <div class="tag ru">Why LaafWeb</div>
+        <h2 class="sec-title ru">Built Different,<br><em>Priced Right</em></h2>
+        <p class="sec-sub ru" style="margin-bottom:36px">We know the West Coast market. We build websites that work for local customers — not generic templates from a Joburg agency that's never heard of Vredenburg.</p>
+        <div class="why-points">
+          <div class="why-point rl"><div class="wp-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div><div><div class="wp-title">Affordable Pricing</div><div class="wp-desc">Professional websites from R1 500. No agency markup, no fluff — just honest value.</div></div></div>
+          <div class="why-point rl d1"><div class="wp-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div><div class="wp-title">Built for Local Businesses</div><div class="wp-desc">We know Saldanha, Vredenburg, and Langebaan. We build for your market, your customers.</div></div></div>
+          <div class="why-point rl d2"><div class="wp-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div><div><div class="wp-title">Fast Loading Websites</div><div class="wp-desc">Lightweight, optimised code. Fast load times even on South African mobile networks.</div></div></div>
+          <div class="why-point rl d3"><div class="wp-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg></div><div><div class="wp-title">WhatsApp Integration</div><div class="wp-desc">Every site comes with a WhatsApp button. Lead capture direct to your phone.</div></div></div>
+          <div class="why-point rl d4"><div class="wp-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg></div><div><div class="wp-title">Ongoing Support</div><div class="wp-desc">We're not disappearing after launch. WhatsApp us anytime — we're always here.</div></div></div>
+        </div>
+      </div>
+      <div class="rr">
+        <div class="glow-card">
+          <div class="gc-title">Everything Included</div>
+          <div class="gc-sub">What's in every LaafWeb website</div>
+          <div class="gc-item"><span class="gc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg></span><span class="gc-text">Mobile-first responsive design</span></div>
+          <div class="gc-item"><span class="gc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg></span><span class="gc-text">WhatsApp contact button</span></div>
+          <div class="gc-item"><span class="gc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg></span><span class="gc-text">Contact / lead gen form</span></div>
+          <div class="gc-item"><span class="gc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg></span><span class="gc-text">SEO-ready structure</span></div>
+          <div class="gc-item"><span class="gc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg></span><span class="gc-text">Google Maps embed</span></div>
+          <div class="gc-item"><span class="gc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg></span><span class="gc-text">Social media links</span></div>
+          <div class="gc-item"><span class="gc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg></span><span class="gc-text">Fast loading &amp; optimised code</span></div>
+          <div class="gc-item"><span class="gc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg></span><span class="gc-text">Post-launch support</span><span class="gc-price">Free ✓</span></div>
+          <a href="https://wa.me/27766714406?text=Hi%2C%20I%27d%20like%20to%20get%20a%20website%20quote" class="price-btn primary" style="margin-top:24px" target="_blank">Start a Conversation →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ECOSYSTEM -->
+<section id="ecosystem">
+  <div class="eco-bg"></div>
+  <div class="container" style="position:relative;z-index:1">
+    <div class="eco-hd">
+      <div class="tag ru">The Laafstyl Ecosystem</div>
+      <h2 class="sec-title ru">One Brand, <em>Three Tools</em></h2>
+      <p class="sec-sub ru" style="text-align:center;margin:0 auto">LaafWeb is part of the Laafstyl digital ecosystem — a suite of affordable tools built for South African businesses.</p>
+    </div>
+    <div class="eco-grid">
+      <div class="eco-card rs">
+        <div class="eco-icon">LC</div>
+        <div class="eco-name">Laaf<span>Connect</span></div>
+        <div class="eco-tag">WhatsApp Automation</div>
+        <p class="eco-desc">AI-powered WhatsApp chatbot for small businesses. Automatic replies, appointment booking, and lead capture — 24/7, without lifting a finger.</p>
+        <a href="https://wa.me/27766714406" class="eco-arrow" target="_blank">Learn More <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      </div>
+      <div class="eco-card rs d1">
+        <div class="eco-icon" style="background:linear-gradient(135deg,rgba(255,107,53,.15),rgba(255,107,53,.05));border-color:rgba(255,107,53,.25);color:var(--accent)">LS</div>
+        <div class="eco-name">Laaf<span style="color:var(--accent)">Shuttle</span></div>
+        <div class="eco-tag acc">Booking Platform</div>
+        <p class="eco-desc">Shuttle booking system for transport operators. Online reservations, route management, payment processing, and passenger management — all in one place.</p>
+        <a href="https://wa.me/27766714406" class="eco-arrow" style="color:var(--accent)" target="_blank">Learn More <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      </div>
+      <div class="eco-card active rs d2">
+        <div class="eco-icon" style="background:linear-gradient(135deg,rgba(26,127,232,.25),rgba(0,212,255,.1));border-color:rgba(0,212,255,.35)">LW</div>
+        <div class="eco-name">Laaf<span>Web</span></div>
+        <div class="eco-tag blue">You Are Here</div>
+        <p class="eco-desc">Affordable, professional websites for small businesses on the West Coast. From R1 500, live in 7 days, built to generate leads and grow your business online.</p>
+        <a href="#pricing" class="eco-arrow">Get Started <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-left rl">
+        <div class="tag">Contact</div>
+        <h2 class="sec-title">Let's Build Your <em>Website</em></h2>
+        <p>Ready to get your business online? Drop us a message or WhatsApp us directly — we'll get back to you the same day.</p>
+        <div class="cinfo">
+          <div class="ci-row"><div class="ci-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.82 19.79 19.79 0 01.22 1.18 2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.09a16 16 0 006 6l.56-.56a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></div><div><div class="ci-label">WhatsApp / Phone</div><div class="ci-val">076 671 4406</div></div></div>
+          <div class="ci-row"><div class="ci-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div><div><div class="ci-label">Email</div><div class="ci-val">hello@laafweb.co.za</div></div></div>
+          <div class="ci-row"><div class="ci-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div><div class="ci-label">Based In</div><div class="ci-val">West Coast, Western Cape</div></div></div>
+          <div class="ci-row"><div class="ci-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><div><div class="ci-label">Response Time</div><div class="ci-val">Same day · 7 days a week</div></div></div>
+        </div>
+        <div style="margin-top:24px">
+          <div style="font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:10px">We Serve These Areas</div>
+          <div class="areas-chips">
+            <span class="area-chip">Saldanha</span>
+            <span class="area-chip">Vredenburg</span>
+            <span class="area-chip">Langebaan</span>
+            <span class="area-chip">Velddrif</span>
+            <span class="area-chip">Hopefield</span>
+            <span class="area-chip">West Coast</span>
+          </div>
+        </div>
+        <a href="https://wa.me/27766714406?text=Hi%20LaafWeb%2C%20I%27d%20like%20to%20discuss%20a%20website" class="btn-wa" style="margin-top:28px;display:inline-flex" target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          Chat on WhatsApp
+        </a>
+      </div>
+      <div class="rr">
+        <div class="form-card">
+          <div style="font-family:var(--fh);font-size:20px;font-weight:800;color:var(--white);margin-bottom:4px">Get a Free Quote</div>
+          <div style="font-size:13px;color:var(--muted);margin-bottom:24px">We'll respond within hours, not days.</div>
+          <div class="form-row">
+            <div class="fg"><label>Name</label><input type="text" placeholder="Your name"></div>
+            <div class="fg"><label>Phone / WhatsApp</label><input type="tel" placeholder="07x xxx xxxx"></div>
+          </div>
+          <div class="fg"><label>Business Name</label><input type="text" placeholder="Your business name"></div>
+          <div class="fg"><label>Town / Area</label><input type="text" placeholder="Saldanha, Vredenburg, Langebaan..."></div>
+          <div class="fg"><label>Service Needed</label>
+            <select>
+              <option value="">Select a service...</option>
+              <option>Starter Website (R1 500)</option>
+              <option>Setup & Launch Package (R1 200)</option>
+              <option>Monthly Website Care (R200/mo)</option>
+              <option>WhatsApp Automation (LaafConnect)</option>
+              <option>Shuttle Booking System (LaafShuttle)</option>
+              <option>Not sure — let's chat</option>
+            </select>
+          </div>
+          <div class="fg"><label>Tell Us About Your Business</label><textarea placeholder="What does your business do? Any specific features you need?"></textarea></div>
+          <button type="button" class="form-submit" id="submitBtn" onclick="submitForm()">
+            <span>Send My Quote Request</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="foot-inner">
+      <div class="foot-left">
+        <strong>LaafWeb</strong> is part of the <strong>Laafstyl</strong> digital ecosystem · LaafConnect · LaafShuttle · LaafWeb
+      </div>
+      <div class="foot-links">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+        <a href="https://wa.me/27766714406" target="_blank">WhatsApp</a>
+      </div>
+      <div class="foot-copy">© 2026 Laafstyl. All rights reserved. · West Coast, Western Cape, South Africa</div>
+    </div>
+  </div>
+</footer>
+
+<!-- WA FLOAT -->
+<a href="https://wa.me/27766714406?text=Hi%20LaafWeb%2C%20I%27m%20interested%20in%20a%20website" class="wa-float" target="_blank" rel="noopener" aria-label="WhatsApp LaafWeb">
+  <svg viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+</a>
+
+<script>
+// CURSOR
+const cd=document.getElementById('cd'),cr=document.getElementById('cr');
+let rx=0,ry=0,mx=0,my=0;
+document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;cd.style.left=mx+'px';cd.style.top=my+'px'});
+(function loop(){rx+=(mx-rx)*.12;ry+=(my-ry)*.12;cr.style.left=rx+'px';cr.style.top=ry+'px';requestAnimationFrame(loop)})();
+document.querySelectorAll('a,button,.price-card,.svc-card,.eco-card,.port-card,.why-point,.astat').forEach(el=>{
+  el.addEventListener('mouseenter',()=>cr.classList.add('big'));
+  el.addEventListener('mouseleave',()=>cr.classList.remove('big'));
+});
+
+// NAV
+window.addEventListener('scroll',()=>document.getElementById('mainNav').classList.toggle('solid',scrollY>60));
+
+// SCROLL REVEAL
+const ro=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in')}),{threshold:.07,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.ru,.rl,.rr,.rs').forEach(el=>ro.observe(el));
+
+// COUNTER
+function animCount(el,target,dur=1600){
+  let s=0;
+  (function step(ts){
+    if(!s)s=ts;const p=Math.min((ts-s)/dur,1);const e=1-Math.pow(1-p,3);
+    el.textContent=Math.floor(e*target);if(p<1)requestAnimationFrame(step);else el.textContent=target;
+  })(performance.now());
+}
+const co=new IntersectionObserver(entries=>entries.forEach(e=>{
+  if(e.isIntersecting){animCount(e.target,parseInt(e.target.dataset.target));co.unobserve(e.target)}
+}),{threshold:.5});
+document.querySelectorAll('.counter').forEach(el=>co.observe(el));
+
+// MOBILE
+function openMob(){const m=document.getElementById('mobMenu');m.style.display='flex';setTimeout(()=>m.classList.add('open'),10)}
+function closeMob(){const m=document.getElementById('mobMenu');m.classList.remove('open');setTimeout(()=>m.style.display='none',400)}
+
+// FORM
+function submitForm(){
+  const btn=document.getElementById('submitBtn');
+  btn.querySelector('span').textContent='Sent! We\'ll be in touch soon ✓';
+  btn.style.background='linear-gradient(135deg,#00c488,#00e5a0)';
+  btn.disabled=true;
+}
+
+// PRICING CARD HOVER GLOW
+document.querySelectorAll('.price-card').forEach(card=>{
+  card.addEventListener('mousemove',e=>{
+    const r=card.getBoundingClientRect();
+    const x=e.clientX-r.left,y=e.clientY-r.top;
+    card.style.background=`radial-gradient(circle at ${x}px ${y}px, rgba(26,127,232,.08), transparent 200px), ${card.classList.contains('featured')?'#0a1628':'var(--card)'}`;
+  });
+  card.addEventListener('mouseleave',()=>card.style.background='');
+});
+
+// PARALLAX orbs
+window.addEventListener('scroll',()=>{
+  const s=scrollY;
+  document.querySelector('.orb1').style.transform=`translateY(${s*.08}px)`;
+  document.querySelector('.orb2').style.transform=`translateY(${s*.05}px)`;
+});
+</script>
+</body>
+</html>
