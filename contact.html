@@ -50,6 +50,10 @@
         ::-webkit-scrollbar-track { background: var(--ink); }
         ::-webkit-scrollbar-thumb { background: var(--red); border-radius: 3px; }
         html { scroll-behavior: smooth; }
+
+        /* FIX: scroll-margin-top for fixed nav on all anchor targets */
+        [id] { scroll-margin-top: 80px; }
+
         body { background: var(--black); color: var(--body); font-family: var(--font-body); font-size: 16px; line-height: 1.6; overflow-x: hidden; }
 
         /* SA BAR */
@@ -62,17 +66,19 @@
         nav { position: fixed; top: 3px; left: 0; right: 0; z-index: 100; height: 68px; display: flex; align-items: center; background: rgba(10,10,9,0.92); backdrop-filter: blur(16px); border-bottom: 1px solid var(--border); padding: 0 48px; gap: 32px; transition: border-color 0.3s; }
         nav.scrolled { border-bottom-color: rgba(196,30,42,0.3); }
         .logo { display: flex; align-items: center; gap: 12px; text-decoration: none; flex-shrink: 0; }
-        .logo-mark { width: 38px; height: 38px; background: var(--red); display: flex; align-items: center; justify-content: center; clip-path: polygon(0 0,100% 0,100% 75%,50% 100%,0 75%); }
-        .logo-mark svg { width: 20px; height: 20px; }
+        .logo-mark { width: 38px; height: 38px; display: flex; align-items: center; justify-content: center; }
         .logo-text strong { display: block; font-family: var(--font-head); font-size: 19px; letter-spacing: 0.06em; color: var(--white); }
         .logo-text span { font-size: 9px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--red); }
         .nav-links { display: flex; align-items: center; gap: 28px; margin-left: auto; list-style: none; }
         .nav-links a { font-size: 13px; font-weight: 500; letter-spacing: 0.07em; text-transform: uppercase; color: var(--body); text-decoration: none; transition: color 0.2s; }
         .nav-links a:hover { color: var(--white); }
+        /* FIX: active state for nav — contact page highlights "Get a Quote" with a ring */
         .nav-cta { background: var(--red) !important; color: var(--white) !important; padding: 9px 22px; border-radius: var(--r); font-weight: 600 !important; }
         .nav-cta:hover { background: var(--red2) !important; }
+        .nav-cta.active { outline: 2px solid rgba(255,255,255,0.4); outline-offset: 2px; }
         .nav-mob-btn { display: none; background: none; border: none; color: var(--white); cursor: pointer; margin-left: auto; padding: 4px; }
-        .mob-menu { display: none; position: fixed; inset: 0; z-index: 300; background: var(--ink); flex-direction: column; padding: 28px 32px; }
+        /* FIX: overflow-y: auto on mob-menu so long menus scroll */
+        .mob-menu { display: none; position: fixed; inset: 0; z-index: 300; background: var(--ink); flex-direction: column; padding: 28px 32px; overflow-y: auto; }
         .mob-menu.open { display: flex; }
         .mob-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 40px; }
         .mob-close { background: none; border: none; color: var(--white); font-size: 30px; cursor: pointer; line-height: 1; }
@@ -94,7 +100,7 @@
         .ph-breadcrumb span { color: var(--redf); }
 
         /* QUICK CONTACT PILLS */
-        .quick-contact { background: var(--red); padding: 0; }
+        .quick-contact { background: var(--red); }
         .qc-grid { display: grid; grid-template-columns: repeat(3, 1fr); }
         .qc-item { display: flex; align-items: center; gap: 16px; padding: 28px 40px; text-decoration: none; color: rgba(255,255,255,0.9); border-right: 1px solid rgba(255,255,255,0.15); transition: background 0.2s; }
         .qc-item:last-child { border-right: none; }
@@ -108,7 +114,7 @@
         .container { max-width: 1240px; margin: 0 auto; padding: 0 48px; }
 
         /* MAIN CONTENT */
-        .contact-main { padding: 96px 0; }
+        .contact-main { padding: 88px 0; }
         .contact-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 80px; align-items: start; }
 
         /* LEFT COLUMN */
@@ -169,7 +175,7 @@
         .form-note svg { width: 13px; height: 13px; color: var(--green); flex-shrink: 0; }
 
         /* MAP SECTION */
-        .map-section { background: var(--ink); padding: 0; border-top: 1px solid var(--border); }
+        .map-section { background: var(--ink); border-top: 1px solid var(--border); }
         .map-header { padding: 64px 0 40px; }
         .map-header-inner { display: flex; justify-content: space-between; align-items: flex-end; }
         .map-embed { width: 100%; height: 420px; border: none; display: block; filter: grayscale(80%) invert(5%) brightness(0.85); }
@@ -219,16 +225,19 @@
             .qc-grid { grid-template-columns: 1fr; }
             .qc-item { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.15); }
             .qc-item:last-child { border-bottom: none; }
+            .foot-grid { grid-template-columns: 1fr 1fr; gap: 36px; }
         }
         @media (max-width: 860px) {
             nav { padding: 0 20px; } .nav-links { display: none; } .nav-mob-btn { display: flex; }
             .contact-grid { grid-template-columns: 1fr; gap: 48px; }
+            /* FIX: form-row collapses to single column on mobile */
             .form-row { grid-template-columns: 1fr; }
             .trust-badges { grid-template-columns: 1fr 1fr; }
             .foot-grid { grid-template-columns: 1fr 1fr; gap: 28px; }
             .map-header-inner { flex-direction: column; align-items: flex-start; gap: 16px; }
             .bcta-inner { flex-direction: column; }
             .container { padding: 0 20px; }
+            .contact-main { padding: 64px 0; }
         }
         @media (max-width: 560px) {
             .foot-grid { grid-template-columns: 1fr; }
@@ -248,8 +257,10 @@
 <!-- NAV -->
 <nav id="mainNav">
     <a href="index.html" class="logo">
-        <div class="logo-mark" style="background:none;clip-path:none;">
-            <img src="logo.png" alt="Izwe 2 Projects Logo" style="width:38px;height:38px;object-fit:contain;">
+        <div class="logo-mark">
+            <!-- FIX: onerror fallback for logo -->
+            <img src="logo.png" alt="Izwe 2 Projects Logo" style="width:38px;height:38px;object-fit:contain;"
+                 onerror="this.style.display='none';this.parentElement.style.background='var(--red)';this.parentElement.style.clipPath='polygon(0 0,100% 0,100% 75%,50% 100%,0 75%)';">
         </div>
         <div class="logo-text">
             <strong>Izwe 2 Projects</strong>
@@ -262,7 +273,8 @@
         <li><a href="index.html#projects">Projects</a></li>
         <li><a href="index.html#areas">Areas</a></li>
         <li><a href="index.html#testimonials">Reviews</a></li>
-        <li><a href="contact.html" class="nav-cta">Get a Quote</a></li>
+        <!-- FIX: active class added to indicate current page -->
+        <li><a href="contact.html" class="nav-cta active">Get a Quote</a></li>
     </ul>
     <button class="nav-mob-btn" onclick="document.getElementById('mobMenu').classList.add('open')" aria-label="Open menu">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
@@ -271,6 +283,7 @@
     </button>
 </nav>
 
+<!-- MOBILE MENU -->
 <div class="mob-menu" id="mobMenu">
     <div class="mob-head">
         <strong style="font-family:var(--font-head);font-size:20px;color:var(--white);letter-spacing:0.06em;">IZWE 2 PROJECTS</strong>
@@ -300,7 +313,7 @@
 
 <!-- QUICK CONTACT PILLS -->
 <div class="quick-contact">
-    <div class="container" style="padding: 0;">
+    <div class="container" style="padding:0;">
         <div class="qc-grid">
             <a href="tel:+27766714106" class="qc-item">
                 <div class="qc-ico">
@@ -344,36 +357,29 @@
                 <p class="contact-desc">We're based in Vredenburg and operate across the full West Coast. Reach Augustine directly — the fastest response is always via WhatsApp.</p>
 
                 <div class="crow">
-                    <div class="cico">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.82 19.79 19.79 0 01.22 1.18 2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.09a16 16 0 006 6l.56-.56a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-                    </div>
+                    <div class="cico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.82 19.79 19.79 0 01.22 1.18 2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.09a16 16 0 006 6l.56-.56a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></div>
                     <div>
                         <div class="clabel">Phone / WhatsApp</div>
                         <div class="cvalue"><a href="tel:+27766714106">076 671 4106</a> &nbsp;&middot;&nbsp; <a href="tel:+27748847688">074 884 7688</a></div>
                     </div>
                 </div>
+                <!-- FIX: replaced Cloudflare-obfuscated email with plain mailto link -->
                 <div class="crow">
-                    <div class="cico">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                    </div>
+                    <div class="cico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
                     <div>
                         <div class="clabel">Email</div>
-                        <div class="cvalue"><a href="/cdn-cgi/l/email-protection#355452524046415c5b500d070d755258545c591b565a58"><span class="__cf_email__" data-cfemail="f29395958781869b9c97cac0cab2959f939b9edc919d9f">[email&#160;protected]</span></a></div>
+                        <div class="cvalue"><a href="mailto:aggustine828@gmail.com">aggustine828@gmail.com</a></div>
                     </div>
                 </div>
                 <div class="crow">
-                    <div class="cico">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                    </div>
+                    <div class="cico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
                     <div>
                         <div class="clabel">Based In</div>
                         <div class="cvalue">Vredenburg, West Coast, Western Cape</div>
                     </div>
                 </div>
                 <div class="crow">
-                    <div class="cico">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                    </div>
+                    <div class="cico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
                     <div>
                         <div class="clabel">Service Area</div>
                         <div class="cvalue">Vredenburg · Saldanha · Langebaan · Velddrif · Hopefield &amp; surrounding West Coast towns</div>
@@ -520,7 +526,9 @@
         <div class="foot-grid">
             <div class="foot-brand">
                 <a href="index.html" class="logo">
-                    <div class="logo-mark" style="background:none;clip-path:none;"><img src="logo.png" alt="Izwe 2 Projects Logo" style="width:38px;height:38px;object-fit:contain;"></div>
+                    <div class="logo-mark">
+                        <img src="logo.png" alt="Logo" style="width:38px;height:38px;object-fit:contain;" onerror="this.style.display='none'">
+                    </div>
                     <div class="logo-text"><strong>Izwe 2 Projects</strong><span>General and Civil Works &middot; West Coast</span></div>
                 </a>
                 <p>Locally operated general and civil construction company serving the West Coast of South Africa. Built on trust. Built to last.</p>
@@ -546,6 +554,7 @@
             <div class="foot-col">
                 <h4>Areas</h4>
                 <ul class="flinks">
+                    <!-- FIX: all area links standardised to index.html#areas -->
                     <li><a href="index.html#areas">Vredenburg</a></li>
                     <li><a href="index.html#areas">Saldanha</a></li>
                     <li><a href="index.html#areas">Langebaan</a></li>
@@ -564,10 +573,11 @@
                 </ul>
                 <div style="margin-top:26px;">
                     <h4>Contact</h4>
+                    <!-- FIX: replaced Cloudflare-obfuscated email with plain mailto link -->
                     <p style="font-size:13.5px;line-height:1.9;color:var(--body);">
                         <a href="tel:+27766714106" style="color:var(--body);text-decoration:none;">076 671 4106</a><br>
                         <a href="tel:+27748847688" style="color:var(--body);text-decoration:none;">074 884 7688</a><br>
-                        <a href="/cdn-cgi/l/email-protection#51303636242225383f3469636911363c30383d7f323e3c" style="color:var(--body);text-decoration:none;"><span class="__cf_email__" data-cfemail="c6a7a1a1b3b5b2afa8a3fef4fe86a1aba7afaae8a5a9ab">[email&#160;protected]</span></a><br>
+                        <a href="mailto:aggustine828@gmail.com" style="color:var(--body);text-decoration:none;">aggustine828@gmail.com</a><br>
                         Vredenburg, West Coast
                     </p>
                 </div>
@@ -584,21 +594,18 @@
     <svg viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
 </a>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-    // Nav scroll effect
+<script>
     const nav = document.getElementById('mainNav');
     window.addEventListener('scroll', () => {
         nav.classList.toggle('scrolled', window.scrollY > 60);
     });
 
-    // Scroll animations
     const fus = document.querySelectorAll('.fu');
     const obs = new IntersectionObserver(entries => {
         entries.forEach(e => { if(e.isIntersecting) { e.target.classList.add('in'); obs.unobserve(e.target); } });
     }, { threshold: 0.1 });
     fus.forEach(el => obs.observe(el));
 
-    // WhatsApp form submit
     function submitViaWhatsApp() {
         const fname   = document.getElementById('f-fname').value.trim();
         const lname   = document.getElementById('f-lname').value.trim();
@@ -615,4 +622,14 @@
 
         let msg = `Hi Izwe 2 Projects! I'd like a quote.\n\n`;
         msg += `*Name:* ${fname} ${lname}\n`;
-        msg += `*Pho
+        msg += `*Phone:* ${phone}\n`;
+        if (email)   msg += `*Email:* ${email}\n`;
+        if (service) msg += `*Service:* ${service}\n`;
+        if (area)    msg += `*Area:* ${area}\n`;
+        if (details) msg += `*Details:* ${details}\n`;
+
+        window.open(`https://wa.me/27766714106?text=${encodeURIComponent(msg)}`, '_blank');
+    }
+</script>
+</body>
+</html>
