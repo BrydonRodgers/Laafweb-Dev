@@ -3,764 +3,331 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Izwe 2 Projects | West Coast Construction</title>
-    <meta name="description" content="Izwe 2 Projects — quality construction services across the West Coast of South Africa. Residential builds, renovations, tiling, plastering, and more.">
+
+    <!-- ══ SEO ══ -->
+    <title>Izwe 2 Projects | Building, Tiling, Carpentry & Construction — Vredenburg, West Coast</title>
+    <meta name="description" content="Izwe 2 Projects — general and civil construction across the West Coast. Building, tiling, carpentry, decking, floor screeding, waterproofing & painting. Serving Vredenburg, Saldanha & Langebaan. Call 076 671 4106.">
+    <meta name="keywords" content="construction Vredenburg, building contractor West Coast, tiling Saldanha, carpentry Langebaan, waterproofing West Coast, floor screeding, decking, painting contractor, civil works">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://izwe2projects.co.za/">
+
+    <!-- ══ Open Graph ══ -->
+    <meta property="og:title" content="Izwe 2 Projects | General & Civil Construction — West Coast, SA">
+    <meta property="og:description" content="Quality building, tiling, carpentry, waterproofing & more across Vredenburg, Saldanha & the West Coast. Call 076 671 4106.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://izwe2projects.co.za/">
+    <meta property="og:image" content="https://izwe2projects.co.za/industrialwall.jpg">
+    <meta property="og:locale" content="en_ZA">
+
+    <!-- ══ LocalBusiness Schema ══ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Izwe 2 Projects",
+      "description": "General and civil construction company serving the West Coast of South Africa. Services include building, tiling, carpentry, floor screeding, decking, painting and waterproofing.",
+      "url": "https://izwe2projects.co.za",
+      "telephone": ["+27766714106", "+27748847688"],
+      "email": "aggustine828@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Vredenburg",
+        "addressRegion": "Western Cape",
+        "addressCountry": "ZA"
+      },
+      "geo": { "@type": "GeoCoordinates", "latitude": -32.9097, "longitude": 17.9947 },
+      "areaServed": ["Vredenburg","Saldanha","Langebaan","Velddrif","Hopefield","St Helena Bay","Paternoster","Jacobs Bay"],
+      "openingHours": "Mo-Fr 07:00-17:00",
+      "priceRange": "$$",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Construction Services",
+        "itemListElement": [
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Building & New Construction"}},
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Tiling"}},
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Carpentry"}},
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Floor Screeding"}},
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Decking"}},
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Painting"}},
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Waterproofing"}},
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Renovations"}}
+        ]
+      }
+    }
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
+
     <style>
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
         :root {
-            --black:   #0a0a09;
-            --ink:     #141412;
-            --card:    #1a1a17;
-            --border:  #2a2a25;
-            --muted:   #585850;
-            --body:    #9a9a8e;
-            --light:   #d8d8cc;
-            --white:   #f2f0ea;
+            --black:  #0a0a09;
+            --ink:    #141412;
+            --card:   #1a1a17;
+            --border: #2a2a25;
+            --muted:  #585850;
+            --body:   #9a9a8e;
+            --light:  #d8d8cc;
+            --white:  #f2f0ea;
 
-            --gold:    #C8971A;
-            --gold2:   #b08516;
-            --goldf:   #e8b030;
-            --green:   #2d6a3f;
-            --green2:  #245533;
-            --green-l: rgba(45,106,63,0.12);
-            --red:     #b83228;
-            --red2:    #9c2a21;
+            --red:    #C41E2A;
+            --red2:   #a8192e;
+            --redf:   #e02535;
+            --red-l:  rgba(196,30,42,0.12);
+            --red-b:  rgba(196,30,42,0.28);
+
+            --green:  #2d6a3f;
+            --green-l:rgba(45,106,63,0.12);
 
             --font-head: 'Anton', sans-serif;
             --font-body: 'DM Sans', sans-serif;
-            --r: 3px;
+            --r:  3px;
             --r2: 6px;
         }
 
         ::-webkit-scrollbar { width: 5px; }
         ::-webkit-scrollbar-track { background: var(--ink); }
-        ::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 3px; }
-
+        ::-webkit-scrollbar-thumb { background: var(--red); border-radius: 3px; }
         html { scroll-behavior: smooth; }
+        body { background: var(--black); color: var(--body); font-family: var(--font-body); font-size: 16px; line-height: 1.6; overflow-x: hidden; }
 
-        body {
-            background: var(--black);
-            color: var(--body);
-            font-family: var(--font-body);
-            font-size: 16px;
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
-
-        /* ── SA BAR ── */
-        .sa-bar {
-            position: fixed; top: 0; left: 0; right: 0;
-            height: 3px; z-index: 200;
-            display: flex;
-        }
+        /* SA BAR */
+        .sa-bar { position: fixed; top: 0; left: 0; right: 0; height: 3px; z-index: 200; display: flex; }
         .sa-bar span { flex: 1; }
-        .sa-bar .s1 { background: #DE3831; }
-        .sa-bar .s2 { background: #FFB612; }
-        .sa-bar .s3 { background: #007A4D; }
-        .sa-bar .s4 { background: #fff; }
-        .sa-bar .s5 { background: #002395; }
-        .sa-bar .s6 { background: #000; }
+        .sa-bar .s1 { background: #DE3831; } .sa-bar .s2 { background: #FFB612; } .sa-bar .s3 { background: #007A4D; }
+        .sa-bar .s4 { background: #fff; }    .sa-bar .s5 { background: #002395; } .sa-bar .s6 { background: #000; }
 
-        /* ── NAV ── */
-        nav {
-            position: fixed; top: 3px; left: 0; right: 0;
-            z-index: 100; height: 68px;
-            display: flex; align-items: center;
-            background: rgba(10,10,9,0.88);
-            backdrop-filter: blur(16px);
-            border-bottom: 1px solid var(--border);
-            padding: 0 48px; gap: 32px;
-            transition: border-color 0.3s;
-        }
-        nav.scrolled { border-bottom-color: rgba(200,151,26,0.25); }
-
-        .logo {
-            display: flex; align-items: center; gap: 12px;
-            text-decoration: none; flex-shrink: 0;
-        }
-        .logo-mark {
-            width: 38px; height: 38px;
-            background: var(--gold);
-            display: flex; align-items: center; justify-content: center;
-            clip-path: polygon(0 0, 100% 0, 100% 75%, 50% 100%, 0 75%);
-        }
+        /* NAV */
+        nav { position: fixed; top: 3px; left: 0; right: 0; z-index: 100; height: 68px; display: flex; align-items: center; background: rgba(10,10,9,0.92); backdrop-filter: blur(16px); border-bottom: 1px solid var(--border); padding: 0 48px; gap: 32px; transition: border-color 0.3s; }
+        nav.scrolled { border-bottom-color: rgba(196,30,42,0.3); }
+        .logo { display: flex; align-items: center; gap: 12px; text-decoration: none; flex-shrink: 0; }
+        .logo-mark { width: 38px; height: 38px; background: var(--red); display: flex; align-items: center; justify-content: center; clip-path: polygon(0 0,100% 0,100% 75%,50% 100%,0 75%); }
         .logo-mark svg { width: 20px; height: 20px; }
-        .logo-text strong {
-            display: block;
-            font-family: var(--font-head);
-            font-size: 19px; letter-spacing: 0.06em;
-            color: var(--white);
-        }
-        .logo-text span {
-            font-size: 9px; letter-spacing: 0.22em;
-            text-transform: uppercase; color: var(--gold);
-        }
-
-        .nav-links {
-            display: flex; align-items: center; gap: 28px;
-            margin-left: auto; list-style: none;
-        }
-        .nav-links a {
-            font-size: 13px; font-weight: 500;
-            letter-spacing: 0.07em; text-transform: uppercase;
-            color: var(--body); text-decoration: none;
-            transition: color 0.2s;
-        }
+        .logo-text strong { display: block; font-family: var(--font-head); font-size: 19px; letter-spacing: 0.06em; color: var(--white); }
+        .logo-text span { font-size: 9px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--red); }
+        .nav-links { display: flex; align-items: center; gap: 28px; margin-left: auto; list-style: none; }
+        .nav-links a { font-size: 13px; font-weight: 500; letter-spacing: 0.07em; text-transform: uppercase; color: var(--body); text-decoration: none; transition: color 0.2s; }
         .nav-links a:hover { color: var(--white); }
-        .nav-cta {
-            background: var(--gold) !important;
-            color: var(--black) !important;
-            padding: 9px 22px; border-radius: var(--r);
-            font-weight: 600 !important;
-        }
-        .nav-cta:hover { background: var(--gold2) !important; }
-
-        .nav-mob-btn {
-            display: none; background: none; border: none;
-            color: var(--white); cursor: pointer; margin-left: auto; padding: 4px;
-        }
-
-        /* Mobile menu */
-        .mob-menu {
-            display: none; position: fixed; inset: 0; z-index: 300;
-            background: var(--ink); flex-direction: column; padding: 28px 32px;
-        }
+        .nav-cta { background: var(--red) !important; color: var(--white) !important; padding: 9px 22px; border-radius: var(--r); font-weight: 600 !important; }
+        .nav-cta:hover { background: var(--red2) !important; }
+        .nav-mob-btn { display: none; background: none; border: none; color: var(--white); cursor: pointer; margin-left: auto; padding: 4px; }
+        .mob-menu { display: none; position: fixed; inset: 0; z-index: 300; background: var(--ink); flex-direction: column; padding: 28px 32px; }
         .mob-menu.open { display: flex; }
         .mob-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 40px; }
         .mob-close { background: none; border: none; color: var(--white); font-size: 30px; cursor: pointer; line-height: 1; }
-        .mob-menu a {
-            display: block; padding: 15px 0;
-            border-bottom: 1px solid var(--border);
-            font-family: var(--font-head); font-size: 28px;
-            letter-spacing: 0.04em; color: var(--white);
-            text-decoration: none; text-transform: uppercase;
-        }
-        .mob-menu a:hover { color: var(--goldf); }
+        .mob-menu a { display: block; padding: 15px 0; border-bottom: 1px solid var(--border); font-family: var(--font-head); font-size: 28px; letter-spacing: 0.04em; color: var(--white); text-decoration: none; text-transform: uppercase; }
+        .mob-menu a:hover { color: var(--redf); }
 
-        /* ── HERO ── */
-        #home {
-            position: relative; min-height: 100vh;
-            display: flex; align-items: flex-end;
-            overflow: hidden;
-        }
-
-        .hero-video-wrap {
-            position: absolute; inset: 0; z-index: 0;
-        }
-        .hero-video-wrap video {
-            width: 100%; height: 100%;
-            object-fit: cover;
-        }
-        .hero-overlay {
-            position: absolute; inset: 0; z-index: 1;
-            background: linear-gradient(
-                135deg,
-                rgba(10,10,9,0.92) 0%,
-                rgba(10,10,9,0.6) 50%,
-                rgba(10,10,9,0.3) 100%
-            );
-        }
-        /* Diagonal gold accent line */
-        .hero-overlay::after {
-            content: '';
-            position: absolute;
-            top: 0; left: 0;
-            width: 4px; height: 100%;
-            background: linear-gradient(to bottom, var(--gold), var(--green), transparent);
-        }
-
-        .hero-content {
-            position: relative; z-index: 2;
-            padding: 0 72px 96px;
-            max-width: 860px;
-        }
-
-        .hero-eyebrow {
-            display: inline-flex; align-items: center; gap: 10px;
-            font-size: 11px; font-weight: 500; letter-spacing: 0.22em;
-            text-transform: uppercase; color: var(--goldf);
-            margin-bottom: 24px;
-        }
-        .hero-eyebrow::before {
-            content: '';
-            width: 28px; height: 2px;
-            background: var(--goldf);
-        }
-
-        .hero-title {
-            font-family: var(--font-head);
-            font-size: clamp(60px, 9vw, 130px);
-            line-height: 0.9;
-            letter-spacing: 0.01em;
-            color: var(--white);
-            text-transform: uppercase;
-            margin-bottom: 12px;
-        }
-        .hero-title .accent { color: var(--goldf); }
-        .hero-title .stroke {
-            -webkit-text-stroke: 1px var(--white);
-            color: transparent;
-        }
-
-        .hero-desc {
-            font-size: 17px; line-height: 1.75;
-            color: var(--light); max-width: 460px;
-            margin-bottom: 44px; margin-top: 20px;
-            font-weight: 300;
-        }
-
-        .hero-btns {
-            display: flex; gap: 14px; flex-wrap: wrap;
-            margin-bottom: 72px;
-        }
-
-        .btn-gold {
-            display: inline-flex; align-items: center; gap: 10px;
-            background: var(--gold); color: var(--black);
-            padding: 15px 34px; border-radius: var(--r);
-            font-family: var(--font-head); font-size: 15px;
-            letter-spacing: 0.1em; text-transform: uppercase;
-            text-decoration: none; border: none; cursor: pointer;
-            transition: background 0.2s, transform 0.15s;
-        }
-        .btn-gold:hover { background: var(--goldf); transform: translateY(-2px); }
-
-        .btn-ghost {
-            display: inline-flex; align-items: center; gap: 10px;
-            background: transparent; color: var(--white);
-            padding: 15px 34px; border-radius: var(--r);
-            font-family: var(--font-head); font-size: 15px;
-            letter-spacing: 0.1em; text-transform: uppercase;
-            text-decoration: none; border: 1.5px solid rgba(255,255,255,0.25);
-            cursor: pointer;
-            transition: border-color 0.2s;
-        }
+        /* HERO */
+        #home { position: relative; min-height: 100vh; display: flex; align-items: flex-end; overflow: hidden; }
+        .hero-video-wrap { position: absolute; inset: 0; z-index: 0; }
+        .hero-video-wrap video { width: 100%; height: 100%; object-fit: cover; }
+        .hero-overlay { position: absolute; inset: 0; z-index: 1; background: linear-gradient(135deg,rgba(10,10,9,0.94) 0%,rgba(10,10,9,0.65) 50%,rgba(10,10,9,0.3) 100%); }
+        .hero-overlay::after { content:''; position: absolute; top:0; left:0; width:4px; height:100%; background: linear-gradient(to bottom,var(--red),var(--green),transparent); }
+        .hero-content { position: relative; z-index: 2; padding: 0 72px 96px; max-width: 860px; }
+        .hero-eyebrow { display: inline-flex; align-items: center; gap: 10px; font-size: 11px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: var(--redf); margin-bottom: 24px; }
+        .hero-eyebrow::before { content:''; width: 28px; height: 2px; background: var(--redf); }
+        .hero-title { font-family: var(--font-head); font-size: clamp(52px,8.5vw,122px); line-height: 0.9; letter-spacing: 0.01em; color: var(--white); text-transform: uppercase; margin-bottom: 12px; }
+        .hero-title .accent { color: var(--redf); }
+        .hero-title .stroke { -webkit-text-stroke: 1px var(--white); color: transparent; }
+        .hero-desc { font-size: 17px; line-height: 1.75; color: var(--light); max-width: 480px; margin-bottom: 44px; margin-top: 20px; font-weight: 300; }
+        .hero-btns { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 72px; }
+        .btn-red { display: inline-flex; align-items: center; gap: 10px; background: var(--red); color: var(--white); padding: 15px 34px; border-radius: var(--r); font-family: var(--font-head); font-size: 15px; letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none; border: none; cursor: pointer; transition: background 0.2s, transform 0.15s; }
+        .btn-red:hover { background: var(--redf); transform: translateY(-2px); }
+        .btn-ghost { display: inline-flex; align-items: center; gap: 10px; background: transparent; color: var(--white); padding: 15px 34px; border-radius: var(--r); font-family: var(--font-head); font-size: 15px; letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none; border: 1.5px solid rgba(255,255,255,0.25); cursor: pointer; transition: border-color 0.2s; }
         .btn-ghost:hover { border-color: var(--white); }
+        .hero-stats { display: flex; gap: 0; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 32px; }
+        .hstat { padding-right: 36px; }
+        .hstat + .hstat { padding-left: 36px; border-left: 1px solid rgba(255,255,255,0.1); }
+        .hstat-num { font-family: var(--font-head); font-size: 46px; line-height: 1; color: var(--redf); }
+        .hstat-label { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin-top: 4px; }
+        .hero-flag-strip { position: absolute; bottom: 0; left: 0; right: 0; height: 5px; z-index: 3; background: linear-gradient(to right,#DE3831 0%,#DE3831 20%,#FFB612 20%,#FFB612 40%,#007A4D 40%,#007A4D 60%,#002395 60%,#002395 80%,#000 80%,#000 100%); }
 
-        .hero-stats {
-            display: flex; gap: 0;
-            border-top: 1px solid rgba(255,255,255,0.1);
-            padding-top: 32px;
-        }
-        .hstat {
-            padding-right: 36px;
-        }
-        .hstat + .hstat {
-            padding-left: 36px;
-            border-left: 1px solid rgba(255,255,255,0.1);
-        }
-        .hstat-num {
-            font-family: var(--font-head);
-            font-size: 46px; line-height: 1;
-            color: var(--goldf);
-        }
-        .hstat-label {
-            font-size: 11px; letter-spacing: 0.12em;
-            text-transform: uppercase; color: var(--muted);
-            margin-top: 4px;
-        }
-
-        /* SA flag strip at bottom of hero */
-        .hero-flag-strip {
-            position: absolute; bottom: 0; left: 0; right: 0;
-            height: 5px; z-index: 3;
-            background: linear-gradient(to right,
-                #DE3831 0%, #DE3831 20%,
-                #FFB612 20%, #FFB612 40%,
-                #007A4D 40%, #007A4D 60%,
-                #002395 60%, #002395 80%,
-                #000 80%, #000 100%
-            );
-        }
-
-        /* ── TICKER / PROCESS BAR ── */
-        .process-bar {
-            background: var(--gold);
-            padding: 0;
-            overflow: hidden;
-        }
-        .process-track {
-            display: flex;
-            animation: ticker 30s linear infinite;
-            white-space: nowrap;
-        }
+        /* TICKER */
+        .process-bar { background: var(--red); overflow: hidden; }
+        .process-track { display: flex; animation: ticker 40s linear infinite; white-space: nowrap; }
         .process-track:hover { animation-play-state: paused; }
-        @keyframes ticker {
-            from { transform: translateX(0); }
-            to { transform: translateX(-50%); }
-        }
-        .tick-item {
-            display: inline-flex; align-items: center; gap: 12px;
-            padding: 14px 40px;
-            font-family: var(--font-head);
-            font-size: 14px; letter-spacing: 0.12em;
-            text-transform: uppercase; color: var(--black);
-            white-space: nowrap;
-        }
-        .tick-sep {
-            display: inline-block;
-            width: 5px; height: 5px;
-            background: var(--black);
-            border-radius: 50%;
-            opacity: 0.35;
-        }
+        @keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+        .tick-item { display: inline-flex; align-items: center; gap: 12px; padding: 14px 40px; font-family: var(--font-head); font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--white); white-space: nowrap; }
+        .tick-sep { display: inline-block; width: 5px; height: 5px; background: rgba(255,255,255,0.4); border-radius: 50%; }
 
-        /* ── SECTIONS ── */
+        /* SECTIONS */
         section { padding: 100px 0; }
         .container { max-width: 1240px; margin: 0 auto; padding: 0 48px; }
+        .sec-label { display: inline-flex; align-items: center; gap: 10px; font-size: 10px; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: var(--redf); margin-bottom: 16px; }
+        .sec-label::before { content:''; width: 20px; height: 2px; background: var(--redf); flex-shrink: 0; }
+        .sec-title { font-family: var(--font-head); font-size: clamp(38px,4.5vw,62px); line-height: 0.95; letter-spacing: 0.01em; color: var(--white); text-transform: uppercase; margin-bottom: 16px; }
+        .sec-title em { font-style: normal; color: var(--redf); }
+        .sec-sub { font-size: 16px; line-height: 1.8; color: var(--body); max-width: 520px; }
 
-        .sec-label {
-            display: inline-flex; align-items: center; gap: 10px;
-            font-size: 10px; font-weight: 600; letter-spacing: 0.22em;
-            text-transform: uppercase; color: var(--goldf);
-            margin-bottom: 16px;
-        }
-        .sec-label::before {
-            content: ''; width: 20px; height: 2px;
-            background: var(--goldf); flex-shrink: 0;
-        }
-
-        .sec-title {
-            font-family: var(--font-head);
-            font-size: clamp(38px, 4.5vw, 62px);
-            line-height: 0.95;
-            letter-spacing: 0.01em;
-            color: var(--white);
-            text-transform: uppercase;
-            margin-bottom: 16px;
-        }
-        .sec-title em { font-style: normal; color: var(--goldf); }
-        .sec-title .gr { color: #4caf7d; }
-
-        .sec-sub {
-            font-size: 16px; line-height: 1.8;
-            color: var(--body); max-width: 520px;
-        }
-
-        /* ── ABOUT ── */
+        /* ABOUT */
         #about { background: var(--ink); }
-
-        .about-grid {
-            display: grid;
-            grid-template-columns: 1fr 1.1fr;
-            gap: 80px; align-items: center;
-        }
-
-        .about-img-stack {
-            position: relative; padding-bottom: 48px;
-        }
-        .about-img-main {
-            width: 100%; height: 520px;
-            object-fit: cover; border-radius: var(--r2);
-            display: block;
-        }
-        .about-img-accent {
-            position: absolute; bottom: 0; right: -24px;
-            width: 52%; height: 200px;
-            object-fit: cover; border-radius: var(--r2);
-            border: 3px solid var(--ink);
-        }
-        .about-badge {
-            position: absolute; top: 24px; left: -20px;
-            background: var(--gold); color: var(--black);
-            padding: 18px 20px; border-radius: var(--r2);
-            text-align: center; z-index: 2;
-        }
-        .about-badge strong {
-            display: block; font-family: var(--font-head);
-            font-size: 38px; line-height: 1;
-        }
-        .about-badge span {
-            font-size: 10px; font-weight: 600;
-            letter-spacing: 0.12em; text-transform: uppercase;
-        }
-
+        .about-grid { display: grid; grid-template-columns: 1fr 1.1fr; gap: 80px; align-items: center; }
+        .about-img-stack { position: relative; padding-bottom: 48px; }
+        .about-img-main { width: 100%; height: 520px; object-fit: cover; border-radius: var(--r2); display: block; }
+        .about-img-accent { position: absolute; bottom: 0; right: -24px; width: 52%; height: 200px; object-fit: cover; border-radius: var(--r2); border: 3px solid var(--ink); }
+        .about-badge { position: absolute; top: 24px; left: -20px; background: var(--red); color: var(--white); padding: 18px 20px; border-radius: var(--r2); text-align: center; z-index: 2; }
+        .about-badge strong { display: block; font-family: var(--font-head); font-size: 38px; line-height: 1; }
+        .about-badge span { font-size: 10px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; }
         .about-text p { font-size: 15px; line-height: 1.85; margin-bottom: 18px; }
-
-        .pillars {
-            display: grid; grid-template-columns: 1fr 1fr;
-            gap: 14px; margin-top: 32px;
-        }
-        .pillar {
-            display: flex; align-items: flex-start; gap: 12px;
-            padding: 18px; background: var(--card);
-            border: 1px solid var(--border); border-radius: var(--r2);
-            transition: border-color 0.2s;
-        }
-        .pillar:hover { border-color: var(--gold); }
-        .pillar-ico {
-            width: 34px; height: 34px; flex-shrink: 0;
-            background: rgba(200,151,26,0.1);
-            border-radius: var(--r);
-            display: flex; align-items: center; justify-content: center;
-            color: var(--goldf);
-        }
+        .pillars { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 32px; }
+        .pillar { display: flex; align-items: flex-start; gap: 12px; padding: 18px; background: var(--card); border: 1px solid var(--border); border-radius: var(--r2); transition: border-color 0.2s; }
+        .pillar:hover { border-color: var(--red); }
+        .pillar-ico { width: 34px; height: 34px; flex-shrink: 0; background: var(--red-l); border-radius: var(--r); display: flex; align-items: center; justify-content: center; color: var(--redf); }
         .pillar-ico svg { width: 17px; height: 17px; }
-        .pillar h4 {
-            font-size: 13px; font-weight: 600;
-            color: var(--white); margin-bottom: 3px;
-        }
+        .pillar h4 { font-size: 13px; font-weight: 600; color: var(--white); margin-bottom: 3px; }
         .pillar p { font-size: 12px; line-height: 1.5; margin: 0; }
 
-        /* ── SERVICES ── */
+        /* SERVICES */
         #services { background: var(--black); }
-
-        .services-hd {
-            display: grid; grid-template-columns: 1fr 1fr;
-            gap: 60px; align-items: end; margin-bottom: 56px;
-        }
-
-        .svc-grid {
-            display: grid; grid-template-columns: repeat(3, 1fr);
-            gap: 1px; background: var(--border);
-            border: 1px solid var(--border); border-radius: var(--r2);
-            overflow: hidden;
-        }
-
-        .svc-card {
-            background: var(--card); padding: 36px 28px;
-            display: flex; flex-direction: column; gap: 14px;
-            transition: background 0.2s; cursor: default;
-        }
+        .services-hd { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: end; margin-bottom: 56px; }
+        .svc-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); border-radius: var(--r2); overflow: hidden; }
+        .svc-card { background: var(--card); padding: 32px 24px; display: flex; flex-direction: column; gap: 12px; transition: background 0.2s; cursor: default; }
         .svc-card:hover { background: #1e1e1a; }
-
-        .svc-num {
-            font-family: var(--font-head); font-size: 10px;
-            letter-spacing: 0.18em; color: var(--goldf); opacity: 0.6;
-        }
-        .svc-ico {
-            width: 50px; height: 50px;
-            background: var(--green-l);
-            border: 1px solid rgba(45,106,63,0.28);
-            border-radius: var(--r);
-            display: flex; align-items: center; justify-content: center;
-            color: var(--green); transition: background 0.2s, color 0.2s, border-color 0.2s;
-        }
-        .svc-card:hover .svc-ico {
-            background: var(--green); color: var(--white);
-            border-color: var(--green);
-        }
+        .svc-num { font-family: var(--font-head); font-size: 10px; letter-spacing: 0.18em; color: var(--redf); opacity: 0.6; }
+        .svc-ico { width: 50px; height: 50px; background: var(--red-l); border: 1px solid var(--red-b); border-radius: var(--r); display: flex; align-items: center; justify-content: center; color: var(--red); transition: background 0.2s, color 0.2s, border-color 0.2s; }
+        .svc-card:hover .svc-ico { background: var(--red); color: var(--white); border-color: var(--red); }
         .svc-ico svg { width: 22px; height: 22px; }
-        .svc-card h3 {
-            font-family: var(--font-head); font-size: 21px;
-            color: var(--white); letter-spacing: 0.03em;
-            text-transform: uppercase;
-        }
-        .svc-card p { font-size: 13.5px; line-height: 1.7; flex: 1; }
-        .svc-link {
-            display: inline-flex; align-items: center; gap: 6px;
-            font-size: 11px; font-weight: 600; letter-spacing: 0.1em;
-            text-transform: uppercase; color: var(--goldf);
-            text-decoration: none; transition: gap 0.2s;
-        }
+        .svc-card h3 { font-family: var(--font-head); font-size: 18px; color: var(--white); letter-spacing: 0.03em; text-transform: uppercase; }
+        .svc-card p { font-size: 13px; line-height: 1.7; flex: 1; }
+        .svc-link { display: inline-flex; align-items: center; gap: 6px; font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--redf); text-decoration: none; transition: gap 0.2s; }
         .svc-link:hover { gap: 10px; }
 
-        /* ── PROJECTS ── */
+        /* PROJECTS */
         #projects { background: var(--ink); }
-
-        .proj-hd {
-            display: flex; justify-content: space-between;
-            align-items: flex-end; margin-bottom: 40px;
-        }
+        .proj-hd { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 40px; }
         .proj-filters { display: flex; gap: 8px; flex-wrap: wrap; }
-        .f-btn {
-            padding: 7px 16px;
-            background: transparent;
-            border: 1px solid var(--border); border-radius: 2px;
-            font-family: var(--font-body); font-size: 12px;
-            font-weight: 500; letter-spacing: 0.08em;
-            text-transform: uppercase; color: var(--body);
-            cursor: pointer; transition: all 0.2s;
-        }
-        .f-btn:hover, .f-btn.active {
-            background: var(--gold); border-color: var(--gold);
-            color: var(--black);
-        }
-
-        .proj-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-auto-rows: 280px;
-            gap: 16px;
-        }
-
-        .proj-card {
-            position: relative; overflow: hidden;
-            border-radius: var(--r2); cursor: pointer;
-        }
+        .f-btn { padding: 7px 16px; background: transparent; border: 1px solid var(--border); border-radius: 2px; font-family: var(--font-body); font-size: 12px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--body); cursor: pointer; transition: all 0.2s; }
+        .f-btn:hover, .f-btn.active { background: var(--red); border-color: var(--red); color: var(--white); }
+        .proj-grid { display: grid; grid-template-columns: repeat(3,1fr); grid-auto-rows: 280px; gap: 16px; }
+        .proj-card { position: relative; overflow: hidden; border-radius: var(--r2); cursor: pointer; }
         .proj-card.tall { grid-row: span 2; }
         .proj-card.wide { grid-column: span 2; }
-
-        .proj-card img {
-            width: 100%; height: 100%;
-            object-fit: cover;
-            transition: transform 0.6s ease;
-            filter: grayscale(15%) brightness(0.85);
-        }
+        .proj-card img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; filter: grayscale(15%) brightness(0.85); }
         .proj-card:hover img { transform: scale(1.06); }
-
-        .proj-ov {
-            position: absolute; inset: 0;
-            background: linear-gradient(to top, rgba(10,10,9,0.94) 0%, rgba(10,10,9,0.15) 60%, transparent 100%);
-            display: flex; flex-direction: column;
-            justify-content: flex-end; padding: 24px;
-        }
-        .proj-tag {
-            display: inline-block; padding: 3px 10px;
-            background: var(--gold); color: var(--black);
-            font-size: 9px; font-weight: 700; letter-spacing: 0.16em;
-            text-transform: uppercase; border-radius: 2px;
-            margin-bottom: 8px; width: fit-content;
-        }
-        .proj-name {
-            font-family: var(--font-head); font-size: 20px;
-            color: var(--white); text-transform: uppercase;
-            letter-spacing: 0.03em;
-        }
+        .proj-ov { position: absolute; inset: 0; background: linear-gradient(to top,rgba(10,10,9,0.94) 0%,rgba(10,10,9,0.15) 60%,transparent 100%); display: flex; flex-direction: column; justify-content: flex-end; padding: 24px; }
+        .proj-tag { display: inline-block; padding: 3px 10px; background: var(--red); color: var(--white); font-size: 9px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; border-radius: 2px; margin-bottom: 8px; width: fit-content; }
+        .proj-name { font-family: var(--font-head); font-size: 20px; color: var(--white); text-transform: uppercase; letter-spacing: 0.03em; }
         .proj-loc { font-size: 12px; color: var(--body); margin-top: 2px; }
+        .proj-card.hidden { display: none; }
+        .load-more-wrap { text-align: center; margin-top: 32px; }
 
-        /* ── AREAS ── */
+        /* AREAS */
         #areas { background: var(--black); }
         .areas-intro { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: end; margin-bottom: 52px; }
-
-        .areas-grid {
-            display: grid; grid-template-columns: repeat(3, 1fr);
-            gap: 14px;
-        }
-        .area-card {
-            padding: 26px;
-            background: var(--card);
-            border: 1px solid var(--border);
-            border-radius: var(--r2);
-            display: flex; align-items: flex-start; gap: 14px;
-            transition: border-color 0.2s, transform 0.2s;
-        }
-        .area-card:hover { border-color: var(--goldf); transform: translateY(-4px); }
-        .area-pin {
-            width: 38px; height: 38px; flex-shrink: 0;
-            background: rgba(200,151,26,0.1);
-            border-radius: var(--r);
-            display: flex; align-items: center; justify-content: center;
-            color: var(--goldf);
-        }
+        .areas-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 14px; }
+        .area-card { padding: 26px; background: var(--card); border: 1px solid var(--border); border-radius: var(--r2); display: flex; align-items: flex-start; gap: 14px; transition: border-color 0.2s, transform 0.2s; }
+        .area-card:hover { border-color: var(--redf); transform: translateY(-4px); }
+        .area-pin { width: 38px; height: 38px; flex-shrink: 0; background: var(--red-l); border-radius: var(--r); display: flex; align-items: center; justify-content: center; color: var(--redf); }
         .area-pin svg { width: 18px; height: 18px; }
-        .area-card h3 {
-            font-family: var(--font-head); font-size: 19px;
-            color: var(--white); text-transform: uppercase;
-            letter-spacing: 0.04em; margin-bottom: 5px;
-        }
+        .area-card h3 { font-family: var(--font-head); font-size: 19px; color: var(--white); text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 5px; }
         .area-card p { font-size: 13px; line-height: 1.6; }
 
-        /* ── TESTIMONIALS ── */
+        /* TESTIMONIALS */
         #testimonials { background: var(--ink); }
         .testi-intro { text-align: center; margin-bottom: 52px; }
         .testi-intro .sec-label { justify-content: center; }
-        .testi-grid {
-            display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px;
-        }
-        .testi-card {
-            background: var(--card);
-            border: 1px solid var(--border);
-            border-radius: var(--r2);
-            padding: 32px 28px; position: relative;
-            transition: border-color 0.2s;
-        }
-        .testi-card:hover { border-color: rgba(200,151,26,0.35); }
-        .testi-card.feat { border-color: rgba(200,151,26,0.4); background: #1c1c18; }
-        .testi-qmark {
-            position: absolute; top: 20px; right: 24px;
-            font-family: Georgia, serif; font-size: 72px;
-            line-height: 1; color: rgba(200,151,26,0.08);
-            user-select: none;
-        }
+        .testi-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 18px; }
+        .testi-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--r2); padding: 32px 28px; position: relative; transition: border-color 0.2s; }
+        .testi-card:hover { border-color: rgba(196,30,42,0.35); }
+        .testi-card.feat { border-color: rgba(196,30,42,0.4); background: #1c1c18; }
+        .testi-qmark { position: absolute; top: 20px; right: 24px; font-family: Georgia,serif; font-size: 72px; line-height: 1; color: rgba(196,30,42,0.1); user-select: none; }
         .testi-stars { display: flex; gap: 3px; margin-bottom: 18px; }
-        .testi-stars svg { width: 15px; height: 15px; fill: var(--goldf); }
-        .testi-text {
-            font-size: 14.5px; line-height: 1.8;
-            color: var(--light); font-style: italic;
-            margin-bottom: 24px;
-        }
-        .testi-author {
-            display: flex; align-items: center; gap: 12px;
-            padding-top: 18px; border-top: 1px solid var(--border);
-        }
-        .tav {
-            width: 42px; height: 42px; flex-shrink: 0;
-            background: var(--green); border-radius: 50%;
-            display: flex; align-items: center; justify-content: center;
-            font-family: var(--font-head); font-size: 14px; color: var(--white);
-        }
+        .testi-stars svg { width: 15px; height: 15px; fill: var(--redf); }
+        .testi-text { font-size: 14.5px; line-height: 1.8; color: var(--light); font-style: italic; margin-bottom: 24px; }
+        .testi-author { display: flex; align-items: center; gap: 12px; padding-top: 18px; border-top: 1px solid var(--border); }
+        .tav { width: 42px; height: 42px; flex-shrink: 0; background: var(--red); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: var(--font-head); font-size: 14px; color: var(--white); }
         .tname { font-size: 13px; font-weight: 600; color: var(--white); }
         .tplace { font-size: 12px; color: var(--muted); margin-top: 2px; }
 
-        /* ── QUOTE ── */
+        /* CTA BAND */
+        .cta-band { background: var(--red); padding: 72px 0; text-align: center; }
+        .cta-band h2 { font-family: var(--font-head); font-size: clamp(32px,4vw,54px); color: var(--white); text-transform: uppercase; letter-spacing: 0.03em; margin-bottom: 12px; }
+        .cta-band p { color: rgba(255,255,255,0.8); font-size: 16px; margin-bottom: 36px; }
+        .cta-phones { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin-bottom: 28px; }
+        .phone-pill { display: inline-flex; align-items: center; gap: 10px; background: rgba(255,255,255,0.14); border: 1px solid rgba(255,255,255,0.3); border-radius: 40px; padding: 12px 24px; color: var(--white); text-decoration: none; font-family: var(--font-head); font-size: 18px; letter-spacing: 0.06em; transition: background 0.2s; }
+        .phone-pill:hover { background: rgba(255,255,255,0.24); }
+        .phone-pill svg { width: 17px; height: 17px; }
+
+        /* QUOTE FORM */
         #quote { background: var(--black); }
-        .quote-grid {
-            display: grid; grid-template-columns: 1fr 1.1fr;
-            gap: 80px; align-items: start;
-        }
+        .quote-grid { display: grid; grid-template-columns: 1fr 1.1fr; gap: 80px; align-items: start; }
         .quote-info p { font-size: 15px; line-height: 1.85; margin-bottom: 32px; }
-        .crow {
-            display: flex; align-items: center; gap: 14px;
-            padding: 16px 0; border-bottom: 1px solid var(--border);
-        }
+        .crow { display: flex; align-items: center; gap: 14px; padding: 16px 0; border-bottom: 1px solid var(--border); }
         .crow:first-of-type { border-top: 1px solid var(--border); }
-        .cico {
-            width: 38px; height: 38px; flex-shrink: 0;
-            background: var(--green-l); border-radius: var(--r);
-            display: flex; align-items: center; justify-content: center;
-            color: #4caf7d;
-        }
+        .cico { width: 38px; height: 38px; flex-shrink: 0; background: var(--red-l); border-radius: var(--r); display: flex; align-items: center; justify-content: center; color: var(--redf); }
         .cico svg { width: 17px; height: 17px; }
         .clabel { font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin-bottom: 2px; }
         .cvalue { font-size: 14px; font-weight: 500; color: var(--white); }
-
-        .form-card {
-            background: var(--card); border: 1px solid var(--border);
-            border-radius: var(--r2); padding: 42px;
-        }
+        .cvalue a { color: var(--redf); text-decoration: none; }
+        .cvalue a:hover { text-decoration: underline; }
+        .form-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--r2); padding: 42px; }
         .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
         .fg { display: flex; flex-direction: column; gap: 7px; margin-bottom: 14px; }
-        .fg label {
-            font-size: 10px; font-weight: 600; letter-spacing: 0.14em;
-            text-transform: uppercase; color: var(--muted);
-        }
-        .fg input, .fg select, .fg textarea {
-            background: var(--black); border: 1px solid var(--border);
-            border-radius: var(--r); padding: 12px 15px;
-            font-family: var(--font-body); font-size: 15px;
-            color: var(--white); outline: none;
-            transition: border-color 0.2s; width: 100%;
-        }
-        .fg input:focus, .fg select:focus, .fg textarea:focus {
-            border-color: var(--gold);
-            box-shadow: 0 0 0 2px rgba(200,151,26,0.12);
-        }
-        .fg select {
-            appearance: none;
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='7' fill='none'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23555' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
-            background-repeat: no-repeat; background-position: right 14px center;
-            padding-right: 38px;
-        }
+        .fg label { font-size: 10px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); }
+        .fg input, .fg select, .fg textarea { background: var(--black); border: 1px solid var(--border); border-radius: var(--r); padding: 12px 15px; font-family: var(--font-body); font-size: 15px; color: var(--white); outline: none; transition: border-color 0.2s; width: 100%; }
+        .fg input:focus, .fg select:focus, .fg textarea:focus { border-color: var(--red); box-shadow: 0 0 0 2px rgba(196,30,42,0.15); }
+        .fg select { appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='7' fill='none'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23555' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 14px center; padding-right: 38px; }
         .fg select option { background: var(--ink); }
         .fg textarea { resize: vertical; min-height: 110px; }
-
-        .form-submit {
-            width: 100%; padding: 15px;
-            background: var(--gold); color: var(--black);
-            border: none; border-radius: var(--r);
-            font-family: var(--font-head); font-size: 16px;
-            letter-spacing: 0.12em; text-transform: uppercase;
-            cursor: pointer; transition: background 0.2s, transform 0.15s;
-            display: flex; align-items: center; justify-content: center; gap: 10px;
-        }
-        .form-submit:hover { background: var(--goldf); transform: translateY(-2px); }
+        .form-submit { width: 100%; padding: 15px; background: var(--red); color: var(--white); border: none; border-radius: var(--r); font-family: var(--font-head); font-size: 16px; letter-spacing: 0.12em; text-transform: uppercase; cursor: pointer; transition: background 0.2s, transform 0.15s; display: flex; align-items: center; justify-content: center; gap: 10px; }
+        .form-submit:hover { background: var(--redf); transform: translateY(-2px); }
         .form-note { text-align: center; font-size: 12px; color: var(--muted); margin-top: 12px; }
 
-        /* ── FOOTER ── */
-        footer {
-            background: var(--ink); border-top: 1px solid var(--border);
-            padding: 64px 0 36px;
-        }
-        .foot-grid {
-            display: grid;
-            grid-template-columns: 1.4fr 1fr 1fr 1fr;
-            gap: 56px; margin-bottom: 48px;
-        }
-        .foot-brand p {
-            font-size: 13.5px; line-height: 1.8;
-            margin-top: 18px; margin-bottom: 22px; max-width: 250px;
-        }
+        /* FOOTER */
+        footer { background: var(--ink); border-top: 1px solid var(--border); padding: 64px 0 36px; }
+        .foot-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 56px; margin-bottom: 48px; }
+        .foot-brand p { font-size: 13.5px; line-height: 1.8; margin-top: 18px; margin-bottom: 22px; max-width: 250px; }
         .socials { display: flex; gap: 9px; }
-        .soc {
-            width: 34px; height: 34px; border-radius: var(--r);
-            background: var(--card); border: 1px solid var(--border);
-            display: flex; align-items: center; justify-content: center;
-            color: var(--body); text-decoration: none;
-            transition: all 0.2s;
-        }
-        .soc:hover { background: var(--gold); color: var(--black); border-color: var(--gold); }
+        .soc { width: 34px; height: 34px; border-radius: var(--r); background: var(--card); border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; color: var(--body); text-decoration: none; transition: all 0.2s; }
+        .soc:hover { background: var(--red); color: var(--white); border-color: var(--red); }
         .soc svg { width: 15px; height: 15px; }
-        .foot-col h4 {
-            font-family: var(--font-head); font-size: 13px;
-            letter-spacing: 0.12em; text-transform: uppercase;
-            color: var(--white); margin-bottom: 18px;
-        }
+        .foot-col h4 { font-family: var(--font-head); font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--white); margin-bottom: 18px; }
         .flinks { list-style: none; display: flex; flex-direction: column; gap: 9px; }
         .flinks a { font-size: 13.5px; color: var(--body); text-decoration: none; transition: color 0.2s; }
-        .flinks a:hover { color: var(--goldf); }
-        .foot-bottom {
-            padding-top: 28px; border-top: 1px solid var(--border);
-            display: flex; justify-content: space-between;
-            align-items: center; gap: 20px; flex-wrap: wrap;
-        }
+        .flinks a:hover { color: var(--redf); }
+        .foot-bottom { padding-top: 28px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap; }
         .foot-bottom p { font-size: 12.5px; color: var(--muted); }
 
-        /* ── WHATSAPP FLOAT ── */
-        .wa-float {
-            position: fixed; bottom: 28px; right: 28px; z-index: 90;
-            width: 58px; height: 58px;
-            background: #25D366; border-radius: 50%;
-            display: flex; align-items: center; justify-content: center;
-            text-decoration: none;
-            box-shadow: 0 4px 20px rgba(37,211,102,0.4);
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
+        /* WHATSAPP FLOAT */
+        .wa-float { position: fixed; bottom: 28px; right: 28px; z-index: 90; width: 58px; height: 58px; background: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; box-shadow: 0 4px 20px rgba(37,211,102,0.4); transition: transform 0.2s, box-shadow 0.2s; }
         .wa-float:hover { transform: scale(1.1); box-shadow: 0 6px 28px rgba(37,211,102,0.55); }
         .wa-float svg { width: 30px; height: 30px; }
 
-        /* ── FADE ANIMATIONS ── */
-        .fu {
-            opacity: 0; transform: translateY(28px);
-            transition: opacity 0.7s ease, transform 0.7s ease;
-        }
+        /* ANIMATIONS */
+        .fu { opacity: 0; transform: translateY(28px); transition: opacity 0.7s ease, transform 0.7s ease; }
         .fu.in { opacity: 1; transform: translateY(0); }
-        .fu.d1 { transition-delay: 0.1s; }
-        .fu.d2 { transition-delay: 0.2s; }
-        .fu.d3 { transition-delay: 0.3s; }
+        .fu.d1 { transition-delay: 0.1s; } .fu.d2 { transition-delay: 0.2s; } .fu.d3 { transition-delay: 0.3s; }
 
-        /* ── RESPONSIVE ── */
+        /* RESPONSIVE */
         @media (max-width: 1100px) {
-            .svc-grid { grid-template-columns: repeat(2, 1fr); }
-            .proj-grid { grid-template-columns: repeat(2, 1fr); }
+            .svc-grid { grid-template-columns: repeat(2,1fr); }
+            .proj-grid { grid-template-columns: repeat(2,1fr); }
             .proj-card.wide { grid-column: span 1; }
             .foot-grid { grid-template-columns: 1fr 1fr; gap: 36px; }
         }
-
         @media (max-width: 860px) {
-            nav { padding: 0 20px; }
-            .nav-links { display: none; }
-            .nav-mob-btn { display: flex; }
-
-            .hero-content { padding: 0 24px 80px; }
-            .hero-title { font-size: 58px; }
-
-            .about-grid { grid-template-columns: 1fr; gap: 40px; }
-            .about-img-stack { display: none; }
-            .services-hd { grid-template-columns: 1fr; gap: 20px; }
-            .svc-grid { grid-template-columns: 1fr; }
+            nav { padding: 0 20px; } .nav-links { display: none; } .nav-mob-btn { display: flex; }
+            .hero-content { padding: 0 24px 80px; } .hero-title { font-size: 52px; }
+            .about-grid { grid-template-columns: 1fr; gap: 40px; } .about-img-stack { display: none; }
+            .services-hd { grid-template-columns: 1fr; gap: 20px; } .svc-grid { grid-template-columns: 1fr; }
             .proj-hd { flex-direction: column; align-items: flex-start; gap: 20px; }
-            .proj-grid { grid-template-columns: 1fr; grid-auto-rows: 260px; }
-            .proj-card.tall { grid-row: span 1; }
-            .areas-intro { grid-template-columns: 1fr; gap: 24px; }
-            .areas-grid { grid-template-columns: 1fr; }
+            .proj-grid { grid-template-columns: 1fr; grid-auto-rows: 260px; } .proj-card.tall { grid-row: span 1; }
+            .areas-intro { grid-template-columns: 1fr; gap: 24px; } .areas-grid { grid-template-columns: 1fr; }
             .testi-grid { grid-template-columns: 1fr; }
             .quote-grid { grid-template-columns: 1fr; gap: 48px; }
             .foot-grid { grid-template-columns: 1fr; gap: 28px; }
-            .form-row { grid-template-columns: 1fr; }
-            .pillars { grid-template-columns: 1fr; }
-            .container { padding: 0 20px; }
-            section { padding: 72px 0; }
+            .form-row { grid-template-columns: 1fr; } .pillars { grid-template-columns: 1fr; }
+            .container { padding: 0 20px; } section { padding: 72px 0; }
+            .cta-phones { flex-direction: column; align-items: center; }
         }
     </style>
 </head>
 <body>
 
-<!-- SA Bar -->
 <div class="sa-bar" aria-hidden="true">
     <span class="s1"></span><span class="s2"></span><span class="s3"></span>
     <span class="s4"></span><span class="s5"></span><span class="s6"></span>
@@ -769,30 +336,25 @@
 <!-- NAV -->
 <nav id="mainNav">
     <a href="#home" class="logo">
-        <div class="logo-mark">
-            <svg viewBox="0 0 24 24" fill="none" stroke="#0a0a09" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
-                <polyline points="9 22 9 12 15 12 15 22"/>
-            </svg>
-        </div>
+        <div class="logo-mark" style="background:none; clip-path:none;">
+    <img src="logo.png" alt="Izwe 2 Projects Logo" style="width:38px;height:38px;object-fit:contain;">
+</div>
         <div class="logo-text">
             <strong>Izwe 2 Projects</strong>
-            <span>West Coast Construction</span>
+            <span>General and Civil Works &middot; West Coast</span>
         </div>
     </a>
     <ul class="nav-links">
         <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
+        <li><a href="services.html">Services</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#areas">Areas</a></li>
         <li><a href="#testimonials">Reviews</a></li>
-        <li><a href="#quote" class="nav-cta">Get a Quote</a></li>
+        <li><a href="contact.html" class="nav-cta">Get a Quote</a></li>
     </ul>
     <button class="nav-mob-btn" onclick="document.getElementById('mobMenu').classList.add('open')" aria-label="Open menu">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-            <line x1="3" y1="6" x2="21" y2="6"/>
-            <line x1="3" y1="12" x2="21" y2="12"/>
-            <line x1="3" y1="18" x2="21" y2="18"/>
+            <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
         </svg>
     </button>
 </nav>
@@ -804,11 +366,11 @@
         <button class="mob-close" onclick="document.getElementById('mobMenu').classList.remove('open')">&times;</button>
     </div>
     <a href="#about" onclick="document.getElementById('mobMenu').classList.remove('open')">About</a>
-    <a href="#services" onclick="document.getElementById('mobMenu').classList.remove('open')">Services</a>
+    <a href="services.html" onclick="document.getElementById('mobMenu').classList.remove('open')">Services</a>
     <a href="#projects" onclick="document.getElementById('mobMenu').classList.remove('open')">Projects</a>
     <a href="#areas" onclick="document.getElementById('mobMenu').classList.remove('open')">Areas</a>
     <a href="#testimonials" onclick="document.getElementById('mobMenu').classList.remove('open')">Reviews</a>
-    <a href="#quote" onclick="document.getElementById('mobMenu').classList.remove('open')" style="color:var(--goldf);margin-top:16px;">Get a Quote →</a>
+    <a href="contact.html" onclick="document.getElementById('mobMenu').classList.remove('open')" style="color:var(--redf);margin-top:16px;">Get a Quote &rarr;</a>
 </div>
 
 <!-- HERO -->
@@ -820,58 +382,54 @@
     </div>
     <div class="hero-overlay"></div>
     <div class="hero-content">
-        <div class="hero-eyebrow">Serving Vredenburg &amp; the West Coast</div>
+        <div class="hero-eyebrow">Vredenburg &amp; West Coast Construction</div>
         <h1 class="hero-title">
-            We <span class="accent">Build.</span><br>
-            <span class="stroke">We Last.</span>
+            West Coast<br>
+            <span class="accent">Building &</span><br>
+            <span class="stroke">Construction.</span>
         </h1>
-        <p class="hero-desc">Izwe 2 Projects delivers quality construction across the West Coast of South Africa — from solid foundations to finished walls, we do the work right.</p>
+        <p class="hero-desc">Izwe 2 Projects delivers quality general and civil construction across the West Coast of South Africa — from solid foundations to finished walls, we do the work right.</p>
         <div class="hero-btns">
-            <a href="#quote" class="btn-gold">
+            <a href="contact.html" class="btn-red">
                 Get a Free Quote
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
             </a>
             <a href="#projects" class="btn-ghost">View Our Work</a>
         </div>
         <div class="hero-stats">
-            <div class="hstat">
-                <div class="hstat-num">10+</div>
-                <div class="hstat-label">Years Experience</div>
-            </div>
-            <div class="hstat">
-                <div class="hstat-num">150+</div>
-                <div class="hstat-label">Projects Done</div>
-            </div>
-            <div class="hstat">
-                <div class="hstat-num">6</div>
-                <div class="hstat-label">Service Areas</div>
-            </div>
+            <div class="hstat"><div class="hstat-num">10+</div><div class="hstat-label">Years Experience</div></div>
+            <div class="hstat"><div class="hstat-num">150+</div><div class="hstat-label">Projects Done</div></div>
+            <div class="hstat"><div class="hstat-num">8</div><div class="hstat-label">Services Offered</div></div>
         </div>
     </div>
     <div class="hero-flag-strip"></div>
 </section>
 
-<!-- TICKER BAR -->
+<!-- TICKER — matches business card services exactly -->
 <div class="process-bar">
-    <div class="process-track" id="ticker">
-        <span class="tick-item">New Construction <span class="tick-sep"></span></span>
-        <span class="tick-item">Bricklaying <span class="tick-sep"></span></span>
+    <div class="process-track">
+        <span class="tick-item">Building <span class="tick-sep"></span></span>
+        <span class="tick-item">Carpentry <span class="tick-sep"></span></span>
+        <span class="tick-item">Floor Screeding <span class="tick-sep"></span></span>
+        <span class="tick-item">Decking <span class="tick-sep"></span></span>
+        <span class="tick-item">Painting <span class="tick-sep"></span></span>
+        <span class="tick-item">Waterproofing <span class="tick-sep"></span></span>
+        <span class="tick-item">Tiling <span class="tick-sep"></span></span>
         <span class="tick-item">Renovations <span class="tick-sep"></span></span>
-        <span class="tick-item">Tiling &amp; Plastering <span class="tick-sep"></span></span>
+        <span class="tick-item">Civil Works <span class="tick-sep"></span></span>
         <span class="tick-item">Roofing <span class="tick-sep"></span></span>
-        <span class="tick-item">Concrete Work <span class="tick-sep"></span></span>
         <span class="tick-item">Extensions <span class="tick-sep"></span></span>
-        <span class="tick-item">Industrial Builds <span class="tick-sep"></span></span>
-        <span class="tick-item">Braai Structures <span class="tick-sep"></span></span>
-        <span class="tick-item">New Construction <span class="tick-sep"></span></span>
-        <span class="tick-item">Bricklaying <span class="tick-sep"></span></span>
+        <span class="tick-item">Building <span class="tick-sep"></span></span>
+        <span class="tick-item">Carpentry <span class="tick-sep"></span></span>
+        <span class="tick-item">Floor Screeding <span class="tick-sep"></span></span>
+        <span class="tick-item">Decking <span class="tick-sep"></span></span>
+        <span class="tick-item">Painting <span class="tick-sep"></span></span>
+        <span class="tick-item">Waterproofing <span class="tick-sep"></span></span>
+        <span class="tick-item">Tiling <span class="tick-sep"></span></span>
         <span class="tick-item">Renovations <span class="tick-sep"></span></span>
-        <span class="tick-item">Tiling &amp; Plastering <span class="tick-sep"></span></span>
+        <span class="tick-item">Civil Works <span class="tick-sep"></span></span>
         <span class="tick-item">Roofing <span class="tick-sep"></span></span>
-        <span class="tick-item">Concrete Work <span class="tick-sep"></span></span>
         <span class="tick-item">Extensions <span class="tick-sep"></span></span>
-        <span class="tick-item">Industrial Builds <span class="tick-sep"></span></span>
-        <span class="tick-item">Braai Structures <span class="tick-sep"></span></span>
     </div>
 </div>
 
@@ -880,54 +438,31 @@
     <div class="container">
         <div class="about-grid">
             <div class="about-img-stack fu">
-                <img class="about-img-main" src="industrialwall.jpg" alt="Izwe 2 Projects — Industrial construction">
-                <img class="about-img-accent" src="paintedwall.jpg" alt="Finished plaster and paintwork">
-                <div class="about-badge">
-                    <strong>10+</strong>
-                    <span>Years Built</span>
-                </div>
+                <img class="about-img-main" src="pic1.jpg" alt="Izwe 2 Projects construction West Coast">
+                <img class="about-img-accent" src="pic2.jpg" alt="Izwe 2 Projects finished work">
+                <div class="about-badge"><strong>10+</strong><span>Years Built</span></div>
             </div>
             <div class="about-text">
                 <div class="sec-label">About Us</div>
                 <h2 class="sec-title">Built on Trust.<br><em>Built to Last.</em></h2>
-                <p>Izwe 2 Projects is a locally rooted construction company serving the West Coast of South Africa. We bring skill, dedication, and pride to every project — from small renovations to full commercial builds.</p>
+                <p>Izwe 2 Projects is a locally rooted general and civil construction company serving the West Coast of South Africa. We bring skill, dedication, and pride to every project — from small renovations to full commercial builds.</p>
                 <p>We understand the West Coast environment — the salt air, the climate, the community. That knowledge shapes everything we build. From the first brick to the final coat of paint, we do it right.</p>
                 <div class="pillars">
                     <div class="pillar fu d1">
-                        <div class="pillar-ico">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                        </div>
-                        <div>
-                            <h4>Safety First</h4>
-                            <p>Strict site safety on every job, no exceptions.</p>
-                        </div>
+                        <div class="pillar-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+                        <div><h4>Safety First</h4><p>Strict site safety on every job, no exceptions.</p></div>
                     </div>
                     <div class="pillar fu d2">
-                        <div class="pillar-ico">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
-                        </div>
-                        <div>
-                            <h4>Quality Assured</h4>
-                            <p>Premium materials. Expert craftsmanship.</p>
-                        </div>
+                        <div class="pillar-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg></div>
+                        <div><h4>Quality Assured</h4><p>Premium materials. Expert craftsmanship.</p></div>
                     </div>
                     <div class="pillar fu d1">
-                        <div class="pillar-ico">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                        </div>
-                        <div>
-                            <h4>On Schedule</h4>
-                            <p>We honour our timelines — always.</p>
-                        </div>
+                        <div class="pillar-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+                        <div><h4>On Schedule</h4><p>We honour our timelines — always.</p></div>
                     </div>
                     <div class="pillar fu d2">
-                        <div class="pillar-ico">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                        </div>
-                        <div>
-                            <h4>Local Expertise</h4>
-                            <p>Born and built on the West Coast.</p>
-                        </div>
+                        <div class="pillar-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+                        <div><h4>Local Expertise</h4><p>Born and built on the West Coast.</p></div>
                     </div>
                 </div>
             </div>
@@ -935,7 +470,7 @@
     </div>
 </section>
 
-<!-- SERVICES -->
+<!-- SERVICES — all 7 from business card + renovations -->
 <section id="services">
     <div class="container">
         <div class="services-hd">
@@ -943,68 +478,78 @@
                 <div class="sec-label">What We Do</div>
                 <h2 class="sec-title">Our <em>Services</em></h2>
             </div>
-            <p class="sec-sub">From new builds to renovations and finishing work — we handle every stage of construction across the West Coast.</p>
+            <p class="sec-sub">From new builds to finishing work — all services available across the West Coast. <a href="services.html" style="color:var(--redf);text-decoration:none;font-weight:600;">Full details &rarr;</a></p>
         </div>
         <div class="svc-grid">
+            <!-- 01 Building -->
             <div class="svc-card fu">
                 <div class="svc-num">01</div>
-                <div class="svc-ico">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-                </div>
-                <h3>New Construction</h3>
-                <p>Complete residential and commercial builds from foundation to finish. Full project management from day one.</p>
-                <a href="#quote" class="svc-link">Get Quote <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+                <div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+                <h3>Building</h3>
+                <p>Complete residential and commercial builds from foundation to finish. Full project management included.</p>
+                <a href="services.html#building" class="svc-link">Learn More <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
             </div>
+            <!-- 02 Carpentry -->
             <div class="svc-card fu d1">
                 <div class="svc-num">02</div>
-                <div class="svc-ico">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg>
-                </div>
-                <h3>Bricklaying</h3>
-                <p>Expert brickwork for walls, facades, and structural elements. Precision and durability in every course laid.</p>
-                <a href="#quote" class="svc-link">Get Quote <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+                <div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg></div>
+                <h3>Carpentry</h3>
+                <p>Doors, frames, ceilings, built-in units and all structural timber work done with precision.</p>
+                <a href="services.html#carpentry" class="svc-link">Learn More <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
             </div>
+            <!-- 03 Floor Screeding -->
             <div class="svc-card fu d2">
                 <div class="svc-num">03</div>
-                <div class="svc-ico">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
-                </div>
-                <h3>Renovations</h3>
-                <p>Transform your existing space. Kitchens, bathrooms, complete makeovers — modern upgrades with lasting quality.</p>
-                <a href="#quote" class="svc-link">Get Quote <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+                <div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></div>
+                <h3>Floor Screeding</h3>
+                <p>Smooth, level floor screeds ready for tiling, epoxy, or any surface finish.</p>
+                <a href="services.html#screeding" class="svc-link">Learn More <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
             </div>
+            <!-- 04 Decking -->
             <div class="svc-card fu">
                 <div class="svc-num">04</div>
-                <div class="svc-ico">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7"/><path d="M9 22V12h6v10"/></svg>
-                </div>
-                <h3>Roofing</h3>
-                <p>New roof installations, repairs, and waterproofing — built to handle the West Coast salt air and weather.</p>
-                <a href="#quote" class="svc-link">Get Quote <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+                <div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg></div>
+                <h3>Decking</h3>
+                <p>Timber and composite decking for outdoor entertainment areas and patios.</p>
+                <a href="services.html#decking" class="svc-link">Learn More <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
             </div>
+            <!-- 05 Painting -->
             <div class="svc-card fu d1">
                 <div class="svc-num">05</div>
-                <div class="svc-ico">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-                </div>
-                <h3>Tiling &amp; Plastering</h3>
-                <p>Shower tiling, wall plastering, and paint finishing. Clean, precise, and built to last.</p>
-                <a href="#quote" class="svc-link">Get Quote <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+                <div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.24 12.24a6 6 0 00-8.49-8.49L5 10.5V19h8.5z"/><line x1="16" y1="8" x2="2" y2="22"/><line x1="17.5" y1="15" x2="9" y2="15"/></svg></div>
+                <h3>Painting</h3>
+                <p>Interior and exterior painting — walls, ceilings, and plaster finishes done to a professional standard.</p>
+                <a href="services.html#painting" class="svc-link">Learn More <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
             </div>
+            <!-- 06 Waterproofing -->
             <div class="svc-card fu d2">
                 <div class="svc-num">06</div>
-                <div class="svc-ico">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>
-                </div>
-                <h3>Extensions &amp; Industrial</h3>
-                <p>Home extensions, storage buildings, and industrial walls — seamlessly matched to existing structures.</p>
-                <a href="#quote" class="svc-link">Get Quote <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+                <div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 11-11.31 0z"/></svg></div>
+                <h3>Waterproofing</h3>
+                <p>Roof, bathroom and structural waterproofing built for the coastal West Coast climate.</p>
+                <a href="services.html#waterproofing" class="svc-link">Learn More <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+            </div>
+            <!-- 07 Tiling -->
+            <div class="svc-card fu">
+                <div class="svc-num">07</div>
+                <div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="9" height="9"/><rect x="13" y="3" width="9" height="9"/><rect x="2" y="13" width="9" height="9"/><rect x="13" y="13" width="9" height="9"/></svg></div>
+                <h3>Tiling</h3>
+                <p>Floor and wall tiling — showers, kitchens, patios and more. Clean, precise, and built to last.</p>
+                <a href="services.html#tiling" class="svc-link">Learn More <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+            </div>
+            <!-- 08 Renovations -->
+            <div class="svc-card fu d1">
+                <div class="svc-num">08</div>
+                <div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg></div>
+                <h3>Renovations</h3>
+                <p>Kitchens, bathrooms, full makeovers — transform your existing space with lasting quality.</p>
+                <a href="services.html#renovations" class="svc-link">Learn More <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
             </div>
         </div>
     </div>
 </section>
 
-<!-- PROJECTS -->
+<!-- PROJECTS — pic1 through pic10 all included -->
 <section id="projects">
     <div class="container">
         <div class="proj-hd">
@@ -1020,54 +565,54 @@
             </div>
         </div>
         <div class="proj-grid" id="projGrid">
+
+            <!-- VISIBLE BY DEFAULT (6 cards) -->
             <div class="proj-card tall fu" data-cat="residential">
-                <img src="BraaiBuild.jpg" alt="Outdoor Braai Construction">
-                <div class="proj-ov">
-                    <span class="proj-tag">Outdoor Build</span>
-                    <div class="proj-name">Custom Braai Structure</div>
-                    <div class="proj-loc">Residential · West Coast</div>
-                </div>
+                <img src="pic1.jpg" alt="Izwe 2 Projects construction West Coast">
+                <div class="proj-ov"><span class="proj-tag">Residential</span><div class="proj-name">Residential Build</div><div class="proj-loc">Residential &middot; West Coast</div></div>
             </div>
             <div class="proj-card fu d1" data-cat="finishing">
-                <img src="Showertiles.jpg" alt="Shower Tiling">
-                <div class="proj-ov">
-                    <span class="proj-tag">Tiling</span>
-                    <div class="proj-name">Shower Tile Installation</div>
-                    <div class="proj-loc">Renovation · Saldanha Area</div>
-                </div>
+                <img src="pic2.jpg" alt="Izwe 2 Projects finishing work">
+                <div class="proj-ov"><span class="proj-tag">Finishing</span><div class="proj-name">Interior Finishing</div><div class="proj-loc">Renovation &middot; West Coast</div></div>
             </div>
             <div class="proj-card fu d2" data-cat="finishing">
-                <img src="paintedwall.jpg" alt="Plastered and Painted Wall">
-                <div class="proj-ov">
-                    <span class="proj-tag">Plastering &amp; Paint</span>
-                    <div class="proj-name">Wall Plaster &amp; First Coat</div>
-                    <div class="proj-loc">New Build · Vredenburg</div>
-                </div>
+                <img src="pic3.jpg" alt="Izwe 2 Projects tiling and painting">
+                <div class="proj-ov"><span class="proj-tag">Tiling</span><div class="proj-name">Tiling &amp; Plastering</div><div class="proj-loc">New Build &middot; Vredenburg</div></div>
             </div>
             <div class="proj-card fu d1" data-cat="residential">
-                <img src="90buildbraai.jpg" alt="Braai 90% Complete">
-                <div class="proj-ov">
-                    <span class="proj-tag">Outdoor Build</span>
-                    <div class="proj-name">Braai — Near Completion</div>
-                    <div class="proj-loc">Residential · Langebaan</div>
-                </div>
+                <img src="pic4.jpg" alt="Izwe 2 Projects residential project">
+                <div class="proj-ov"><span class="proj-tag">Residential</span><div class="proj-name">Residential Project</div><div class="proj-loc">Residential &middot; West Coast</div></div>
             </div>
             <div class="proj-card fu d2" data-cat="commercial">
-                <img src="industrialwall.jpg" alt="Industrial Wall Construction">
-                <div class="proj-ov">
-                    <span class="proj-tag">Industrial</span>
-                    <div class="proj-name">Industrial Wall Build</div>
-                    <div class="proj-loc">Commercial · West Coast</div>
-                </div>
+                <img src="pic5.jpg" alt="Izwe 2 Projects commercial build">
+                <div class="proj-ov"><span class="proj-tag">Commercial</span><div class="proj-name">Commercial Build</div><div class="proj-loc">Commercial &middot; West Coast</div></div>
             </div>
             <div class="proj-card fu d1" data-cat="commercial">
-                <img src="industrialwallroof.jpg" alt="Storage Building Roof">
-                <div class="proj-ov">
-                    <span class="proj-tag">Industrial</span>
-                    <div class="proj-name">Storage Building &amp; Roof</div>
-                    <div class="proj-loc">Commercial · West Coast</div>
-                </div>
+                <img src="pic6.jpg" alt="Izwe 2 Projects industrial construction">
+                <div class="proj-ov"><span class="proj-tag">Industrial</span><div class="proj-name">Industrial Project</div><div class="proj-loc">Commercial &middot; West Coast</div></div>
             </div>
+
+            <!-- HIDDEN — revealed on Load More -->
+            <div class="proj-card fu hidden" data-cat="residential">
+                <img src="pic7.jpg" alt="Izwe 2 Projects build West Coast">
+                <div class="proj-ov"><span class="proj-tag">Residential</span><div class="proj-name">Residential Build</div><div class="proj-loc">Residential &middot; West Coast</div></div>
+            </div>
+            <div class="proj-card fu hidden" data-cat="finishing">
+                <img src="pic8.jpg" alt="Izwe 2 Projects finishing work">
+                <div class="proj-ov"><span class="proj-tag">Finishing</span><div class="proj-name">Finishing Work</div><div class="proj-loc">Renovation &middot; West Coast</div></div>
+            </div>
+            <div class="proj-card fu hidden" data-cat="residential">
+                <img src="pic9.jpg" alt="Izwe 2 Projects home build">
+                <div class="proj-ov"><span class="proj-tag">Residential</span><div class="proj-name">Home Build</div><div class="proj-loc">Residential &middot; West Coast</div></div>
+            </div>
+            <div class="proj-card fu hidden" data-cat="commercial">
+                <img src="pic10.jpg" alt="Izwe 2 Projects commercial construction">
+                <div class="proj-ov"><span class="proj-tag">Commercial</span><div class="proj-name">Commercial Project</div><div class="proj-loc">Commercial &middot; West Coast</div></div>
+            </div>
+
+        </div>
+        <div class="load-more-wrap">
+            <button class="btn-ghost" id="loadMoreBtn" onclick="loadMoreProjects()" style="margin:0 auto;">Load More Projects</button>
         </div>
     </div>
 </section>
@@ -1080,63 +625,15 @@
                 <div class="sec-label">Service Areas</div>
                 <h2 class="sec-title">Where We <em>Operate</em></h2>
             </div>
-            <p class="sec-sub">Based on the West Coast, we serve the full stretch from Yzerfontein to Velddrif — and everywhere in between.</p>
+            <p class="sec-sub">Based in Vredenburg, we serve the full West Coast stretch — from Yzerfontein to Velddrif and everywhere in between.</p>
         </div>
         <div class="areas-grid">
-            <div class="area-card fu">
-                <div class="area-pin">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                </div>
-                <div>
-                    <h3>Vredenburg</h3>
-                    <p>Our primary service area. All services available with the fastest response times.</p>
-                </div>
-            </div>
-            <div class="area-card fu d1">
-                <div class="area-pin">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                </div>
-                <div>
-                    <h3>Saldanha</h3>
-                    <p>Full construction and renovation services for the Saldanha Bay area.</p>
-                </div>
-            </div>
-            <div class="area-card fu d2">
-                <div class="area-pin">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                </div>
-                <div>
-                    <h3>Langebaan</h3>
-                    <p>Coastal builds built for the lagoon environment — salt-resistant and built to last.</p>
-                </div>
-            </div>
-            <div class="area-card fu">
-                <div class="area-pin">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                </div>
-                <div>
-                    <h3>Velddrif</h3>
-                    <p>Residential and commercial builds for Velddrif and the Berg River area.</p>
-                </div>
-            </div>
-            <div class="area-card fu d1">
-                <div class="area-pin">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                </div>
-                <div>
-                    <h3>Hopefield</h3>
-                    <p>Rural and residential construction for Hopefield, Langebaanweg, and farms.</p>
-                </div>
-            </div>
-            <div class="area-card fu d2">
-                <div class="area-pin">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                </div>
-                <div>
-                    <h3>Surrounding Towns</h3>
-                    <p>St Helena Bay, Paternoster, Jacobs Bay, Yzerfontein &amp; more.</p>
-                </div>
-            </div>
+            <div class="area-card fu"><div class="area-pin"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div><h3>Vredenburg</h3><p>Our home base. All services available with the fastest response times.</p></div></div>
+            <div class="area-card fu d1"><div class="area-pin"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div><h3>Saldanha</h3><p>Full construction and renovation services for the Saldanha Bay area.</p></div></div>
+            <div class="area-card fu d2"><div class="area-pin"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div><h3>Langebaan</h3><p>Coastal builds designed for the lagoon environment — salt-resistant and built to last.</p></div></div>
+            <div class="area-card fu"><div class="area-pin"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div><h3>Velddrif</h3><p>Residential and commercial builds for Velddrif and the Berg River area.</p></div></div>
+            <div class="area-card fu d1"><div class="area-pin"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div><h3>Hopefield</h3><p>Rural and residential construction for Hopefield, Langebaanweg and surrounding farms.</p></div></div>
+            <div class="area-card fu d2"><div class="area-pin"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div><h3>Surrounding Towns</h3><p>St Helena Bay, Paternoster, Jacobs Bay, Yzerfontein &amp; more.</p></div></div>
         </div>
     </div>
 </section>
@@ -1159,13 +656,7 @@
                     <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                 </div>
                 <p class="testi-text">"Excellent work on our braai and patio extension. The team was professional, kept to the timeline, and the quality exceeded our expectations. Highly recommended to anyone on the West Coast!"</p>
-                <div class="testi-author">
-                    <div class="tav">JD</div>
-                    <div>
-                        <div class="tname">Johan &amp; Maria De Wet</div>
-                        <div class="tplace">Vredenburg</div>
-                    </div>
-                </div>
+                <div class="testi-author"><div class="tav">JD</div><div><div class="tname">Johan &amp; Maria De Wet</div><div class="tplace">Vredenburg</div></div></div>
             </div>
             <div class="testi-card fu d1">
                 <div class="testi-qmark">"</div>
@@ -1177,13 +668,7 @@
                     <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                 </div>
                 <p class="testi-text">"Our bathroom renovation came out absolutely beautiful. Tiling is perfect, work was clean every day, and communication was great. Really happy with the result."</p>
-                <div class="testi-author">
-                    <div class="tav">SN</div>
-                    <div>
-                        <div class="tname">Sarie Nortjé</div>
-                        <div class="tplace">Saldanha</div>
-                    </div>
-                </div>
+                <div class="testi-author"><div class="tav">SN</div><div><div class="tname">Sarie Nortjé</div><div class="tplace">Saldanha</div></div></div>
             </div>
             <div class="testi-card fu d2">
                 <div class="testi-qmark">"</div>
@@ -1195,17 +680,37 @@
                     <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                 </div>
                 <p class="testi-text">"Built our industrial storage walls on time and exactly to spec. Very competitive pricing and the quality of workmanship speaks for itself. Will be using them again."</p>
-                <div class="testi-author">
-                    <div class="tav">PV</div>
-                    <div>
-                        <div class="tname">Pieter Van Zyl</div>
-                        <div class="tplace">Langebaan</div>
-                    </div>
-                </div>
+                <div class="testi-author"><div class="tav">PV</div><div><div class="tname">Pieter Van Zyl</div><div class="tplace">Langebaan</div></div></div>
             </div>
         </div>
     </div>
 </section>
+
+<!-- CTA BAND -->
+<div class="cta-band">
+    <div class="container">
+        <h2>Ready to Start Your Project?</h2>
+        <p>Call or WhatsApp Augustine directly — we respond fast.</p>
+        <div class="cta-phones">
+            <a href="tel:+27766714106" class="phone-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.82 19.79 19.79 0 01.22 1.18 2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.09a16 16 0 006 6l.56-.56a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                076 671 4106
+            </a>
+            <a href="tel:+27748847688" class="phone-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.82 19.79 19.79 0 01.22 1.18 2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.09a16 16 0 006 6l.56-.56a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                074 884 7688
+            </a>
+            <a href="https://wa.me/27766714106" class="phone-pill" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="white" width="17" height="17"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                WhatsApp Us
+            </a>
+        </div>
+        <a href="contact.html" class="btn-ghost" style="border-color:rgba(255,255,255,0.4);color:var(--white);display:inline-flex;align-items:center;gap:10px;">
+            Fill in our Quote Form
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+    </div>
+</div>
 
 <!-- QUOTE FORM -->
 <section id="quote">
@@ -1214,92 +719,53 @@
             <div class="quote-info">
                 <div class="sec-label">Free Quote</div>
                 <h2 class="sec-title">Start Your <em>Project</em></h2>
-                <p>Ready to build? Fill in the form and we'll get back to you within 24 hours with a no-obligation quote. Or give us a call — we're happy to chat.</p>
+                <p>Fill in the form and we'll get back to you via WhatsApp within a few hours. No obligation, no pressure.</p>
                 <div class="crow">
-                    <div class="cico">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.82 19.79 19.79 0 01.22 1.18 2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.09a16 16 0 006 6l.56-.56a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-                    </div>
-                    <div>
-                        <div class="clabel">Phone / WhatsApp</div>
-                        <div class="cvalue">076 671 4406</div>
-                    </div>
+                    <div class="cico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.82 19.79 19.79 0 01.22 1.18 2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.09a16 16 0 006 6l.56-.56a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></div>
+                    <div><div class="clabel">Phone / WhatsApp</div><div class="cvalue"><a href="tel:+27766714106">076 671 4106</a> &nbsp;&middot;&nbsp; <a href="tel:+27748847688">074 884 7688</a></div></div>
                 </div>
                 <div class="crow">
-                    <div class="cico">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                    </div>
-                    <div>
-                        <div class="clabel">Email</div>
-                        <div class="cvalue">info@izwe2projects.co.za</div>
-                    </div>
+                    <div class="cico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+                    <div><div class="clabel">Email</div><div class="cvalue"><a href="mailto:aggustine828@gmail.com">aggustine828@gmail.com</a></div></div>
                 </div>
                 <div class="crow">
-                    <div class="cico">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                    </div>
-                    <div>
-                        <div class="clabel">Location</div>
-                        <div class="cvalue">West Coast, Western Cape</div>
-                    </div>
+                    <div class="cico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+                    <div><div class="clabel">Based In</div><div class="cvalue">Vredenburg, West Coast, Western Cape</div></div>
                 </div>
                 <div class="crow">
-                    <div class="cico">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                    </div>
-                    <div>
-                        <div class="clabel">Working Hours</div>
-                        <div class="cvalue">Mon – Fri: 07:00 – 17:00</div>
-                    </div>
+                    <div class="cico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+                    <div><div class="clabel">Working Hours</div><div class="cvalue">Mon – Fri: 07:00 – 17:00</div></div>
                 </div>
             </div>
             <div class="form-card fu">
                 <div class="form-row">
-                    <div class="fg">
-                        <label>First Name</label>
-                        <input type="text" placeholder="Johan">
-                    </div>
-                    <div class="fg">
-                        <label>Last Name</label>
-                        <input type="text" placeholder="Smith">
-                    </div>
+                    <div class="fg"><label>First Name</label><input type="text" id="f-fname" placeholder="Johan"></div>
+                    <div class="fg"><label>Last Name</label><input type="text" id="f-lname" placeholder="Smith"></div>
                 </div>
-                <div class="fg">
-                    <label>Phone Number</label>
-                    <input type="tel" placeholder="076 671 4406">
-                </div>
-                <div class="fg">
-                    <label>Email Address</label>
-                    <input type="email" placeholder="you@example.com">
-                </div>
+                <div class="fg"><label>Phone Number</label><input type="tel" id="f-phone" placeholder="076 123 4567"></div>
                 <div class="fg">
                     <label>Service Required</label>
-                    <select>
+                    <select id="f-service">
                         <option value="">Select a service...</option>
-                        <option>New Building Construction</option>
-                        <option>Home Renovation</option>
-                        <option>Extension / Alteration</option>
-                        <option>Bricklaying</option>
+                        <option>Building / New Construction</option>
+                        <option>Carpentry</option>
+                        <option>Floor Screeding</option>
+                        <option>Decking</option>
+                        <option>Painting</option>
+                        <option>Waterproofing</option>
+                        <option>Tiling</option>
+                        <option>Renovations</option>
                         <option>Roofing</option>
-                        <option>Tiling &amp; Plastering</option>
-                        <option>Concrete Work</option>
-                        <option>Industrial Build</option>
-                        <option>Outdoor Braai / Entertainment Area</option>
                         <option>Other</option>
                     </select>
                 </div>
-                <div class="fg">
-                    <label>Town / Area</label>
-                    <input type="text" placeholder="Vredenburg, Saldanha, Langebaan...">
-                </div>
-                <div class="fg">
-                    <label>Project Details</label>
-                    <textarea placeholder="Tell us about your project — size, scope, timeline..."></textarea>
-                </div>
-                <button type="button" class="form-submit" id="submitBtn" onclick="submitForm()">
-                    Send Quote Request
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                <div class="fg"><label>Town / Area</label><input type="text" id="f-area" placeholder="Vredenburg, Saldanha, Langebaan..."></div>
+                <div class="fg"><label>Project Details</label><textarea id="f-details" placeholder="Tell us about your project — size, scope, timeline..."></textarea></div>
+                <button type="button" class="form-submit" onclick="submitViaWhatsApp()">
+                    Send via WhatsApp
+                    <svg viewBox="0 0 24 24" fill="white" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
                 </button>
-                <p class="form-note">We typically respond within 24 hours · No obligation</p>
+                <p class="form-note">Opens WhatsApp with your details pre-filled &middot; No obligation</p>
             </div>
         </div>
     </div>
@@ -1310,40 +776,28 @@
     <div class="container">
         <div class="foot-grid">
             <div class="foot-brand">
-                <a href="#home" class="logo" style="text-decoration:none;">
-                    <div class="logo-mark">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="#0a0a09" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
-                            <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
-                            <polyline points="9 22 9 12 15 12 15 22"/>
-                        </svg>
-                    </div>
-                    <div class="logo-text">
-                        <strong>Izwe 2 Projects</strong>
-                        <span>West Coast Construction</span>
-                    </div>
+                <a href="#home" class="logo">
+                    <div class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+                    <div class="logo-text"><strong>Izwe 2 Projects</strong><span>General and Civil Works &middot; West Coast</span></div>
                 </a>
-                <p>Locally operated construction company serving the West Coast of South Africa. Built on trust. Built to last.</p>
+                <p>Locally operated general and civil construction company serving the West Coast of South Africa. Built on trust. Built to last.</p>
                 <div class="socials">
-                    <a href="#" class="soc" aria-label="Facebook">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
-                    </a>
-                    <a href="#" class="soc" aria-label="Instagram">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-                    </a>
-                    <a href="https://wa.me/27766714406" class="soc" aria-label="WhatsApp">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
-                    </a>
+                    <a href="#" class="soc" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+                    <a href="#" class="soc" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+                    <a href="https://wa.me/27766714106" class="soc" aria-label="WhatsApp" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg></a>
                 </div>
             </div>
             <div class="foot-col">
                 <h4>Services</h4>
                 <ul class="flinks">
-                    <li><a href="#services">New Construction</a></li>
-                    <li><a href="#services">Renovations</a></li>
-                    <li><a href="#services">Bricklaying</a></li>
-                    <li><a href="#services">Roofing</a></li>
-                    <li><a href="#services">Tiling &amp; Plastering</a></li>
-                    <li><a href="#services">Extensions</a></li>
+                    <li><a href="services.html#building">Building</a></li>
+                    <li><a href="services.html#carpentry">Carpentry</a></li>
+                    <li><a href="services.html#screeding">Floor Screeding</a></li>
+                    <li><a href="services.html#decking">Decking</a></li>
+                    <li><a href="services.html#painting">Painting</a></li>
+                    <li><a href="services.html#waterproofing">Waterproofing</a></li>
+                    <li><a href="services.html#tiling">Tiling</a></li>
+                    <li><a href="services.html#renovations">Renovations</a></li>
                 </ul>
             </div>
             <div class="foot-col">
@@ -1363,63 +817,88 @@
                     <li><a href="#about">About Us</a></li>
                     <li><a href="#projects">Our Projects</a></li>
                     <li><a href="#testimonials">Client Reviews</a></li>
-                    <li><a href="#quote">Request a Quote</a></li>
+                    <li><a href="contact.html">Request a Quote</a></li>
                 </ul>
                 <div style="margin-top:26px;">
                     <h4>Contact</h4>
-                    <p style="font-size:13.5px;line-height:1.8;color:var(--body);">
-                        076 671 4406<br>
-                        info@izwe2projects.co.za<br>
-                        West Coast, Western Cape
+                    <p style="font-size:13.5px;line-height:1.9;color:var(--body);">
+                        <a href="tel:+27766714106" style="color:var(--body);text-decoration:none;">076 671 4106</a><br>
+                        <a href="tel:+27748847688" style="color:var(--body);text-decoration:none;">074 884 7688</a><br>
+                        <a href="mailto:aggustine828@gmail.com" style="color:var(--body);text-decoration:none;">aggustine828@gmail.com</a><br>
+                        Vredenburg, West Coast
                     </p>
                 </div>
             </div>
         </div>
         <div class="foot-bottom">
-            <p>© 2026 Izwe 2 Projects. All rights reserved.</p>
-            <p>Proudly <span style="color:#4caf7d">South African</span> · <span style="color:var(--goldf)">West Coast</span> Built</p>
+            <p>&copy; 2026 Izwe 2 Projects. All rights reserved.</p>
+            <p>Proudly <span style="color:#4caf7d">South African</span> &middot; <span style="color:var(--redf)">West Coast</span> Built</p>
         </div>
     </div>
 </footer>
 
 <!-- WHATSAPP FLOAT -->
-<a href="https://wa.me/27766714406" class="wa-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-    <svg viewBox="0 0 24 24" fill="white">
-        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
-    </svg>
+<a href="https://wa.me/27766714106" class="wa-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
 </a>
 
 <script>
-    // Scroll fade animations
-    const obs = new IntersectionObserver((entries) => {
-        entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); });
-    }, { threshold: 0.1, rootMargin: '0px 0px -36px 0px' });
-    document.querySelectorAll('.fu').forEach(el => obs.observe(el));
-
     // Nav scroll effect
+    const nav = document.getElementById('mainNav');
     window.addEventListener('scroll', () => {
-        document.getElementById('mainNav').classList.toggle('scrolled', window.scrollY > 80);
+        nav.classList.toggle('scrolled', window.scrollY > 60);
     });
+
+    // Scroll-triggered fade-up animations
+    const fus = document.querySelectorAll('.fu');
+    const obs = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+            if (e.isIntersecting) { e.target.classList.add('in'); obs.unobserve(e.target); }
+        });
+    }, { threshold: 0.12 });
+    fus.forEach(el => obs.observe(el));
 
     // Project filter
     function filterProj(btn, cat) {
         document.querySelectorAll('.f-btn').forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
-        document.querySelectorAll('#projGrid .proj-card').forEach(card => {
-            const show = cat === 'all' || card.dataset.cat === cat;
-            card.style.opacity = show ? '1' : '0.15';
-            card.style.transform = show ? '' : 'scale(0.97)';
-            card.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+        document.querySelectorAll('.proj-card').forEach(card => {
+            if (card.classList.contains('hidden')) return;
+            card.style.display = (cat === 'all' || card.dataset.cat === cat) ? '' : 'none';
         });
     }
 
-    // Form submit feedback
-    function submitForm() {
-        const btn = document.getElementById('submitBtn');
-        btn.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="20 6 9 17 4 12"/></svg> Quote Request Sent!`;
-        btn.style.background = 'var(--green)';
-        btn.style.color = 'white';
-        btn.disabled = true;
+    // Load more projects
+    function loadMoreProjects() {
+        const hidden = document.querySelectorAll('.proj-card.hidden');
+        hidden.forEach(card => card.classList.remove('hidden'));
+        document.getElementById('loadMoreBtn').style.display = 'none';
+        // Re-observe newly visible cards for animation
+        document.querySelectorAll('.proj-card.fu:not(.in)').forEach(el => obs.observe(el));
+    }
+
+    // WhatsApp form submit
+    function submitViaWhatsApp() {
+        const fname   = document.getElementById('f-fname').value.trim();
+        const lname   = document.getElementById('f-lname').value.trim();
+        const phone   = document.getElementById('f-phone').value.trim();
+        const service = document.getElementById('f-service').value;
+        const area    = document.getElementById('f-area').value.trim();
+        const details = document.getElementById('f-details').value.trim();
+
+        if (!fname || !phone) {
+            alert('Please enter at least your name and phone number.');
+            return;
+        }
+
+        let msg = `Hi Izwe 2 Projects! I'd like a quote.\n\n`;
+        msg += `*Name:* ${fname} ${lname}\n`;
+        msg += `*Phone:* ${phone}\n`;
+        if (service) msg += `*Service:* ${service}\n`;
+        if (area)    msg += `*Area:* ${area}\n`;
+        if (details) msg += `\n*Project Details:*\n${details}`;
+
+        window.open(`https://wa.me/27766714106?text=${encodeURIComponent(msg)}`, '_blank');
     }
 </script>
 </body>
