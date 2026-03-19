@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Get a Quote | Izwe 2 Projects — Contact Us — Vredenburg West Coast</title>
+    <meta name="description" content="Get a free construction quote from Izwe 2 Projects. Call 076 671 4106 or WhatsApp us. Serving Vredenburg, Saldanha, Langebaan and the full West Coast. Quick response guaranteed.">
+    <meta name="keywords" content="construction quote Vredenburg, building quote West Coast, contact Izwe 2 Projects, Saldanha builder contact, Langebaan construction quote">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://izwe2projects.co.za/contact.html">
+
+    <meta property="og:title" content="Get a Free Quote | Izwe 2 Projects — West Coast Construction">
+    <meta property="og:description" content="Contact Izwe 2 Projects for a free construction quote. Call 076 671 4106. Serving the full West Coast of South Africa.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://izwe2projects.co.za/contact.html">
+    <meta property="og:image" content="https://izwe2projects.co.za/industrialwall.jpg">
+    <meta property="og:locale" content="en_ZA">
+
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
+
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        :root {
+            --black:  #0a0a09;
+            --ink:    #141412;
+            --card:   #1a1a17;
+            --border: #2a2a25;
+            --muted:  #585850;
+            --body:   #9a9a8e;
+            --light:  #d8d8cc;
+            --white:  #f2f0ea;
+            --red:    #C41E2A;
+            --red2:   #a8192e;
+            --redf:   #e02535;
+            --red-l:  rgba(196,30,42,0.12);
+            --red-b:  rgba(196,30,42,0.28);
+            --green:  #25D366;
+            --font-head: 'Anton', sans-serif;
+            --font-body: 'DM Sans', sans-serif;
+            --r:  3px;
+            --r2: 6px;
+        }
+
+        ::-webkit-scrollbar { width: 5px; }
+        ::-webkit-scrollbar-track { background: var(--ink); }
+        ::-webkit-scrollbar-thumb { background: var(--red); border-radius: 3px; }
+        html { scroll-behavior: smooth; }
+        body { background: var(--black); color: var(--body); font-family: var(--font-body); font-size: 16px; line-height: 1.6; overflow-x: hidden; }
+
+        /* SA BAR */
+        .sa-bar { position: fixed; top: 0; left: 0; right: 0; height: 3px; z-index: 200; display: flex; }
+        .sa-bar span { flex: 1; }
+        .sa-bar .s1 { background: #DE3831; } .sa-bar .s2 { background: #FFB612; } .sa-bar .s3 { background: #007A4D; }
+        .sa-bar .s4 { background: #fff; }    .sa-bar .s5 { background: #002395; } .sa-bar .s6 { background: #000; }
+
+        /* NAV */
+        nav { position: fixed; top: 3px; left: 0; right: 0; z-index: 100; height: 68px; display: flex; align-items: center; background: rgba(10,10,9,0.92); backdrop-filter: blur(16px); border-bottom: 1px solid var(--border); padding: 0 48px; gap: 32px; transition: border-color 0.3s; }
+        nav.scrolled { border-bottom-color: rgba(196,30,42,0.3); }
+        .logo { display: flex; align-items: center; gap: 12px; text-decoration: none; flex-shrink: 0; }
+        .logo-mark { width: 38px; height: 38px; background: var(--red); display: flex; align-items: center; justify-content: center; clip-path: polygon(0 0,100% 0,100% 75%,50% 100%,0 75%); }
+        .logo-mark svg { width: 20px; height: 20px; }
+        .logo-text strong { display: block; font-family: var(--font-head); font-size: 19px; letter-spacing: 0.06em; color: var(--white); }
+        .logo-text span { font-size: 9px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--red); }
+        .nav-links { display: flex; align-items: center; gap: 28px; margin-left: auto; list-style: none; }
+        .nav-links a { font-size: 13px; font-weight: 500; letter-spacing: 0.07em; text-transform: uppercase; color: var(--body); text-decoration: none; transition: color 0.2s; }
+        .nav-links a:hover { color: var(--white); }
+        .nav-cta { background: var(--red) !important; color: var(--white) !important; padding: 9px 22px; border-radius: var(--r); font-weight: 600 !important; }
+        .nav-cta:hover { background: var(--red2) !important; }
+        .nav-mob-btn { display: none; background: none; border: none; color: var(--white); cursor: pointer; margin-left: auto; padding: 4px; }
+        .mob-menu { display: none; position: fixed; inset: 0; z-index: 300; background: var(--ink); flex-direction: column; padding: 28px 32px; }
+        .mob-menu.open { display: flex; }
+        .mob-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 40px; }
+        .mob-close { background: none; border: none; color: var(--white); font-size: 30px; cursor: pointer; line-height: 1; }
+        .mob-menu a { display: block; padding: 15px 0; border-bottom: 1px solid var(--border); font-family: var(--font-head); font-size: 28px; letter-spacing: 0.04em; color: var(--white); text-decoration: none; text-transform: uppercase; }
+        .mob-menu a:hover { color: var(--redf); }
+
+        /* HERO STRIP */
+        .contact-hero { padding: 140px 0 72px; background: var(--ink); position: relative; overflow: hidden; }
+        .contact-hero::before { content: ''; position: absolute; top: 0; right: 0; width: 600px; height: 100%; background: linear-gradient(135deg, transparent 40%, rgba(196,30,42,0.05) 100%); pointer-events: none; }
+        .contact-hero::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 1px; background: linear-gradient(to right, var(--red), transparent 60%); }
+        .ph-label { display: inline-flex; align-items: center; gap: 10px; font-size: 10px; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: var(--redf); margin-bottom: 16px; }
+        .ph-label::before { content:''; width: 20px; height: 2px; background: var(--redf); flex-shrink: 0; }
+        .ph-title { font-family: var(--font-head); font-size: clamp(44px,6vw,88px); line-height: 0.92; letter-spacing: 0.01em; color: var(--white); text-transform: uppercase; margin-bottom: 20px; }
+        .ph-title em { font-style: normal; color: var(--redf); }
+        .ph-sub { font-size: 17px; line-height: 1.8; color: var(--body); max-width: 560px; font-weight: 300; }
+        .ph-breadcrumb { display: flex; align-items: center; gap: 8px; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 24px; }
+        .ph-breadcrumb a { color: var(--muted); text-decoration: none; transition: color 0.2s; }
+        .ph-breadcrumb a:hover { color: var(--redf); }
+        .ph-breadcrumb span { color: var(--redf); }
+
+        /* QUICK CONTACT PILLS */
+        .quick-contact { background: var(--red); padding: 0; }
+        .qc-grid { display: grid; grid-template-columns: repeat(3, 1fr); }
+        .qc-item { display: flex; align-items: center; gap: 16px; padding: 28px 40px; text-decoration: none; color: rgba(255,255,255,0.9); border-right: 1px solid rgba(255,255,255,0.15); transition: background 0.2s; }
+        .qc-item:last-child { border-right: none; }
+        .qc-item:hover { background: rgba(0,0,0,0.15); }
+        .qc-ico { width: 46px; height: 46px; flex-shrink: 0; background: rgba(255,255,255,0.12); border-radius: var(--r); display: flex; align-items: center; justify-content: center; }
+        .qc-ico svg { width: 20px; height: 20px; }
+        .qc-label { font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; opacity: 0.7; margin-bottom: 2px; }
+        .qc-value { font-family: var(--font-head); font-size: 20px; letter-spacing: 0.04em; color: var(--white); }
+
+        /* CONTAINER */
+        .container { max-width: 1240px; margin: 0 auto; padding: 0 48px; }
+
+        /* MAIN CONTENT */
+        .contact-main { padding: 96px 0; }
+        .contact-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 80px; align-items: start; }
+
+        /* LEFT COLUMN */
+        .sec-label { display: inline-flex; align-items: center; gap: 10px; font-size: 10px; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: var(--redf); margin-bottom: 16px; }
+        .sec-label::before { content:''; width: 20px; height: 2px; background: var(--redf); flex-shrink: 0; }
+        .sec-title { font-family: var(--font-head); font-size: clamp(32px,3.5vw,52px); line-height: 0.95; letter-spacing: 0.01em; color: var(--white); text-transform: uppercase; margin-bottom: 20px; }
+        .sec-title em { font-style: normal; color: var(--redf); }
+        .contact-desc { font-size: 15px; line-height: 1.85; margin-bottom: 36px; }
+
+        /* CONTACT ROWS */
+        .crow { display: flex; align-items: flex-start; gap: 14px; padding: 18px 0; border-bottom: 1px solid var(--border); }
+        .crow:first-of-type { border-top: 1px solid var(--border); }
+        .cico { width: 42px; height: 42px; flex-shrink: 0; background: var(--red-l); border: 1px solid var(--red-b); border-radius: var(--r); display: flex; align-items: center; justify-content: center; color: var(--redf); }
+        .cico svg { width: 18px; height: 18px; }
+        .clabel { font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin-bottom: 4px; }
+        .cvalue { font-size: 15px; font-weight: 500; color: var(--white); line-height: 1.5; }
+        .cvalue a { color: var(--redf); text-decoration: none; transition: color 0.2s; }
+        .cvalue a:hover { color: var(--white); }
+
+        /* TRUST BADGES */
+        .trust-badges { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 36px; }
+        .t-badge { padding: 16px 18px; background: var(--card); border: 1px solid var(--border); border-radius: var(--r2); display: flex; align-items: center; gap: 12px; }
+        .t-badge-ico { width: 36px; height: 36px; flex-shrink: 0; background: var(--red-l); border-radius: var(--r); display: flex; align-items: center; justify-content: center; color: var(--redf); }
+        .t-badge-ico svg { width: 16px; height: 16px; }
+        .t-badge-num { font-family: var(--font-head); font-size: 22px; color: var(--white); line-height: 1; }
+        .t-badge-txt { font-size: 11px; color: var(--muted); letter-spacing: 0.06em; text-transform: uppercase; margin-top: 2px; }
+
+        /* HOURS */
+        .hours-block { margin-top: 32px; padding: 22px 24px; background: var(--card); border: 1px solid var(--border); border-radius: var(--r2); border-left: 3px solid var(--redf); }
+        .hours-title { font-family: var(--font-head); font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--white); margin-bottom: 14px; }
+        .hours-row { display: flex; justify-content: space-between; align-items: center; padding: 6px 0; border-bottom: 1px solid rgba(255,255,255,0.04); font-size: 13.5px; }
+        .hours-row:last-child { border-bottom: none; }
+        .hours-day { color: var(--body); }
+        .hours-time { color: var(--light); font-weight: 500; }
+        .hours-closed { color: var(--muted); }
+        .response-badge { margin-top: 16px; display: flex; align-items: center; gap: 10px; padding: 12px 16px; background: rgba(37,211,102,0.08); border: 1px solid rgba(37,211,102,0.2); border-radius: var(--r); }
+        .response-dot { width: 8px; height: 8px; background: var(--green); border-radius: 50%; flex-shrink: 0; animation: pulse 2s infinite; }
+        @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.4; } }
+        .response-text { font-size: 13px; color: #4cce7e; }
+
+        /* FORM CARD */
+        .form-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--r2); padding: 44px; }
+        .form-card-head { margin-bottom: 32px; padding-bottom: 24px; border-bottom: 1px solid var(--border); }
+        .form-card-head h3 { font-family: var(--font-head); font-size: 22px; color: var(--white); letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: 6px; }
+        .form-card-head p { font-size: 13.5px; color: var(--body); }
+        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+        .fg { display: flex; flex-direction: column; gap: 7px; margin-bottom: 14px; }
+        .fg label { font-size: 10px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); }
+        .fg input, .fg select, .fg textarea { background: var(--black); border: 1px solid var(--border); border-radius: var(--r); padding: 13px 15px; font-family: var(--font-body); font-size: 15px; color: var(--white); outline: none; transition: border-color 0.2s, box-shadow 0.2s; width: 100%; }
+        .fg input::placeholder, .fg textarea::placeholder { color: var(--muted); }
+        .fg input:focus, .fg select:focus, .fg textarea:focus { border-color: var(--red); box-shadow: 0 0 0 2px rgba(196,30,42,0.15); }
+        .fg select { appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='7' fill='none'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23555' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 14px center; padding-right: 38px; cursor: pointer; }
+        .fg select option { background: var(--ink); }
+        .fg textarea { resize: vertical; min-height: 120px; }
+        .form-submit { width: 100%; padding: 16px; background: var(--red); color: var(--white); border: none; border-radius: var(--r); font-family: var(--font-head); font-size: 16px; letter-spacing: 0.12em; text-transform: uppercase; cursor: pointer; transition: background 0.2s, transform 0.15s; display: flex; align-items: center; justify-content: center; gap: 10px; }
+        .form-submit:hover { background: var(--redf); transform: translateY(-2px); }
+        .form-note { text-align: center; font-size: 12px; color: var(--muted); margin-top: 12px; display: flex; align-items: center; justify-content: center; gap: 6px; }
+        .form-note svg { width: 13px; height: 13px; color: var(--green); flex-shrink: 0; }
+
+        /* MAP SECTION */
+        .map-section { background: var(--ink); padding: 0; border-top: 1px solid var(--border); }
+        .map-header { padding: 64px 0 40px; }
+        .map-header-inner { display: flex; justify-content: space-between; align-items: flex-end; }
+        .map-embed { width: 100%; height: 420px; border: none; display: block; filter: grayscale(80%) invert(5%) brightness(0.85); }
+        .map-overlay-bar { background: var(--black); border-top: 1px solid var(--border); padding: 24px 0; }
+        .area-pills { display: flex; flex-wrap: wrap; gap: 8px; }
+        .area-pill { display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; background: var(--card); border: 1px solid var(--border); border-radius: 20px; font-size: 12px; font-weight: 500; color: var(--body); }
+        .area-pill svg { width: 11px; height: 11px; color: var(--redf); flex-shrink: 0; }
+
+        /* BOTTOM CTA */
+        .bottom-cta { background: var(--red); padding: 72px 0; }
+        .bcta-inner { display: flex; justify-content: space-between; align-items: center; gap: 40px; flex-wrap: wrap; }
+        .bcta-text h2 { font-family: var(--font-head); font-size: clamp(28px,3.5vw,48px); color: var(--white); text-transform: uppercase; letter-spacing: 0.03em; line-height: 0.95; margin-bottom: 10px; }
+        .bcta-text p { color: rgba(255,255,255,0.8); font-size: 15px; }
+        .bcta-btns { display: flex; gap: 12px; flex-wrap: wrap; }
+        .btn-white { display: inline-flex; align-items: center; gap: 10px; background: var(--white); color: var(--red); padding: 14px 28px; border-radius: var(--r); font-family: var(--font-head); font-size: 14px; letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none; transition: background 0.2s; }
+        .btn-white:hover { background: var(--light); }
+        .btn-ghost-w { display: inline-flex; align-items: center; gap: 10px; background: transparent; color: var(--white); padding: 14px 28px; border-radius: var(--r); font-family: var(--font-head); font-size: 14px; letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none; border: 1.5px solid rgba(255,255,255,0.4); transition: border-color 0.2s; }
+        .btn-ghost-w:hover { border-color: var(--white); }
+
+        /* FOOTER */
+        footer { background: var(--ink); border-top: 1px solid var(--border); padding: 64px 0 36px; }
+        .foot-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 56px; margin-bottom: 48px; }
+        .foot-brand p { font-size: 13.5px; line-height: 1.8; margin-top: 18px; margin-bottom: 22px; max-width: 250px; }
+        .socials { display: flex; gap: 9px; }
+        .soc { width: 34px; height: 34px; border-radius: var(--r); background: var(--card); border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; color: var(--body); text-decoration: none; transition: all 0.2s; }
+        .soc:hover { background: var(--red); color: var(--white); border-color: var(--red); }
+        .soc svg { width: 15px; height: 15px; }
+        .foot-col h4 { font-family: var(--font-head); font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--white); margin-bottom: 18px; }
+        .flinks { list-style: none; display: flex; flex-direction: column; gap: 9px; }
+        .flinks a { font-size: 13.5px; color: var(--body); text-decoration: none; transition: color 0.2s; }
+        .flinks a:hover { color: var(--redf); }
+        .foot-bottom { padding-top: 28px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap; }
+        .foot-bottom p { font-size: 12.5px; color: var(--muted); }
+
+        /* WHATSAPP FLOAT */
+        .wa-float { position: fixed; bottom: 28px; right: 28px; z-index: 90; width: 58px; height: 58px; background: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; box-shadow: 0 4px 20px rgba(37,211,102,0.4); transition: transform 0.2s, box-shadow 0.2s; }
+        .wa-float:hover { transform: scale(1.1); box-shadow: 0 6px 28px rgba(37,211,102,0.55); }
+        .wa-float svg { width: 30px; height: 30px; }
+
+        /* ANIMATIONS */
+        .fu { opacity: 0; transform: translateY(28px); transition: opacity 0.7s ease, transform 0.7s ease; }
+        .fu.in { opacity: 1; transform: translateY(0); }
+        .fu.d1 { transition-delay: 0.1s; } .fu.d2 { transition-delay: 0.2s; }
+
+        /* RESPONSIVE */
+        @media (max-width: 1100px) {
+            .qc-grid { grid-template-columns: 1fr; }
+            .qc-item { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.15); }
+            .qc-item:last-child { border-bottom: none; }
+        }
+        @media (max-width: 860px) {
+            nav { padding: 0 20px; } .nav-links { display: none; } .nav-mob-btn { display: flex; }
+            .contact-grid { grid-template-columns: 1fr; gap: 48px; }
+            .form-row { grid-template-columns: 1fr; }
+            .trust-badges { grid-template-columns: 1fr 1fr; }
+            .foot-grid { grid-template-columns: 1fr 1fr; gap: 28px; }
+            .map-header-inner { flex-direction: column; align-items: flex-start; gap: 16px; }
+            .bcta-inner { flex-direction: column; }
+            .container { padding: 0 20px; }
+        }
+        @media (max-width: 560px) {
+            .foot-grid { grid-template-columns: 1fr; }
+            .form-card { padding: 24px; }
+            .bcta-btns { flex-direction: column; }
+            .trust-badges { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="sa-bar" aria-hidden="true">
+    <span class="s1"></span><span class="s2"></span><span class="s3"></span>
+    <span class="s4"></span><span class="s5"></span><span class="s6"></span>
+</div>
+
+<!-- NAV -->
+<nav id="mainNav">
+    <a href="index.html" class="logo">
+        <div class="logo-mark" style="background:none;clip-path:none;">
+            <img src="logo.png" alt="Izwe 2 Projects Logo" style="width:38px;height:38px;object-fit:contain;">
+        </div>
+        <div class="logo-text">
+            <strong>Izwe 2 Projects</strong>
+            <span>General and Civil Works &middot; West Coast</span>
+        </div>
+    </a>
+    <ul class="nav-links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#areas">Areas</a></li>
+        <li><a href="index.html#testimonials">Reviews</a></li>
+        <li><a href="contact.html" class="nav-cta">Get a Quote</a></li>
+    </ul>
+    <button class="nav-mob-btn" onclick="document.getElementById('mobMenu').classList.add('open')" aria-label="Open menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+    </button>
+</nav>
+
+<div class="mob-menu" id="mobMenu">
+    <div class="mob-head">
+        <strong style="font-family:var(--font-head);font-size:20px;color:var(--white);letter-spacing:0.06em;">IZWE 2 PROJECTS</strong>
+        <button class="mob-close" onclick="document.getElementById('mobMenu').classList.remove('open')">&times;</button>
+    </div>
+    <a href="index.html#about" onclick="document.getElementById('mobMenu').classList.remove('open')">About</a>
+    <a href="services.html" onclick="document.getElementById('mobMenu').classList.remove('open')">Services</a>
+    <a href="index.html#projects" onclick="document.getElementById('mobMenu').classList.remove('open')">Projects</a>
+    <a href="index.html#areas" onclick="document.getElementById('mobMenu').classList.remove('open')">Areas</a>
+    <a href="index.html#testimonials" onclick="document.getElementById('mobMenu').classList.remove('open')">Reviews</a>
+    <a href="contact.html" onclick="document.getElementById('mobMenu').classList.remove('open')" style="color:var(--redf);margin-top:16px;">Get a Quote &rarr;</a>
+</div>
+
+<!-- HERO -->
+<div class="contact-hero">
+    <div class="container">
+        <div class="ph-breadcrumb">
+            <a href="index.html">Home</a>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg>
+            <span>Get a Quote</span>
+        </div>
+        <div class="ph-label">Free Quote</div>
+        <h1 class="ph-title">Let's <em>Talk</em><br>About Your<br>Project</h1>
+        <p class="ph-sub">No obligation, no pressure. Tell us what you need and we'll get back to you via WhatsApp within a few hours. We serve the full West Coast — Mon to Fri, 07:00–17:00.</p>
+    </div>
+</div>
+
+<!-- QUICK CONTACT PILLS -->
+<div class="quick-contact">
+    <div class="container" style="padding: 0;">
+        <div class="qc-grid">
+            <a href="tel:+27766714106" class="qc-item">
+                <div class="qc-ico">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.82 19.79 19.79 0 01.22 1.18 2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.09a16 16 0 006 6l.56-.56a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                </div>
+                <div>
+                    <div class="qc-label">Call Direct</div>
+                    <div class="qc-value">076 671 4106</div>
+                </div>
+            </a>
+            <a href="tel:+27748847688" class="qc-item">
+                <div class="qc-ico">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.82 19.79 19.79 0 01.22 1.18 2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.09a16 16 0 006 6l.56-.56a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                </div>
+                <div>
+                    <div class="qc-label">Alt Number</div>
+                    <div class="qc-value">074 884 7688</div>
+                </div>
+            </a>
+            <a href="https://wa.me/27766714106" class="qc-item" target="_blank" rel="noopener">
+                <div class="qc-ico">
+                    <svg viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                </div>
+                <div>
+                    <div class="qc-label">WhatsApp</div>
+                    <div class="qc-value">Chat Now</div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- MAIN CONTACT + FORM -->
+<section class="contact-main">
+    <div class="container">
+        <div class="contact-grid">
+            <!-- LEFT: INFO -->
+            <div class="fu">
+                <div class="sec-label">Contact Details</div>
+                <h2 class="sec-title">Find &amp; <em>Reach</em> Us</h2>
+                <p class="contact-desc">We're based in Vredenburg and operate across the full West Coast. Reach Augustine directly — the fastest response is always via WhatsApp.</p>
+
+                <div class="crow">
+                    <div class="cico">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.82 19.79 19.79 0 01.22 1.18 2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.09a16 16 0 006 6l.56-.56a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                    </div>
+                    <div>
+                        <div class="clabel">Phone / WhatsApp</div>
+                        <div class="cvalue"><a href="tel:+27766714106">076 671 4106</a> &nbsp;&middot;&nbsp; <a href="tel:+27748847688">074 884 7688</a></div>
+                    </div>
+                </div>
+                <div class="crow">
+                    <div class="cico">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    </div>
+                    <div>
+                        <div class="clabel">Email</div>
+                        <div class="cvalue"><a href="/cdn-cgi/l/email-protection#355452524046415c5b500d070d755258545c591b565a58"><span class="__cf_email__" data-cfemail="f29395958781869b9c97cac0cab2959f939b9edc919d9f">[email&#160;protected]</span></a></div>
+                    </div>
+                </div>
+                <div class="crow">
+                    <div class="cico">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    </div>
+                    <div>
+                        <div class="clabel">Based In</div>
+                        <div class="cvalue">Vredenburg, West Coast, Western Cape</div>
+                    </div>
+                </div>
+                <div class="crow">
+                    <div class="cico">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    </div>
+                    <div>
+                        <div class="clabel">Service Area</div>
+                        <div class="cvalue">Vredenburg · Saldanha · Langebaan · Velddrif · Hopefield &amp; surrounding West Coast towns</div>
+                    </div>
+                </div>
+
+                <!-- Trust badges -->
+                <div class="trust-badges">
+                    <div class="t-badge">
+                        <div class="t-badge-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+                        <div><div class="t-badge-num">10+</div><div class="t-badge-txt">Years Active</div></div>
+                    </div>
+                    <div class="t-badge">
+                        <div class="t-badge-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg></div>
+                        <div><div class="t-badge-num">150+</div><div class="t-badge-txt">Projects Done</div></div>
+                    </div>
+                    <div class="t-badge">
+                        <div class="t-badge-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+                        <div><div class="t-badge-num">8</div><div class="t-badge-txt">Services</div></div>
+                    </div>
+                    <div class="t-badge">
+                        <div class="t-badge-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+                        <div><div class="t-badge-num">8</div><div class="t-badge-txt">Towns Served</div></div>
+                    </div>
+                </div>
+
+                <!-- Hours -->
+                <div class="hours-block">
+                    <div class="hours-title">Working Hours</div>
+                    <div class="hours-row"><span class="hours-day">Monday – Friday</span><span class="hours-time">07:00 – 17:00</span></div>
+                    <div class="hours-row"><span class="hours-day">Saturday</span><span class="hours-closed">By arrangement</span></div>
+                    <div class="hours-row"><span class="hours-day">Sunday</span><span class="hours-closed">Closed</span></div>
+                    <div class="response-badge">
+                        <div class="response-dot"></div>
+                        <div class="response-text">WhatsApp messages answered within a few hours during working hours</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT: FORM -->
+            <div class="form-card fu d1">
+                <div class="form-card-head">
+                    <h3>Request a Free Quote</h3>
+                    <p>Fill in the form and we'll send your details to WhatsApp — ready to send in one tap. No email delays.</p>
+                </div>
+                <div class="form-row">
+                    <div class="fg"><label>First Name</label><input type="text" id="f-fname" placeholder="Johan"></div>
+                    <div class="fg"><label>Last Name</label><input type="text" id="f-lname" placeholder="Smith"></div>
+                </div>
+                <div class="fg"><label>Phone Number</label><input type="tel" id="f-phone" placeholder="076 123 4567"></div>
+                <div class="fg"><label>Email (optional)</label><input type="email" id="f-email" placeholder="youremail@example.com"></div>
+                <div class="fg">
+                    <label>Service Required</label>
+                    <select id="f-service">
+                        <option value="">Select a service...</option>
+                        <option>Building / New Construction</option>
+                        <option>Tiling</option>
+                        <option>Carpentry</option>
+                        <option>Floor Screeding</option>
+                        <option>Decking</option>
+                        <option>Painting</option>
+                        <option>Waterproofing</option>
+                        <option>Renovations</option>
+                        <option>Roofing</option>
+                        <option>Multiple Services</option>
+                        <option>Other / Not Sure</option>
+                    </select>
+                </div>
+                <div class="fg"><label>Town / Area</label><input type="text" id="f-area" placeholder="e.g. Vredenburg, Saldanha, Langebaan..."></div>
+                <div class="fg"><label>Project Details</label><textarea id="f-details" placeholder="Describe your project — size, scope, timeframe, any special requirements..."></textarea></div>
+                <button type="button" class="form-submit" onclick="submitViaWhatsApp()">
+                    Send via WhatsApp
+                    <svg viewBox="0 0 24 24" fill="white" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                </button>
+                <p class="form-note">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#25D366" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"/></svg>
+                    Opens WhatsApp with your details pre-filled &middot; Free &middot; No obligation
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- MAP SECTION -->
+<div class="map-section">
+    <div class="map-header">
+        <div class="container">
+            <div class="map-header-inner">
+                <div>
+                    <div class="sec-label">Service Area</div>
+                    <h2 class="sec-title">Where We <em>Operate</em></h2>
+                </div>
+                <p style="font-size:14px;line-height:1.8;max-width:360px;">Based in Vredenburg — we serve the entire West Coast stretch from Yzerfontein to Velddrif and everywhere in between.</p>
+            </div>
+        </div>
+    </div>
+    <iframe
+        class="map-embed"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d214764.8!2d17.8!3d-32.95!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dbc25ce4e7b97e3%3A0x17a38e3ecbe17d89!2sVredenburg%2C%20South%20Africa!5e0!3m2!1sen!2sza!4v1700000000000"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Izwe 2 Projects service area — Vredenburg West Coast">
+    </iframe>
+    <div class="map-overlay-bar">
+        <div class="container">
+            <div class="area-pills">
+                <div class="area-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Vredenburg</div>
+                <div class="area-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Saldanha</div>
+                <div class="area-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Langebaan</div>
+                <div class="area-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Velddrif</div>
+                <div class="area-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Hopefield</div>
+                <div class="area-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> St Helena Bay</div>
+                <div class="area-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Paternoster</div>
+                <div class="area-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Jacobs Bay</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- BOTTOM CTA -->
+<div class="bottom-cta">
+    <div class="container">
+        <div class="bcta-inner">
+            <div class="bcta-text">
+                <h2>Still Deciding?<br>Call Us First.</h2>
+                <p>A quick call costs nothing. We'll tell you if we're the right fit for your project.</p>
+            </div>
+            <div class="bcta-btns">
+                <a href="tel:+27766714106" class="btn-white">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.82 19.79 19.79 0 01.22 1.18 2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.09a16 16 0 006 6l.56-.56a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                    Call 076 671 4106
+                </a>
+                <a href="https://wa.me/27766714106" class="btn-ghost-w" target="_blank" rel="noopener">
+                    WhatsApp Us &rarr;
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+        <div class="foot-grid">
+            <div class="foot-brand">
+                <a href="index.html" class="logo">
+                    <div class="logo-mark" style="background:none;clip-path:none;"><img src="logo.png" alt="Izwe 2 Projects Logo" style="width:38px;height:38px;object-fit:contain;"></div>
+                    <div class="logo-text"><strong>Izwe 2 Projects</strong><span>General and Civil Works &middot; West Coast</span></div>
+                </a>
+                <p>Locally operated general and civil construction company serving the West Coast of South Africa. Built on trust. Built to last.</p>
+                <div class="socials">
+                    <a href="#" class="soc" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+                    <a href="#" class="soc" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+                    <a href="https://wa.me/27766714106" class="soc" aria-label="WhatsApp" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg></a>
+                </div>
+            </div>
+            <div class="foot-col">
+                <h4>Services</h4>
+                <ul class="flinks">
+                    <li><a href="services.html#building">Building</a></li>
+                    <li><a href="services.html#tiling">Tiling</a></li>
+                    <li><a href="services.html#carpentry">Carpentry</a></li>
+                    <li><a href="services.html#screeding">Floor Screeding</a></li>
+                    <li><a href="services.html#decking">Decking</a></li>
+                    <li><a href="services.html#painting">Painting</a></li>
+                    <li><a href="services.html#waterproofing">Waterproofing</a></li>
+                    <li><a href="services.html#renovations">Renovations</a></li>
+                </ul>
+            </div>
+            <div class="foot-col">
+                <h4>Areas</h4>
+                <ul class="flinks">
+                    <li><a href="index.html#areas">Vredenburg</a></li>
+                    <li><a href="index.html#areas">Saldanha</a></li>
+                    <li><a href="index.html#areas">Langebaan</a></li>
+                    <li><a href="index.html#areas">Velddrif</a></li>
+                    <li><a href="index.html#areas">Hopefield</a></li>
+                    <li><a href="index.html#areas">Surrounding Towns</a></li>
+                </ul>
+            </div>
+            <div class="foot-col">
+                <h4>Company</h4>
+                <ul class="flinks">
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="index.html#projects">Our Projects</a></li>
+                    <li><a href="index.html#testimonials">Client Reviews</a></li>
+                    <li><a href="contact.html">Request a Quote</a></li>
+                </ul>
+                <div style="margin-top:26px;">
+                    <h4>Contact</h4>
+                    <p style="font-size:13.5px;line-height:1.9;color:var(--body);">
+                        <a href="tel:+27766714106" style="color:var(--body);text-decoration:none;">076 671 4106</a><br>
+                        <a href="tel:+27748847688" style="color:var(--body);text-decoration:none;">074 884 7688</a><br>
+                        <a href="/cdn-cgi/l/email-protection#51303636242225383f3469636911363c30383d7f323e3c" style="color:var(--body);text-decoration:none;"><span class="__cf_email__" data-cfemail="c6a7a1a1b3b5b2afa8a3fef4fe86a1aba7afaae8a5a9ab">[email&#160;protected]</span></a><br>
+                        Vredenburg, West Coast
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="foot-bottom">
+            <p>&copy; 2026 Izwe 2 Projects. All rights reserved.</p>
+            <p>Proudly <span style="color:#4caf7d">South African</span> &middot; <span style="color:var(--redf)">West Coast</span> Built</p>
+        </div>
+    </div>
+</footer>
+
+<a href="https://wa.me/27766714106" class="wa-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+</a>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    // Nav scroll effect
+    const nav = document.getElementById('mainNav');
+    window.addEventListener('scroll', () => {
+        nav.classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    // Scroll animations
+    const fus = document.querySelectorAll('.fu');
+    const obs = new IntersectionObserver(entries => {
+        entries.forEach(e => { if(e.isIntersecting) { e.target.classList.add('in'); obs.unobserve(e.target); } });
+    }, { threshold: 0.1 });
+    fus.forEach(el => obs.observe(el));
+
+    // WhatsApp form submit
+    function submitViaWhatsApp() {
+        const fname   = document.getElementById('f-fname').value.trim();
+        const lname   = document.getElementById('f-lname').value.trim();
+        const phone   = document.getElementById('f-phone').value.trim();
+        const email   = document.getElementById('f-email').value.trim();
+        const service = document.getElementById('f-service').value;
+        const area    = document.getElementById('f-area').value.trim();
+        const details = document.getElementById('f-details').value.trim();
+
+        if (!fname || !phone) {
+            alert('Please enter at least your name and phone number.');
+            return;
+        }
+
+        let msg = `Hi Izwe 2 Projects! I'd like a quote.\n\n`;
+        msg += `*Name:* ${fname} ${lname}\n`;
+        msg += `*Pho

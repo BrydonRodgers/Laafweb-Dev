@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Services | Izwe 2 Projects — Building, Tiling, Carpentry & More — West Coast SA</title>
+    <meta name="description" content="Full list of construction services by Izwe 2 Projects: Building, Tiling, Carpentry, Floor Screeding, Decking, Painting, Waterproofing and Renovations. Serving Vredenburg, Saldanha & West Coast.">
+    <meta name="keywords" content="building contractor Vredenburg, tiling Saldanha, carpentry West Coast, floor screeding, decking, painting, waterproofing, renovations West Coast SA">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://izwe2projects.co.za/services.html">
+
+    <meta property="og:title" content="Services | Izwe 2 Projects — West Coast Construction">
+    <meta property="og:description" content="8 construction services across the West Coast — Building, Tiling, Carpentry, Screeding, Decking, Painting, Waterproofing & Renovations.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://izwe2projects.co.za/services.html">
+    <meta property="og:image" content="https://izwe2projects.co.za/industrialwall.jpg">
+    <meta property="og:locale" content="en_ZA">
+
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
+
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        :root {
+            --black:  #0a0a09;
+            --ink:    #141412;
+            --card:   #1a1a17;
+            --border: #2a2a25;
+            --muted:  #585850;
+            --body:   #9a9a8e;
+            --light:  #d8d8cc;
+            --white:  #f2f0ea;
+            --red:    #C41E2A;
+            --red2:   #a8192e;
+            --redf:   #e02535;
+            --red-l:  rgba(196,30,42,0.12);
+            --red-b:  rgba(196,30,42,0.28);
+            --green:  #2d6a3f;
+            --font-head: 'Anton', sans-serif;
+            --font-body: 'DM Sans', sans-serif;
+            --r:  3px;
+            --r2: 6px;
+        }
+
+        ::-webkit-scrollbar { width: 5px; }
+        ::-webkit-scrollbar-track { background: var(--ink); }
+        ::-webkit-scrollbar-thumb { background: var(--red); border-radius: 3px; }
+        html { scroll-behavior: smooth; }
+        body { background: var(--black); color: var(--body); font-family: var(--font-body); font-size: 16px; line-height: 1.6; overflow-x: hidden; }
+
+        /* SA BAR */
+        .sa-bar { position: fixed; top: 0; left: 0; right: 0; height: 3px; z-index: 200; display: flex; }
+        .sa-bar span { flex: 1; }
+        .sa-bar .s1 { background: #DE3831; } .sa-bar .s2 { background: #FFB612; } .sa-bar .s3 { background: #007A4D; }
+        .sa-bar .s4 { background: #fff; }    .sa-bar .s5 { background: #002395; } .sa-bar .s6 { background: #000; }
+
+        /* NAV */
+        nav { position: fixed; top: 3px; left: 0; right: 0; z-index: 100; height: 68px; display: flex; align-items: center; background: rgba(10,10,9,0.92); backdrop-filter: blur(16px); border-bottom: 1px solid var(--border); padding: 0 48px; gap: 32px; transition: border-color 0.3s; }
+        nav.scrolled { border-bottom-color: rgba(196,30,42,0.3); }
+        .logo { display: flex; align-items: center; gap: 12px; text-decoration: none; flex-shrink: 0; }
+        .logo-mark { width: 38px; height: 38px; background: var(--red); display: flex; align-items: center; justify-content: center; clip-path: polygon(0 0,100% 0,100% 75%,50% 100%,0 75%); }
+        .logo-mark svg { width: 20px; height: 20px; }
+        .logo-text strong { display: block; font-family: var(--font-head); font-size: 19px; letter-spacing: 0.06em; color: var(--white); }
+        .logo-text span { font-size: 9px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--red); }
+        .nav-links { display: flex; align-items: center; gap: 28px; margin-left: auto; list-style: none; }
+        .nav-links a { font-size: 13px; font-weight: 500; letter-spacing: 0.07em; text-transform: uppercase; color: var(--body); text-decoration: none; transition: color 0.2s; }
+        .nav-links a:hover, .nav-links a.active { color: var(--white); }
+        .nav-cta { background: var(--red) !important; color: var(--white) !important; padding: 9px 22px; border-radius: var(--r); font-weight: 600 !important; }
+        .nav-cta:hover { background: var(--red2) !important; }
+        .nav-mob-btn { display: none; background: none; border: none; color: var(--white); cursor: pointer; margin-left: auto; padding: 4px; }
+        .mob-menu { display: none; position: fixed; inset: 0; z-index: 300; background: var(--ink); flex-direction: column; padding: 28px 32px; }
+        .mob-menu.open { display: flex; }
+        .mob-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 40px; }
+        .mob-close { background: none; border: none; color: var(--white); font-size: 30px; cursor: pointer; line-height: 1; }
+        .mob-menu a { display: block; padding: 15px 0; border-bottom: 1px solid var(--border); font-family: var(--font-head); font-size: 28px; letter-spacing: 0.04em; color: var(--white); text-decoration: none; text-transform: uppercase; }
+        .mob-menu a:hover { color: var(--redf); }
+
+        /* PAGE HERO */
+        .page-hero { padding: 140px 0 80px; background: var(--ink); position: relative; overflow: hidden; }
+        .page-hero::before { content: ''; position: absolute; top: -80px; right: -80px; width: 500px; height: 500px; background: radial-gradient(circle, rgba(196,30,42,0.08) 0%, transparent 70%); pointer-events: none; }
+        .page-hero::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 1px; background: linear-gradient(to right, var(--red), transparent 60%); }
+        .ph-label { display: inline-flex; align-items: center; gap: 10px; font-size: 10px; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: var(--redf); margin-bottom: 16px; }
+        .ph-label::before { content:''; width: 20px; height: 2px; background: var(--redf); flex-shrink: 0; }
+        .ph-title { font-family: var(--font-head); font-size: clamp(44px,6vw,88px); line-height: 0.92; letter-spacing: 0.01em; color: var(--white); text-transform: uppercase; margin-bottom: 20px; }
+        .ph-title em { font-style: normal; color: var(--redf); }
+        .ph-sub { font-size: 17px; line-height: 1.8; color: var(--body); max-width: 540px; font-weight: 300; margin-bottom: 36px; }
+        .ph-breadcrumb { display: flex; align-items: center; gap: 8px; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+        .ph-breadcrumb a { color: var(--muted); text-decoration: none; transition: color 0.2s; }
+        .ph-breadcrumb a:hover { color: var(--redf); }
+        .ph-breadcrumb span { color: var(--redf); }
+        .ph-nav { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 32px; }
+        .ph-nav a { display: inline-flex; align-items: center; gap: 8px; padding: 8px 18px; background: var(--card); border: 1px solid var(--border); border-radius: 2px; font-size: 12px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--body); text-decoration: none; transition: all 0.2s; white-space: nowrap; }
+        .ph-nav a:hover { background: var(--red); border-color: var(--red); color: var(--white); }
+
+        /* CONTAINER */
+        .container { max-width: 1240px; margin: 0 auto; padding: 0 48px; }
+
+        /* SERVICE SECTIONS */
+        .svc-section { padding: 96px 0; border-bottom: 1px solid var(--border); }
+        .svc-section:nth-child(even) { background: var(--ink); }
+        .svc-section:nth-child(odd) { background: var(--black); }
+        .svc-section:last-child { border-bottom: none; }
+
+        .svc-inner { display: grid; grid-template-columns: 1fr 1.4fr; gap: 80px; align-items: start; }
+        .svc-section:nth-child(even) .svc-inner { direction: rtl; }
+        .svc-section:nth-child(even) .svc-inner > * { direction: ltr; }
+
+        .svc-info {}
+        .svc-num-big { font-family: var(--font-head); font-size: 120px; line-height: 1; color: rgba(196,30,42,0.07); letter-spacing: -0.02em; margin-bottom: -20px; }
+        .svc-label { display: inline-flex; align-items: center; gap: 10px; font-size: 10px; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: var(--redf); margin-bottom: 12px; }
+        .svc-label::before { content:''; width: 20px; height: 2px; background: var(--redf); flex-shrink: 0; }
+        .svc-title { font-family: var(--font-head); font-size: clamp(32px,3.5vw,52px); line-height: 0.95; letter-spacing: 0.01em; color: var(--white); text-transform: uppercase; margin-bottom: 20px; }
+        .svc-desc { font-size: 15px; line-height: 1.85; margin-bottom: 16px; }
+        .svc-desc:last-of-type { margin-bottom: 28px; }
+
+        .included-list { list-style: none; display: flex; flex-direction: column; gap: 10px; margin-bottom: 32px; }
+        .included-list li { display: flex; align-items: flex-start; gap: 12px; font-size: 14px; line-height: 1.6; color: var(--light); }
+        .included-list li::before { content: ''; width: 18px; height: 18px; flex-shrink: 0; background: var(--red-l); border: 1px solid var(--red-b); border-radius: 2px; display: flex; align-items: center; justify-content: center; margin-top: 2px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 24 24' fill='none' stroke='%23e02535' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: center; }
+
+        .wa-btn { display: inline-flex; align-items: center; gap: 10px; background: #25D366; color: #fff; padding: 14px 28px; border-radius: var(--r); font-family: var(--font-head); font-size: 14px; letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none; transition: background 0.2s, transform 0.15s; }
+        .wa-btn:hover { background: #1ebe5d; transform: translateY(-2px); }
+        .wa-btn svg { width: 18px; height: 18px; flex-shrink: 0; }
+
+        .svc-visual { position: relative; }
+        .svc-img-wrap { position: relative; border-radius: var(--r2); overflow: hidden; }
+        .svc-img-wrap img { width: 100%; height: 440px; object-fit: cover; display: block; transition: transform 0.6s ease; filter: grayscale(10%) brightness(0.88); }
+        .svc-img-wrap:hover img { transform: scale(1.04); }
+        .svc-img-overlay { position: absolute; inset: 0; background: linear-gradient(135deg, rgba(196,30,42,0.18) 0%, transparent 60%); pointer-events: none; }
+        .svc-img-tag { position: absolute; bottom: 20px; left: 20px; background: var(--red); color: var(--white); padding: 6px 14px; border-radius: 2px; font-family: var(--font-head); font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; }
+
+        .svc-placeholder { width: 100%; height: 440px; background: var(--card); border: 1px solid var(--border); border-radius: var(--r2); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px; }
+        .svc-placeholder-ico { width: 80px; height: 80px; background: var(--red-l); border: 1px solid var(--red-b); border-radius: var(--r2); display: flex; align-items: center; justify-content: center; color: var(--redf); }
+        .svc-placeholder-ico svg { width: 36px; height: 36px; }
+        .svc-placeholder p { font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+
+        /* TRUST STRIP */
+        .trust-strip { background: var(--red); padding: 56px 0; }
+        .trust-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; }
+        .trust-item { text-align: center; padding: 0 20px; }
+        .trust-item + .trust-item { border-left: 1px solid rgba(255,255,255,0.2); }
+        .trust-num { font-family: var(--font-head); font-size: 52px; line-height: 1; color: var(--white); }
+        .trust-label { font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.7); margin-top: 4px; }
+
+        /* CTA BAND */
+        .cta-band { background: var(--ink); padding: 96px 0; border-top: 1px solid var(--border); }
+        .cta-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+        .cta-text .sec-label { display: inline-flex; align-items: center; gap: 10px; font-size: 10px; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: var(--redf); margin-bottom: 16px; }
+        .cta-text .sec-label::before { content:''; width: 20px; height: 2px; background: var(--redf); flex-shrink: 0; }
+        .cta-text h2 { font-family: var(--font-head); font-size: clamp(34px,3.5vw,54px); line-height: 0.95; letter-spacing: 0.01em; color: var(--white); text-transform: uppercase; margin-bottom: 16px; }
+        .cta-text h2 em { font-style: normal; color: var(--redf); }
+        .cta-text p { font-size: 15px; line-height: 1.85; }
+        .cta-actions { display: flex; flex-direction: column; gap: 14px; }
+        .btn-red { display: inline-flex; align-items: center; gap: 10px; background: var(--red); color: var(--white); padding: 15px 34px; border-radius: var(--r); font-family: var(--font-head); font-size: 15px; letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none; border: none; cursor: pointer; transition: background 0.2s, transform 0.15s; }
+        .btn-red:hover { background: var(--redf); transform: translateY(-2px); }
+        .btn-ghost { display: inline-flex; align-items: center; gap: 10px; background: transparent; color: var(--white); padding: 15px 34px; border-radius: var(--r); font-family: var(--font-head); font-size: 15px; letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none; border: 1.5px solid rgba(255,255,255,0.25); cursor: pointer; transition: border-color 0.2s; }
+        .btn-ghost:hover { border-color: var(--white); }
+        .phone-row { display: flex; gap: 12px; flex-wrap: wrap; }
+        .phone-link { display: inline-flex; align-items: center; gap: 8px; color: var(--redf); text-decoration: none; font-family: var(--font-head); font-size: 17px; letter-spacing: 0.06em; transition: color 0.2s; }
+        .phone-link:hover { color: var(--white); }
+        .phone-link svg { width: 15px; height: 15px; }
+        .phone-sep { color: var(--border); font-size: 18px; line-height: 1; }
+
+        /* FOOTER */
+        footer { background: var(--ink); border-top: 1px solid var(--border); padding: 64px 0 36px; }
+        .foot-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 56px; margin-bottom: 48px; }
+        .foot-brand p { font-size: 13.5px; line-height: 1.8; margin-top: 18px; margin-bottom: 22px; max-width: 250px; }
+        .socials { display: flex; gap: 9px; }
+        .soc { width: 34px; height: 34px; border-radius: var(--r); background: var(--card); border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; color: var(--body); text-decoration: none; transition: all 0.2s; }
+        .soc:hover { background: var(--red); color: var(--white); border-color: var(--red); }
+        .soc svg { width: 15px; height: 15px; }
+        .foot-col h4 { font-family: var(--font-head); font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--white); margin-bottom: 18px; }
+        .flinks { list-style: none; display: flex; flex-direction: column; gap: 9px; }
+        .flinks a { font-size: 13.5px; color: var(--body); text-decoration: none; transition: color 0.2s; }
+        .flinks a:hover { color: var(--redf); }
+        .foot-bottom { padding-top: 28px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap; }
+        .foot-bottom p { font-size: 12.5px; color: var(--muted); }
+
+        /* WHATSAPP FLOAT */
+        .wa-float { position: fixed; bottom: 28px; right: 28px; z-index: 90; width: 58px; height: 58px; background: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; box-shadow: 0 4px 20px rgba(37,211,102,0.4); transition: transform 0.2s, box-shadow 0.2s; }
+        .wa-float:hover { transform: scale(1.1); box-shadow: 0 6px 28px rgba(37,211,102,0.55); }
+        .wa-float svg { width: 30px; height: 30px; }
+
+        /* ANIMATIONS */
+        .fu { opacity: 0; transform: translateY(28px); transition: opacity 0.7s ease, transform 0.7s ease; }
+        .fu.in { opacity: 1; transform: translateY(0); }
+        .fu.d1 { transition-delay: 0.1s; } .fu.d2 { transition-delay: 0.2s; }
+
+        /* RESPONSIVE */
+        @media (max-width: 1100px) {
+            .trust-grid { grid-template-columns: repeat(2, 1fr); gap: 0; }
+            .trust-item:nth-child(3) { border-left: none; border-top: 1px solid rgba(255,255,255,0.2); }
+            .trust-item:nth-child(4) { border-top: 1px solid rgba(255,255,255,0.2); }
+            .trust-item { padding: 20px; }
+        }
+        @media (max-width: 860px) {
+            nav { padding: 0 20px; } .nav-links { display: none; } .nav-mob-btn { display: flex; }
+            .svc-inner { grid-template-columns: 1fr; gap: 40px; }
+            .svc-section:nth-child(even) .svc-inner { direction: ltr; }
+            .svc-num-big { font-size: 80px; margin-bottom: -10px; }
+            .cta-inner { grid-template-columns: 1fr; gap: 40px; }
+            .foot-grid { grid-template-columns: 1fr 1fr; gap: 28px; }
+            .container { padding: 0 20px; }
+            .svc-section { padding: 64px 0; }
+            .ph-nav { gap: 6px; }
+            .ph-nav a { font-size: 11px; padding: 7px 12px; }
+        }
+        @media (max-width: 560px) {
+            .foot-grid { grid-template-columns: 1fr; }
+            .trust-grid { grid-template-columns: 1fr 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="sa-bar" aria-hidden="true">
+    <span class="s1"></span><span class="s2"></span><span class="s3"></span>
+    <span class="s4"></span><span class="s5"></span><span class="s6"></span>
+</div>
+
+<!-- NAV -->
+<nav id="mainNav">
+    <a href="index.html" class="logo">
+        <div class="logo-mark" style="background:none;clip-path:none;">
+            <img src="logo.png" alt="Izwe 2 Projects Logo" style="width:38px;height:38px;object-fit:contain;">
+        </div>
+        <div class="logo-text">
+            <strong>Izwe 2 Projects</strong>
+            <span>General and Civil Works &middot; West Coast</span>
+        </div>
+    </a>
+    <ul class="nav-links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#areas">Areas</a></li>
+        <li><a href="index.html#testimonials">Reviews</a></li>
+        <li><a href="contact.html" class="nav-cta">Get a Quote</a></li>
+    </ul>
+    <button class="nav-mob-btn" onclick="document.getElementById('mobMenu').classList.add('open')" aria-label="Open menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+    </button>
+</nav>
+
+<div class="mob-menu" id="mobMenu">
+    <div class="mob-head">
+        <strong style="font-family:var(--font-head);font-size:20px;color:var(--white);letter-spacing:0.06em;">IZWE 2 PROJECTS</strong>
+        <button class="mob-close" onclick="document.getElementById('mobMenu').classList.remove('open')">&times;</button>
+    </div>
+    <a href="index.html#about" onclick="document.getElementById('mobMenu').classList.remove('open')">About</a>
+    <a href="services.html" onclick="document.getElementById('mobMenu').classList.remove('open')">Services</a>
+    <a href="index.html#projects" onclick="document.getElementById('mobMenu').classList.remove('open')">Projects</a>
+    <a href="index.html#areas" onclick="document.getElementById('mobMenu').classList.remove('open')">Areas</a>
+    <a href="index.html#testimonials" onclick="document.getElementById('mobMenu').classList.remove('open')">Reviews</a>
+    <a href="contact.html" onclick="document.getElementById('mobMenu').classList.remove('open')" style="color:var(--redf);margin-top:16px;">Get a Quote &rarr;</a>
+</div>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+    <div class="container">
+        <div class="ph-breadcrumb">
+            <a href="index.html">Home</a>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg>
+            <span>Services</span>
+        </div>
+        <div style="height:24px;"></div>
+        <div class="ph-label">What We Do</div>
+        <h1 class="ph-title">Our <em>8</em><br>Services</h1>
+        <p class="ph-sub">From solid foundations to finished interiors — every trade you need, under one roof. Serving Vredenburg, Saldanha, Langebaan and the wider West Coast.</p>
+        <div class="ph-nav">
+            <a href="#building">Building</a>
+            <a href="#tiling">Tiling</a>
+            <a href="#carpentry">Carpentry</a>
+            <a href="#screeding">Floor Screeding</a>
+            <a href="#decking">Decking</a>
+            <a href="#painting">Painting</a>
+            <a href="#waterproofing">Waterproofing</a>
+            <a href="#renovations">Renovations</a>
+        </div>
+    </div>
+</div>
+
+<!-- TRUST STRIP -->
+<div class="trust-strip">
+    <div class="container">
+        <div class="trust-grid">
+            <div class="trust-item"><div class="trust-num">10+</div><div class="trust-label">Years Experience</div></div>
+            <div class="trust-item"><div class="trust-num">150+</div><div class="trust-label">Projects Completed</div></div>
+            <div class="trust-item"><div class="trust-num">8</div><div class="trust-label">Services Offered</div></div>
+            <div class="trust-item"><div class="trust-num">8</div><div class="trust-label">Towns Served</div></div>
+        </div>
+    </div>
+</div>
+
+<!-- SERVICE 01: BUILDING -->
+<section class="svc-section" id="building">
+    <div class="container">
+        <div class="svc-inner">
+            <div class="svc-info fu">
+                <div class="svc-num-big">01</div>
+                <div class="svc-label">Service 01</div>
+                <h2 class="svc-title">Building &amp; New Construction</h2>
+                <p class="svc-desc">Whether you need a new home, a business premises, or a complete commercial build from the ground up, Izwe 2 Projects handles the full scope. We manage every stage — from foundation to final handover — so you don't have to coordinate multiple contractors.</p>
+                <p class="svc-desc">Our building work covers residential homes, outbuildings, extensions, and light commercial/industrial structures across the Vredenburg and West Coast area.</p>
+                <ul class="included-list">
+                    <li>Foundation and slab work</li>
+                    <li>Brick and block laying</li>
+                    <li>Residential homes — new builds and extensions</li>
+                    <li>Outbuildings, garages and granny flats</li>
+                    <li>Light commercial and industrial structures</li>
+                    <li>Full project management from start to finish</li>
+                    <li>Roofing structures (in conjunction with roofing team)</li>
+                </ul>
+                <a href="https://wa.me/27766714106?text=Hi%2C%20I'm%20interested%20in%20a%20quote%20for%20Building%20%2F%20New%20Construction" class="wa-btn" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                    Get a Building Quote
+                </a>
+            </div>
+            <div class="svc-visual fu d1">
+                <div class="svc-img-wrap">
+                    <img src="resident1.jpg" alt="Residential building construction by Izwe 2 Projects West Coast">
+                    <div class="svc-img-overlay"></div>
+                    <div class="svc-img-tag">Building</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SERVICE 02: TILING -->
+<section class="svc-section" id="tiling">
+    <div class="container">
+        <div class="svc-inner">
+            <div class="svc-info fu">
+                <div class="svc-num-big">02</div>
+                <div class="svc-label">Service 02</div>
+                <h2 class="svc-title">Tiling</h2>
+                <p class="svc-desc">Precision tiling that lasts. We tile floors and walls for showers, bathrooms, kitchens, patios, braai areas, and commercial spaces — using the correct adhesives and grout for the surface type and environment.</p>
+                <p class="svc-desc">Our tilers work to tight tolerances and deliver a clean, level finish every time. Serving homes and businesses across Vredenburg, Saldanha, Langebaan and the wider West Coast.</p>
+                <ul class="included-list">
+                    <li>Bathroom and shower tiling</li>
+                    <li>Kitchen floor and splashback tiling</li>
+                    <li>Patio and outdoor area tiling</li>
+                    <li>Braai surround and entertainment area tiling</li>
+                    <li>Commercial floor tiling</li>
+                    <li>Large-format tile installation</li>
+                    <li>Tile repairs and re-grouting</li>
+                </ul>
+                <a href="https://wa.me/27766714106?text=Hi%2C%20I'm%20interested%20in%20a%20quote%20for%20Tiling" class="wa-btn" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                    Get a Tiling Quote
+                </a>
+            </div>
+            <div class="svc-visual fu d1">
+                <div class="svc-img-wrap">
+                    <img src="Showertiles.jpg" alt="Shower tiling installation by Izwe 2 Projects Saldanha West Coast">
+                    <div class="svc-img-overlay"></div>
+                    <div class="svc-img-tag">Tiling</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SERVICE 03: CARPENTRY -->
+<section class="svc-section" id="carpentry">
+    <div class="container">
+        <div class="svc-inner">
+            <div class="svc-info fu">
+                <div class="svc-num-big">03</div>
+                <div class="svc-label">Service 03</div>
+                <h2 class="svc-title">Carpentry</h2>
+                <p class="svc-desc">Skilled carpentry work for residential and commercial projects — from fitting door frames and hanging doors to installing ceilings, built-in cupboards and all structural timber work.</p>
+                <p class="svc-desc">We work with both softwood and hardwood, sourcing quality timber suited to the coastal West Coast environment where salt air demands the right materials and finishes.</p>
+                <ul class="included-list">
+                    <li>Door frames, doors and door hardware fitting</li>
+                    <li>Window frames and sills</li>
+                    <li>Ceiling installation (including cornicing)</li>
+                    <li>Built-in cupboards and wardrobes</li>
+                    <li>Structural timber and roof trusses</li>
+                    <li>Wooden staircases and handrails</li>
+                    <li>Skirting boards and architraves</li>
+                </ul>
+                <a href="https://wa.me/27766714106?text=Hi%2C%20I'm%20interested%20in%20a%20quote%20for%20Carpentry" class="wa-btn" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                    Get a Carpentry Quote
+                </a>
+            </div>
+            <div class="svc-visual fu d1">
+                <div class="svc-placeholder">
+                    <div class="svc-placeholder-ico">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+                    </div>
+                    <p>Carpentry Showcase Photo</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SERVICE 04: FLOOR SCREEDING -->
+<section class="svc-section" id="screeding">
+    <div class="container">
+        <div class="svc-inner">
+            <div class="svc-info fu">
+                <div class="svc-num-big">04</div>
+                <div class="svc-label">Service 04</div>
+                <h2 class="svc-title">Floor Screeding</h2>
+                <p class="svc-desc">A proper screed is the foundation of every quality floor finish. We lay smooth, level floor screeds that provide the perfect base for tiles, epoxy coatings, vinyl, or polished concrete — ensuring your final floor surface looks great and lasts for years.</p>
+                <p class="svc-desc">We handle screeding for new builds, renovations, and commercial floor preparations across the West Coast, including Vredenburg and Saldanha.</p>
+                <ul class="included-list">
+                    <li>Sand and cement floor screeding</li>
+                    <li>Level and smooth screed for tile installation</li>
+                    <li>Screed for epoxy and resin flooring</li>
+                    <li>Underfloor heating screed systems</li>
+                    <li>Garage and workshop floors</li>
+                    <li>Commercial and industrial screeding</li>
+                    <li>Patching and repair screeds</li>
+                </ul>
+                <a href="https://wa.me/27766714106?text=Hi%2C%20I'm%20interested%20in%20a%20quote%20for%20Floor%20Screeding" class="wa-btn" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                    Get a Screeding Quote
+                </a>
+            </div>
+            <div class="svc-visual fu d1">
+                <div class="svc-placeholder">
+                    <div class="svc-placeholder-ico">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+                    </div>
+                    <p>Floor Screeding Photo</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SERVICE 05: DECKING -->
+<section class="svc-section" id="decking">
+    <div class="container">
+        <div class="svc-inner">
+            <div class="svc-info fu">
+                <div class="svc-num-big">05</div>
+                <div class="svc-label">Service 05</div>
+                <h2 class="svc-title">Decking</h2>
+                <p class="svc-desc">A quality deck transforms your outdoor space — perfect for the West Coast lifestyle. We design and build timber and composite decks for entertainment areas, braai patios, poolsides, and seaside properties that can handle the coastal environment.</p>
+                <p class="svc-desc">Salt air and sun are tough on outdoor timber. We specify the right treated timber or composite materials for each project so your deck stays beautiful year after year in Langebaan, Saldanha, or anywhere on the West Coast.</p>
+                <ul class="included-list">
+                    <li>Hardwood and treated pine decking</li>
+                    <li>Composite / low-maintenance decking</li>
+                    <li>Braai and entertainment deck areas</li>
+                    <li>Pool and garden decks</li>
+                    <li>Elevated and multi-level decks</li>
+                    <li>Handrails and balustrades</li>
+                    <li>Deck repairs and restoration</li>
+                </ul>
+                <a href="https://wa.me/27766714106?text=Hi%2C%20I'm%20interested%20in%20a%20quote%20for%20Decking" class="wa-btn" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                    Get a Decking Quote
+                </a>
+            </div>
+            <div class="svc-visual fu d1">
+                <div class="svc-placeholder">
+                    <div class="svc-placeholder-ico">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg>
+                    </div>
+                    <p>Decking Showcase Photo</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SERVICE 06: PAINTING -->
+<section class="svc-section" id="painting">
+    <div class="container">
+        <div class="svc-inner">
+            <div class="svc-info fu">
+                <div class="svc-num-big">06</div>
+                <div class="svc-label">Service 06</div>
+                <h2 class="svc-title">Painting</h2>
+                <p class="svc-desc">The final coat makes or breaks a build. Our painting team delivers clean, consistent finishes on interior walls and ceilings, and durable exterior coats that stand up to the West Coast's harsh sun, wind, and salt air.</p>
+                <p class="svc-desc">We surface-prepare properly — fixing cracks, sealing, and priming before any paint goes on — because a lasting finish starts well before the brush touches the wall.</p>
+                <ul class="included-list">
+                    <li>Interior walls and ceilings — new builds and renovations</li>
+                    <li>Exterior painting and weatherproofing coats</li>
+                    <li>Plaster primer and first / second coat application</li>
+                    <li>Feature walls and specialty finishes</li>
+                    <li>Garage floors and industrial coatings</li>
+                    <li>Crack and defect repair before painting</li>
+                    <li>Fascias, gutters and outbuilding painting</li>
+                </ul>
+                <a href="https://wa.me/27766714106?text=Hi%2C%20I'm%20interested%20in%20a%20quote%20for%20Painting" class="wa-btn" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                    Get a Painting Quote
+                </a>
+            </div>
+            <div class="svc-visual fu d1">
+                <div class="svc-img-wrap">
+                    <img src="paintedwall.jpg" alt="Professional wall plastering and painting by Izwe 2 Projects Vredenburg">
+                    <div class="svc-img-overlay"></div>
+                    <div class="svc-img-tag">Painting</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SERVICE 07: WATERPROOFING -->
+<section class="svc-section" id="waterproofing">
+    <div class="container">
+        <div class="svc-inner">
+            <div class="svc-info fu">
+                <div class="svc-num-big">07</div>
+                <div class="svc-label">Service 07</div>
+                <h2 class="svc-title">Waterproofing</h2>
+                <p class="svc-desc">Water ingress is the number one cause of structural damage in the Western Cape. On the West Coast, where salty air and seasonal rain are relentless, proper waterproofing isn't optional — it's essential.</p>
+                <p class="svc-desc">We waterproof roofs, wet areas, basements, retaining walls and balconies using proven systems that hold up to West Coast weather conditions. If you're seeing damp, leaks, or rising moisture — call us before it gets worse.</p>
+                <ul class="included-list">
+                    <li>Flat roof and pitched roof waterproofing</li>
+                    <li>Bathroom and shower waterproofing (pre-tile)</li>
+                    <li>Balcony and terrace waterproofing</li>
+                    <li>External wall damp treatment</li>
+                    <li>Basement and below-slab waterproofing</li>
+                    <li>Crystalline and membrane waterproofing systems</li>
+                    <li>Leak detection and remedial waterproofing</li>
+                </ul>
+                <a href="https://wa.me/27766714106?text=Hi%2C%20I'm%20interested%20in%20a%20quote%20for%20Waterproofing" class="wa-btn" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                    Get a Waterproofing Quote
+                </a>
+            </div>
+            <div class="svc-visual fu d1">
+                <div class="svc-placeholder">
+                    <div class="svc-placeholder-ico">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 11-11.31 0z"/></svg>
+                    </div>
+                    <p>Waterproofing Project Photo</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SERVICE 08: RENOVATIONS -->
+<section class="svc-section" id="renovations">
+    <div class="container">
+        <div class="svc-inner">
+            <div class="svc-info fu">
+                <div class="svc-num-big">08</div>
+                <div class="svc-label">Service 08</div>
+                <h2 class="svc-title">Renovations</h2>
+                <p class="svc-desc">Transform your existing space without the cost of a new build. Whether it's a kitchen makeover, a bathroom upgrade, an extra room, or a full interior transformation — we manage the entire renovation from demolition to the finished product.</p>
+                <p class="svc-desc">We coordinate all the trades needed — building, tiling, carpentry, screeding, painting and waterproofing — so you deal with one team and get one consistent standard of work throughout your renovation.</p>
+                <ul class="included-list">
+                    <li>Kitchen renovations and upgrades</li>
+                    <li>Bathroom and en-suite renovations</li>
+                    <li>Room additions and extensions</li>
+                    <li>Open-plan conversions</li>
+                    <li>Full interior strip-outs and rebuilds</li>
+                    <li>Braai and entertainment area builds</li>
+                    <li>Property upgrade for resale</li>
+                </ul>
+                <a href="https://wa.me/27766714106?text=Hi%2C%20I'm%20interested%20in%20a%20quote%20for%20Renovations" class="wa-btn" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                    Get a Renovation Quote
+                </a>
+            </div>
+            <div class="svc-visual fu d1">
+                <div class="svc-img-wrap">
+                    <img src="BraaiBuild.jpg" alt="Custom braai outdoor entertainment build by Izwe 2 Projects West Coast">
+                    <div class="svc-img-overlay"></div>
+                    <div class="svc-img-tag">Renovations</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA BAND -->
+<div class="cta-band">
+    <div class="container">
+        <div class="cta-inner">
+            <div class="cta-text">
+                <div class="sec-label">Ready to Start?</div>
+                <h2>Let's Build <em>Something</em></h2>
+                <p>Call or WhatsApp Augustine directly for a free, no-obligation quote. We respond fast and come to you anywhere on the West Coast.</p>
+            </div>
+            <div class="cta-actions">
+                <div class="phone-row">
+                    <a href="tel:+27766714106" class="phone-link">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.82 19.79 19.79 0 01.22 1.18 2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.09a16 16 0 006 6l.56-.56a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                        076 671 4106
+                    </a>
+                    <span class="phone-sep">/</span>
+                    <a href="tel:+27748847688" class="phone-link">074 884 7688</a>
+                </div>
+                <a href="https://wa.me/27766714106" class="wa-btn" target="_blank" rel="noopener" style="max-width:fit-content;">
+                    <svg viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                    WhatsApp Us Now
+                </a>
+                <a href="contact.html" class="btn-ghost">Fill in a Quote Form &rarr;</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+        <div class="foot-grid">
+            <div class="foot-brand">
+                <a href="index.html" class="logo">
+                    <div class="logo-mark" style="background:none;clip-path:none;"><img src="logo.png" alt="Izwe 2 Projects Logo" style="width:38px;height:38px;object-fit:contain;"></div>
+                    <div class="logo-text"><strong>Izwe 2 Projects</strong><span>General and Civil Works &middot; West Coast</span></div>
+                </a>
+                <p>Locally operated general and civil construction company serving the West Coast of South Africa. Built on trust. Built to last.</p>
+                <div class="socials">
+                    <a href="#" class="soc" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+                    <a href="#" class="soc" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+                    <a href="https://wa.me/27766714106" class="soc" aria-label="WhatsApp" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg></a>
+                </div>
+            </div>
+            <div class="foot-col">
+                <h4>Services</h4>
+                <ul class="flinks">
+                    <li><a href="#building">Building</a></li>
+                    <li><a href="#tiling">Tiling</a></li>
+                    <li><a href="#carpentry">Carpentry</a></li>
+                    <li><a href="#screeding">Floor Screeding</a></li>
+                    <li><a href="#decking">Decking</a></li>
+                    <li><a href="#painting">Painting</a></li>
+                    <li><a href="#waterproofing">Waterproofing</a></li>
+                    <li><a href="#renovations">Renovations</a></li>
+                </ul>
+            </div>
+            <div class="foot-col">
+                <h4>Areas</h4>
+                <ul class="flinks">
+                    <li><a href="index.html#areas">Vredenburg</a></li>
+                    <li><a href="index.html#areas">Saldanha</a></li>
+                    <li><a href="index.html#areas">Langebaan</a></li>
+                    <li><a href="index.html#areas">Velddrif</a></li>
+                    <li><a href="index.html#areas">Hopefield</a></li>
+                    <li><a href="index.html#areas">Surrounding Towns</a></li>
+                </ul>
+            </div>
+            <div class="foot-col">
+                <h4>Company</h4>
+                <ul class="flinks">
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="index.html#projects">Our Projects</a></li>
+                    <li><a href="index.html#testimonials">Client Reviews</a></li>
+                    <li><a href="contact.html">Request a Quote</a></li>
+                </ul>
+                <div style="margin-top:26px;">
+                    <h4>Contact</h4>
+                    <p style="font-size:13.5px;line-height:1.9;color:var(--body);">
+                        <a href="tel:+27766714106" style="color:var(--body);text-decoration:none;">076 671 4106</a><br>
+                        <a href="tel:+27748847688" style="color:var(--body);text-decoration:none;">074 884 7688</a><br>
+                        <a href="/cdn-cgi/l/email-protection#1d7c7a7a686e69747378252f255d7a707c7471337e7270" style="color:var(--body);text-decoration:none;"><span class="__cf_email__" data-cfemail="630204041610170a0d065b515b23040e020a0f4d000c0e">[email&#160;protected]</span></a><br>
+                        Vredenburg, West Coast
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="foot-bottom">
+            <p>&copy; 2026 Izwe 2 Projects. All rights reserved.</p>
+            <p>Proudly <span style="color:#4caf7d">South African</span> &middot; <span style="color:var(--redf)">West Coast</span> Built</p>
+        </div>
+    </div>
+</footer>
+
+<a href="https://wa.me/27766714106" class="wa-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+</a>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    // Nav scroll effect
+    const nav = document.getElementById('mainNav');
+    window.addEventListener('scroll', () => {
+        nav.classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    // Scroll animations
+    const fus = document.querySelectorAll('.fu');
+    const obs =
