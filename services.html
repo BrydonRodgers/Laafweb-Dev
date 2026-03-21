@@ -5,278 +5,265 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Services | Izwe 2 Projects — Building, Tiling, Carpentry & More — West Coast SA</title>
-    <meta name="description" content="Full list of construction services by Izwe 2 Projects: Building, Tiling, Carpentry, Floor Screeding, Decking, Painting, Waterproofing and Renovations. Serving Vredenburg, Saldanha & West Coast.">
-    <meta name="keywords" content="building contractor Vredenburg, tiling Saldanha, carpentry West Coast, floor screeding, decking, painting, waterproofing, renovations West Coast SA">
-    <meta name="robots" content="index, follow">
+    <meta name="description" content="Full list of construction services by Izwe 2 Projects: Building, Tiling, Carpentry, Floor Screeding, Decking, Painting, Waterproofing and Renovations. Serving Vredenburg, Saldanha & the full West Coast.">
+    <meta name="keywords" content="building contractor Vredenburg, tiling Saldanha, carpentry West Coast, floor screeding Vredenburg, decking contractor, painting contractor, waterproofing West Coast SA, renovations Saldanha, construction services Western Cape">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+    <meta name="author" content="Izwe 2 Projects">
     <link rel="canonical" href="https://izwe2projects.co.za/services.html">
 
     <meta property="og:title" content="Services | Izwe 2 Projects — West Coast Construction">
-    <meta property="og:description" content="8 construction services across the West Coast — Building, Tiling, Carpentry, Screeding, Decking, Painting, Waterproofing & Renovations.">
+    <meta property="og:description" content="8 construction services across the West Coast — Building, Tiling, Carpentry, Screeding, Decking, Painting, Waterproofing & Renovations. Call 076 671 4106.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://izwe2projects.co.za/services.html">
-    <meta property="og:image" content="https://izwe2projects.co.za/industrialwall.jpg">
+    <meta property="og:image" content="https://izwe2projects.co.za/pic1.jpeg">
     <meta property="og:locale" content="en_ZA">
 
     <link rel="icon" type="image/png" href="logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
 
     <style>
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
         :root {
-            --black:  #0a0a09;
-            --ink:    #141412;
-            --card:   #1a1a17;
-            --border: #2a2a25;
-            --muted:  #585850;
-            --body:   #9a9a8e;
-            --light:  #d8d8cc;
-            --white:  #f2f0ea;
-            --red:    #C41E2A;
-            --red2:   #a8192e;
-            --redf:   #e02535;
-            --red-l:  rgba(196,30,42,0.12);
-            --red-b:  rgba(196,30,42,0.28);
-            --font-head: 'Anton', sans-serif;
-            --font-body: 'DM Sans', sans-serif;
-            --r:  3px;
-            --r2: 6px;
+            --white:   #ffffff;
+            --off:     #f7f6f3;
+            --cream:   #f0ede6;
+            --border:  #e2ddd6;
+            --light:   #c8c4bb;
+            --muted:   #8a8070;
+            --body:    #4a4438;
+            --ink:     #1e1a14;
+            --black:   #111009;
+            --red:     #D42B35;
+            --red2:    #b82028;
+            --redf:    #e83540;
+            --red-l:   rgba(212,43,53,0.08);
+            --red-b:   rgba(212,43,53,0.2);
+            --font-head: 'Barlow Condensed', sans-serif;
+            --font-body: 'Outfit', sans-serif;
+            --shadow-sm: 0 2px 8px rgba(30,26,20,0.06);
+            --shadow-md: 0 8px 32px rgba(30,26,20,0.1);
+            --shadow-lg: 0 20px 60px rgba(30,26,20,0.14);
+            --r:  4px;
+            --r2: 10px;
+            --r3: 16px;
         }
 
         ::-webkit-scrollbar { width: 5px; }
-        ::-webkit-scrollbar-track { background: var(--ink); }
+        ::-webkit-scrollbar-track { background: var(--cream); }
         ::-webkit-scrollbar-thumb { background: var(--red); border-radius: 3px; }
         html { scroll-behavior: smooth; }
+        [id] { scroll-margin-top: 84px; }
 
-        /* FIX: scroll offset for fixed nav */
-        [id] { scroll-margin-top: 80px; }
+        body { background: var(--white); color: var(--body); font-family: var(--font-body); font-size: 16px; line-height: 1.65; overflow-x: hidden; }
 
-        body { background: var(--black); color: var(--body); font-family: var(--font-body); font-size: 16px; line-height: 1.6; overflow-x: hidden; }
-
-        /* SA BAR */
-        .sa-bar { position: fixed; top: 0; left: 0; right: 0; height: 3px; z-index: 200; display: flex; }
+        .sa-bar { position: fixed; top: 0; left: 0; right: 0; height: 3px; z-index: 300; display: flex; }
         .sa-bar span { flex: 1; }
         .sa-bar .s1 { background: #DE3831; } .sa-bar .s2 { background: #FFB612; } .sa-bar .s3 { background: #007A4D; }
         .sa-bar .s4 { background: #fff; }    .sa-bar .s5 { background: #002395; } .sa-bar .s6 { background: #000; }
 
-        /* NAV */
-        nav { position: fixed; top: 3px; left: 0; right: 0; z-index: 100; height: 68px; display: flex; align-items: center; background: rgba(10,10,9,0.92); backdrop-filter: blur(16px); border-bottom: 1px solid var(--border); padding: 0 48px; gap: 32px; transition: border-color 0.3s; }
-        nav.scrolled { border-bottom-color: rgba(196,30,42,0.3); }
+        nav {
+            position: fixed; top: 3px; left: 0; right: 0; z-index: 200;
+            height: 72px; display: flex; align-items: center;
+            background: rgba(255,255,255,0.96); backdrop-filter: blur(20px);
+            border-bottom: 1.5px solid var(--border); padding: 0 48px; gap: 32px;
+            transition: box-shadow 0.3s;
+        }
+        nav.scrolled { box-shadow: var(--shadow-md); border-bottom-color: transparent; }
         .logo { display: flex; align-items: center; gap: 12px; text-decoration: none; flex-shrink: 0; }
-        .logo-mark { width: 38px; height: 38px; display: flex; align-items: center; justify-content: center; }
-        .logo-text strong { display: block; font-family: var(--font-head); font-size: 19px; letter-spacing: 0.06em; color: var(--white); }
-        .logo-text span { font-size: 9px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--red); }
-        .nav-links { display: flex; align-items: center; gap: 28px; margin-left: auto; list-style: none; }
-        .nav-links a { font-size: 13px; font-weight: 500; letter-spacing: 0.07em; text-transform: uppercase; color: var(--body); text-decoration: none; transition: color 0.2s; }
-        .nav-links a:hover, .nav-links a.active { color: var(--white); }
-        .nav-cta { background: var(--red) !important; color: var(--white) !important; padding: 9px 22px; border-radius: var(--r); font-weight: 600 !important; }
+        .logo-mark { width: 42px; height: 42px; background: var(--red); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-family: var(--font-head); font-size: 20px; font-weight: 900; color: white; letter-spacing: -1px; }
+        .logo-text strong { display: block; font-family: var(--font-head); font-size: 20px; font-weight: 800; letter-spacing: 0.02em; color: var(--ink); text-transform: uppercase; line-height: 1.1; }
+        .logo-text span { font-size: 9px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--red); font-weight: 600; }
+        .nav-links { display: flex; align-items: center; gap: 6px; margin-left: auto; list-style: none; }
+        .nav-links a { font-size: 13px; font-weight: 500; letter-spacing: 0.05em; text-transform: uppercase; color: var(--muted); text-decoration: none; padding: 6px 12px; border-radius: var(--r); transition: color 0.2s, background 0.2s; }
+        .nav-links a:hover { color: var(--ink); background: var(--off); }
+        .nav-links a.active { color: var(--ink); font-weight: 600; }
+        .nav-cta { background: var(--red) !important; color: white !important; padding: 9px 22px !important; border-radius: var(--r) !important; font-weight: 600 !important; box-shadow: 0 3px 12px rgba(212,43,53,0.3); }
         .nav-cta:hover { background: var(--red2) !important; }
-        .nav-mob-btn { display: none; background: none; border: none; color: var(--white); cursor: pointer; margin-left: auto; padding: 4px; }
-        .mob-menu { display: none; position: fixed; inset: 0; z-index: 300; background: var(--ink); flex-direction: column; padding: 28px 32px; overflow-y: auto; }
+        .nav-mob-btn { display: none; background: none; border: none; color: var(--ink); cursor: pointer; margin-left: auto; padding: 6px; }
+        .mob-menu { display: none; position: fixed; inset: 0; z-index: 400; background: white; flex-direction: column; padding: 28px 32px; }
         .mob-menu.open { display: flex; }
         .mob-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 40px; }
-        .mob-close { background: none; border: none; color: var(--white); font-size: 30px; cursor: pointer; line-height: 1; }
-        .mob-menu a { display: block; padding: 15px 0; border-bottom: 1px solid var(--border); font-family: var(--font-head); font-size: 28px; letter-spacing: 0.04em; color: var(--white); text-decoration: none; text-transform: uppercase; }
-        .mob-menu a:hover { color: var(--redf); }
-
-        /* PAGE HERO */
-        .page-hero { padding: 140px 0 72px; background: var(--ink); position: relative; overflow: hidden; }
-        .page-hero::before { content: ''; position: absolute; top: -80px; right: -80px; width: 500px; height: 500px; background: radial-gradient(circle, rgba(196,30,42,0.08) 0%, transparent 70%); pointer-events: none; }
-        .page-hero::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 1px; background: linear-gradient(to right, var(--red), transparent 60%); }
-        .ph-label { display: inline-flex; align-items: center; gap: 10px; font-size: 10px; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: var(--redf); margin-bottom: 16px; }
-        .ph-label::before { content:''; width: 20px; height: 2px; background: var(--redf); flex-shrink: 0; }
-        .ph-title { font-family: var(--font-head); font-size: clamp(44px,6vw,88px); line-height: 0.92; letter-spacing: 0.01em; color: var(--white); text-transform: uppercase; margin-bottom: 20px; }
-        .ph-title em { font-style: normal; color: var(--redf); }
-        .ph-sub { font-size: 17px; line-height: 1.8; color: var(--body); max-width: 540px; font-weight: 300; margin-bottom: 36px; }
-        .ph-breadcrumb { display: flex; align-items: center; gap: 8px; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
-        .ph-breadcrumb a { color: var(--muted); text-decoration: none; transition: color 0.2s; }
-        .ph-breadcrumb a:hover { color: var(--redf); }
-        .ph-breadcrumb span { color: var(--redf); }
-        .ph-nav { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 32px; }
-        .ph-nav a { display: inline-flex; align-items: center; gap: 8px; padding: 8px 18px; background: var(--card); border: 1px solid var(--border); border-radius: 2px; font-size: 12px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--body); text-decoration: none; transition: all 0.2s; white-space: nowrap; }
-        .ph-nav a:hover { background: var(--red); border-color: var(--red); color: var(--white); }
+        .mob-close { background: none; border: none; color: var(--ink); font-size: 32px; cursor: pointer; line-height: 1; }
+        .mob-menu a { display: block; padding: 16px 0; border-bottom: 1px solid var(--border); font-family: var(--font-head); font-size: 30px; font-weight: 800; color: var(--ink); text-decoration: none; text-transform: uppercase; }
+        .mob-menu a:hover { color: var(--red); }
 
         .container { max-width: 1240px; margin: 0 auto; padding: 0 48px; }
 
+        /* PAGE HERO */
+        .page-hero {
+            padding: 144px 0 80px;
+            background: var(--ink);
+            position: relative; overflow: hidden;
+        }
+        .page-hero::before {
+            content: '';
+            position: absolute; top: 0; right: 0;
+            width: 50%; height: 100%;
+            background: linear-gradient(135deg, transparent 30%, rgba(212,43,53,0.07) 100%);
+        }
+        .page-hero::after {
+            content: '';
+            position: absolute; bottom: 0; left: 0; right: 0;
+            height: 4px;
+            background: linear-gradient(to right, var(--red), var(--redf) 40%, transparent);
+        }
+
+        .breadcrumb { display: flex; align-items: center; gap: 8px; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.35); margin-bottom: 28px; }
+        .breadcrumb a { color: rgba(255,255,255,0.35); text-decoration: none; transition: color 0.2s; }
+        .breadcrumb a:hover { color: var(--redf); }
+        .breadcrumb span { color: var(--redf); }
+
+        .label-tag { display: inline-flex; align-items: center; gap: 8px; background: var(--red-l); color: var(--red); padding: 5px 14px; border-radius: 30px; font-size: 10px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 18px; border: 1px solid var(--red-b); }
+
+        .ph-title { font-family: var(--font-head); font-size: clamp(52px,7vw,100px); font-weight: 900; line-height: 0.9; color: white; text-transform: uppercase; margin-bottom: 24px; }
+        .ph-title em { font-style: normal; color: var(--redf); }
+        .ph-sub { font-size: 17px; line-height: 1.8; color: rgba(255,255,255,0.6); max-width: 520px; font-weight: 300; margin-bottom: 40px; }
+
+        .ph-nav { display: flex; gap: 8px; flex-wrap: wrap; }
+        .ph-nav a { display: inline-flex; align-items: center; gap: 8px; padding: 8px 18px; background: rgba(255,255,255,0.07); border: 1.5px solid rgba(255,255,255,0.12); border-radius: 30px; font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(255,255,255,0.65); text-decoration: none; transition: all 0.2s; }
+        .ph-nav a:hover { background: var(--red); border-color: var(--red); color: white; }
+
+        /* TRUST STRIP */
+        .trust-strip { background: var(--red); }
+        .trust-grid { display: grid; grid-template-columns: repeat(4,1fr); }
+        .trust-item { text-align: center; padding: 32px 20px; transition: background 0.2s; }
+        .trust-item:hover { background: rgba(0,0,0,0.12); }
+        .trust-item + .trust-item { border-left: 1px solid rgba(255,255,255,0.2); }
+        .trust-num { font-family: var(--font-head); font-size: 56px; font-weight: 900; line-height: 1; color: white; }
+        .trust-label { font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(255,255,255,0.7); margin-top: 4px; font-weight: 600; }
+
         /* SERVICE SECTIONS */
-        .svc-section { padding: 88px 0; border-bottom: 1px solid var(--border); }
-        .svc-section:nth-child(even) { background: var(--ink); }
-        .svc-section:nth-child(odd) { background: var(--black); }
+        .svc-section { padding: 96px 0; border-bottom: 1.5px solid var(--border); }
+        .svc-section:nth-child(odd) { background: var(--white); }
+        .svc-section:nth-child(even) { background: var(--off); }
         .svc-section:last-child { border-bottom: none; }
 
-        .svc-inner { display: grid; grid-template-columns: 1fr 1.4fr; gap: 80px; align-items: start; }
+        .svc-inner { display: grid; grid-template-columns: 1fr 1.35fr; gap: 80px; align-items: start; }
         .svc-section:nth-child(even) .svc-inner { direction: rtl; }
         .svc-section:nth-child(even) .svc-inner > * { direction: ltr; }
 
-        .svc-num-big { font-family: var(--font-head); font-size: 120px; line-height: 1; color: rgba(196,30,42,0.07); letter-spacing: -0.02em; margin-bottom: -20px; }
-        .svc-label { display: inline-flex; align-items: center; gap: 10px; font-size: 10px; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: var(--redf); margin-bottom: 12px; }
-        .svc-label::before { content:''; width: 20px; height: 2px; background: var(--redf); flex-shrink: 0; }
-        .svc-title { font-family: var(--font-head); font-size: clamp(32px,3.5vw,52px); line-height: 0.95; letter-spacing: 0.01em; color: var(--white); text-transform: uppercase; margin-bottom: 20px; }
-        .svc-desc { font-size: 15px; line-height: 1.85; margin-bottom: 16px; }
-        .svc-desc:last-of-type { margin-bottom: 28px; }
+        .svc-num-big { font-family: var(--font-head); font-size: 110px; font-weight: 900; line-height: 1; color: rgba(212,43,53,0.06); letter-spacing: -0.02em; margin-bottom: -16px; }
+        .svc-sub-label { display: inline-flex; align-items: center; gap: 8px; font-size: 10px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--red); margin-bottom: 12px; }
+        .svc-sub-label::before { content:''; width: 16px; height: 2px; background: var(--red); flex-shrink: 0; }
+        .svc-title { font-family: var(--font-head); font-size: clamp(34px,3.5vw,54px); font-weight: 900; line-height: 0.95; color: var(--ink); text-transform: uppercase; margin-bottom: 20px; }
+        .svc-desc { font-size: 15px; line-height: 1.85; color: var(--muted); margin-bottom: 16px; }
 
-        .included-list { list-style: none; display: flex; flex-direction: column; gap: 10px; margin-bottom: 32px; }
-        .included-list li { display: flex; align-items: flex-start; gap: 12px; font-size: 14px; line-height: 1.6; color: var(--light); }
-        .included-list li::before { content: ''; width: 18px; height: 18px; flex-shrink: 0; background: var(--red-l); border: 1px solid var(--red-b); border-radius: 2px; margin-top: 2px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 24 24' fill='none' stroke='%23e02535' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: center; }
+        .included-list { list-style: none; display: flex; flex-direction: column; gap: 10px; margin: 24px 0 36px; }
+        .included-list li { display: flex; align-items: flex-start; gap: 12px; font-size: 14px; line-height: 1.6; color: var(--body); }
+        .included-list li::before {
+            content: '';
+            width: 20px; height: 20px; flex-shrink: 0;
+            background: var(--red-l);
+            border: 1.5px solid var(--red-b);
+            border-radius: var(--r);
+            margin-top: 1px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 24 24' fill='none' stroke='%23D42B35' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");
+            background-repeat: no-repeat; background-position: center;
+        }
 
-        .wa-btn { display: inline-flex; align-items: center; gap: 10px; background: #25D366; color: #fff; padding: 14px 28px; border-radius: var(--r); font-family: var(--font-head); font-size: 14px; letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none; transition: background 0.2s, transform 0.15s; }
-        .wa-btn:hover { background: #1ebe5d; transform: translateY(-2px); }
+        .wa-btn {
+            display: inline-flex; align-items: center; gap: 10px;
+            background: #25D366; color: white;
+            padding: 14px 28px; border-radius: var(--r2);
+            font-family: var(--font-head); font-size: 15px; font-weight: 700;
+            letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none;
+            box-shadow: 0 4px 18px rgba(37,211,102,0.35);
+            transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+        }
+        .wa-btn:hover { background: #1ebe5d; transform: translateY(-2px); box-shadow: 0 6px 24px rgba(37,211,102,0.45); }
         .wa-btn svg { width: 18px; height: 18px; flex-shrink: 0; }
 
+        /* SERVICE IMAGE */
         .svc-visual { position: relative; }
-        .svc-img-wrap { position: relative; border-radius: var(--r2); overflow: hidden; }
-        .svc-img-wrap img { width: 100%; height: 440px; object-fit: cover; display: block; transition: transform 0.6s ease; filter: grayscale(10%) brightness(0.88); }
+        .svc-img-wrap { position: relative; border-radius: var(--r3); overflow: hidden; box-shadow: var(--shadow-lg); }
+        .svc-img-wrap img { width: 100%; height: 460px; object-fit: cover; display: block; transition: transform 0.6s ease; }
         .svc-img-wrap:hover img { transform: scale(1.04); }
-        .svc-img-overlay { position: absolute; inset: 0; background: linear-gradient(135deg, rgba(196,30,42,0.18) 0%, transparent 60%); pointer-events: none; }
-        .svc-img-tag { position: absolute; bottom: 20px; left: 20px; background: var(--red); color: var(--white); padding: 6px 14px; border-radius: 2px; font-family: var(--font-head); font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; }
+        .svc-img-tag { position: absolute; bottom: 20px; left: 20px; background: var(--red); color: white; padding: 6px 16px; border-radius: 20px; font-family: var(--font-head); font-size: 11px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; }
 
-        /* FIX: Redesigned placeholder — compact, branded, not a 440px void */
+        /* Placeholder for missing images */
         .svc-placeholder {
-            width: 100%;
-            height: 440px;
-            background: var(--card);
-            border: 1px solid var(--border);
-            border-radius: var(--r2);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 0;
-            position: relative;
-            overflow: hidden;
+            width: 100%; height: 460px;
+            background: var(--cream);
+            border: 1.5px solid var(--border);
+            border-radius: var(--r3);
+            display: flex; flex-direction: column;
+            align-items: center; justify-content: center;
+            gap: 0; position: relative; overflow: hidden;
         }
-        /* Red diagonal accent line behind placeholder */
-        .svc-placeholder::before {
-            content: '';
-            position: absolute;
-            top: -60px; right: -60px;
-            width: 200px; height: 200px;
-            background: radial-gradient(circle, rgba(196,30,42,0.08) 0%, transparent 70%);
-        }
-        .svc-placeholder::after {
-            content: '';
-            position: absolute;
-            bottom: 0; left: 0; right: 0;
-            height: 3px;
-            background: linear-gradient(to right, var(--red), transparent);
-        }
-        .svc-ph-icon {
-            width: 72px; height: 72px;
-            background: var(--red-l);
-            border: 1px solid var(--red-b);
-            border-radius: var(--r2);
-            display: flex; align-items: center; justify-content: center;
-            color: var(--redf);
-            margin-bottom: 20px;
-        }
-        .svc-ph-icon svg { width: 32px; height: 32px; }
-        .svc-ph-title {
-            font-family: var(--font-head);
-            font-size: 22px;
-            color: var(--white);
-            letter-spacing: 0.04em;
-            text-transform: uppercase;
-            margin-bottom: 8px;
-        }
-        .svc-ph-sub {
-            font-size: 12px;
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
-            color: var(--muted);
-            margin-bottom: 28px;
-        }
-        .svc-ph-wa {
-            display: inline-flex; align-items: center; gap: 8px;
-            padding: 10px 20px;
-            background: rgba(37,211,102,0.1);
-            border: 1px solid rgba(37,211,102,0.25);
-            border-radius: var(--r);
-            font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
-            color: #4cce7e;
-            text-decoration: none;
-            transition: background 0.2s;
-        }
+        .svc-placeholder::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 4px; background: linear-gradient(to right, var(--red), transparent); }
+        .svc-ph-icon { width: 72px; height: 72px; background: var(--red-l); border: 1.5px solid var(--red-b); border-radius: var(--r2); display: flex; align-items: center; justify-content: center; color: var(--red); margin-bottom: 20px; }
+        .svc-ph-icon svg { width: 30px; height: 30px; }
+        .svc-ph-title { font-family: var(--font-head); font-size: 22px; font-weight: 800; color: var(--ink); letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: 6px; }
+        .svc-ph-sub { font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--light); margin-bottom: 28px; }
+        .svc-ph-wa { display: inline-flex; align-items: center; gap: 8px; padding: 10px 20px; background: rgba(37,211,102,0.1); border: 1.5px solid rgba(37,211,102,0.25); border-radius: var(--r2); font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #1a9e4a; text-decoration: none; transition: background 0.2s; }
         .svc-ph-wa:hover { background: rgba(37,211,102,0.18); }
-        .svc-ph-wa svg { width: 14px; height: 14px; }
-
-        /* TRUST STRIP */
-        .trust-strip { background: var(--red); padding: 56px 0; }
-        .trust-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; }
-        .trust-item { text-align: center; padding: 0 20px; }
-        .trust-item + .trust-item { border-left: 1px solid rgba(255,255,255,0.2); }
-        .trust-num { font-family: var(--font-head); font-size: 52px; line-height: 1; color: var(--white); }
-        .trust-label { font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.7); margin-top: 4px; }
 
         /* CTA BAND */
-        .cta-band { background: var(--ink); padding: 88px 0; border-top: 1px solid var(--border); }
+        .cta-band { background: var(--off); padding: 96px 0; border-top: 1.5px solid var(--border); }
         .cta-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
-        .cta-text .sec-label { display: inline-flex; align-items: center; gap: 10px; font-size: 10px; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: var(--redf); margin-bottom: 16px; }
-        .cta-text .sec-label::before { content:''; width: 20px; height: 2px; background: var(--redf); flex-shrink: 0; }
-        .cta-text h2 { font-family: var(--font-head); font-size: clamp(34px,3.5vw,54px); line-height: 0.95; letter-spacing: 0.01em; color: var(--white); text-transform: uppercase; margin-bottom: 16px; }
-        .cta-text h2 em { font-style: normal; color: var(--redf); }
-        .cta-text p { font-size: 15px; line-height: 1.85; }
-        .cta-actions { display: flex; flex-direction: column; gap: 14px; }
-        .btn-red { display: inline-flex; align-items: center; gap: 10px; background: var(--red); color: var(--white); padding: 15px 34px; border-radius: var(--r); font-family: var(--font-head); font-size: 15px; letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none; border: none; cursor: pointer; transition: background 0.2s, transform 0.15s; }
-        .btn-red:hover { background: var(--redf); transform: translateY(-2px); }
-        .btn-ghost { display: inline-flex; align-items: center; gap: 10px; background: transparent; color: var(--white); padding: 15px 34px; border-radius: var(--r); font-family: var(--font-head); font-size: 15px; letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none; border: 1.5px solid rgba(255,255,255,0.25); cursor: pointer; transition: border-color 0.2s; }
-        .btn-ghost:hover { border-color: var(--white); }
-        .phone-row { display: flex; gap: 12px; flex-wrap: wrap; }
-        .phone-link { display: inline-flex; align-items: center; gap: 8px; color: var(--redf); text-decoration: none; font-family: var(--font-head); font-size: 17px; letter-spacing: 0.06em; transition: color 0.2s; }
-        .phone-link:hover { color: var(--white); }
-        .phone-link svg { width: 15px; height: 15px; }
-        .phone-sep { color: var(--border); font-size: 18px; line-height: 1; }
+        .cta-text .label-tag { background: var(--red-l); color: var(--red); border-color: var(--red-b); }
+        .cta-text h2 { font-family: var(--font-head); font-size: clamp(36px,3.5vw,56px); font-weight: 900; line-height: 0.95; color: var(--ink); text-transform: uppercase; margin-bottom: 16px; }
+        .cta-text h2 em { font-style: normal; color: var(--red); }
+        .cta-text p { font-size: 15px; line-height: 1.85; color: var(--muted); }
+        .cta-actions { display: flex; flex-direction: column; gap: 16px; }
+        .phone-row { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+        .phone-link { display: inline-flex; align-items: center; gap: 8px; color: var(--red); text-decoration: none; font-family: var(--font-head); font-size: 20px; font-weight: 700; letter-spacing: 0.04em; transition: color 0.2s; }
+        .phone-link:hover { color: var(--ink); }
+        .phone-link svg { width: 16px; height: 16px; }
+        .phone-sep { color: var(--border); font-size: 20px; }
+
+        .btn-primary { display: inline-flex; align-items: center; gap: 10px; background: var(--red); color: white; padding: 15px 34px; border-radius: var(--r2); font-family: var(--font-head); font-size: 16px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none; box-shadow: 0 6px 24px rgba(212,43,53,0.35); transition: background 0.2s, transform 0.15s; }
+        .btn-primary:hover { background: var(--redf); transform: translateY(-2px); }
+        .btn-secondary { display: inline-flex; align-items: center; gap: 10px; background: white; color: var(--ink); padding: 15px 34px; border-radius: var(--r2); font-family: var(--font-head); font-size: 16px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none; border: 2px solid var(--border); transition: border-color 0.2s, box-shadow 0.2s; }
+        .btn-secondary:hover { border-color: var(--ink); box-shadow: var(--shadow-sm); }
 
         /* FOOTER */
-        footer { background: var(--ink); border-top: 1px solid var(--border); padding: 64px 0 36px; }
-        .foot-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 56px; margin-bottom: 48px; }
-        .foot-brand p { font-size: 13.5px; line-height: 1.8; margin-top: 18px; margin-bottom: 22px; max-width: 250px; }
-        .socials { display: flex; gap: 9px; }
-        .soc { width: 34px; height: 34px; border-radius: var(--r); background: var(--card); border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; color: var(--body); text-decoration: none; transition: all 0.2s; }
-        .soc:hover { background: var(--red); color: var(--white); border-color: var(--red); }
+        footer { background: var(--ink); border-top: 1px solid rgba(255,255,255,0.06); padding: 72px 0 40px; }
+        .foot-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 56px; margin-bottom: 56px; }
+        .foot-brand p { font-size: 13.5px; line-height: 1.85; color: rgba(255,255,255,0.45); margin-top: 20px; margin-bottom: 28px; max-width: 240px; }
+        .socials { display: flex; gap: 10px; }
+        .soc { width: 36px; height: 36px; border-radius: var(--r); background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,0.5); text-decoration: none; transition: all 0.2s; }
+        .soc:hover { background: var(--red); color: white; border-color: var(--red); }
         .soc svg { width: 15px; height: 15px; }
-        .foot-col h4 { font-family: var(--font-head); font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--white); margin-bottom: 18px; }
-        .flinks { list-style: none; display: flex; flex-direction: column; gap: 9px; }
-        .flinks a { font-size: 13.5px; color: var(--body); text-decoration: none; transition: color 0.2s; }
+        .foot-col h4 { font-family: var(--font-head); font-size: 13px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: white; margin-bottom: 20px; }
+        .flinks { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+        .flinks a { font-size: 13.5px; color: rgba(255,255,255,0.45); text-decoration: none; transition: color 0.2s; }
         .flinks a:hover { color: var(--redf); }
-        .foot-bottom { padding-top: 28px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap; }
-        .foot-bottom p { font-size: 12.5px; color: var(--muted); }
+        .foot-bottom { padding-top: 28px; border-top: 1px solid rgba(255,255,255,0.08); display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap; }
+        .foot-bottom p { font-size: 12.5px; color: rgba(255,255,255,0.3); }
 
-        /* WHATSAPP FLOAT */
-        .wa-float { position: fixed; bottom: 28px; right: 28px; z-index: 90; width: 58px; height: 58px; background: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; box-shadow: 0 4px 20px rgba(37,211,102,0.4); transition: transform 0.2s, box-shadow 0.2s; }
-        .wa-float:hover { transform: scale(1.1); box-shadow: 0 6px 28px rgba(37,211,102,0.55); }
+        .wa-float { position: fixed; bottom: 28px; right: 28px; z-index: 90; width: 60px; height: 60px; background: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; box-shadow: 0 4px 24px rgba(37,211,102,0.45); transition: transform 0.2s, box-shadow 0.2s; }
+        .wa-float:hover { transform: scale(1.1); box-shadow: 0 6px 32px rgba(37,211,102,0.6); }
         .wa-float svg { width: 30px; height: 30px; }
 
-        /* ANIMATIONS */
-        .fu { opacity: 0; transform: translateY(28px); transition: opacity 0.7s ease, transform 0.7s ease; }
+        .fu { opacity: 0; transform: translateY(24px); transition: opacity 0.65s ease, transform 0.65s ease; }
         .fu.in { opacity: 1; transform: translateY(0); }
         .fu.d1 { transition-delay: 0.1s; } .fu.d2 { transition-delay: 0.2s; }
 
-        /* RESPONSIVE */
         @media (max-width: 1100px) {
-            .trust-grid { grid-template-columns: repeat(2, 1fr); }
+            .trust-grid { grid-template-columns: repeat(2,1fr); }
             .trust-item:nth-child(3) { border-left: none; border-top: 1px solid rgba(255,255,255,0.2); }
             .trust-item:nth-child(4) { border-top: 1px solid rgba(255,255,255,0.2); }
-            .trust-item { padding: 20px; }
+            .foot-grid { grid-template-columns: 1fr 1fr; gap: 36px; }
         }
         @media (max-width: 860px) {
             nav { padding: 0 20px; } .nav-links { display: none; } .nav-mob-btn { display: flex; }
+            .container { padding: 0 20px; }
             .svc-inner { grid-template-columns: 1fr; gap: 36px; }
             .svc-section:nth-child(even) .svc-inner { direction: ltr; }
             .svc-num-big { font-size: 80px; margin-bottom: -10px; }
-            .svc-placeholder { height: 280px; }
-            .svc-img-wrap img { height: 280px; }
+            .svc-placeholder, .svc-img-wrap img { height: 280px; }
+            .svc-section { padding: 64px 0; }
             .cta-inner { grid-template-columns: 1fr; gap: 40px; }
-            .foot-grid { grid-template-columns: 1fr 1fr; gap: 28px; }
-            .container { padding: 0 20px; }
-            .svc-section { padding: 60px 0; }
-            .ph-nav { gap: 6px; }
-            .ph-nav a { font-size: 11px; padding: 7px 12px; }
+            .ph-nav a { font-size: 11px; padding: 7px 14px; }
         }
         @media (max-width: 560px) {
             .foot-grid { grid-template-columns: 1fr; }
             .trust-grid { grid-template-columns: 1fr 1fr; }
+            .trust-item:nth-child(3) { border-left: none; border-top: 1px solid rgba(255,255,255,0.2); }
         }
     </style>
 </head>
@@ -287,58 +274,51 @@
     <span class="s4"></span><span class="s5"></span><span class="s6"></span>
 </div>
 
-<!-- NAV -->
-<nav id="mainNav">
-    <a href="index.html" class="logo">
-        <div class="logo-mark">
-            <img src="logo.png" alt="Izwe 2 Projects Logo" style="width:38px;height:38px;object-fit:contain;" onerror="this.style.display='none'">
-        </div>
-        <div class="logo-text">
-            <strong>Izwe 2 Projects</strong>
-            <span>General and Civil Works &middot; West Coast</span>
-        </div>
+<nav id="mainNav" role="navigation" aria-label="Main navigation">
+    <a href="index.html" class="logo" aria-label="Izwe 2 Projects Home">
+        <div class="logo-mark" aria-hidden="true">I2</div>
+        <div class="logo-text"><strong>Izwe 2 Projects</strong><span>General &amp; Civil Works &middot; West Coast</span></div>
     </a>
-    <ul class="nav-links">
+    <ul class="nav-links" role="list">
         <li><a href="index.html#about">About</a></li>
         <li><a href="services.html" class="active">Services</a></li>
         <li><a href="index.html#projects">Projects</a></li>
         <li><a href="index.html#areas">Areas</a></li>
         <li><a href="index.html#testimonials">Reviews</a></li>
-        <li><a href="contact.html" class="nav-cta">Get a Quote</a></li>
+        <li><a href="contact.html" class="nav-cta">Free Quote</a></li>
     </ul>
     <button class="nav-mob-btn" onclick="document.getElementById('mobMenu').classList.add('open')" aria-label="Open menu">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
             <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
         </svg>
     </button>
 </nav>
 
-<div class="mob-menu" id="mobMenu">
+<div class="mob-menu" id="mobMenu" role="dialog" aria-label="Mobile menu">
     <div class="mob-head">
-        <strong style="font-family:var(--font-head);font-size:20px;color:var(--white);letter-spacing:0.06em;">IZWE 2 PROJECTS</strong>
-        <button class="mob-close" onclick="document.getElementById('mobMenu').classList.remove('open')">&times;</button>
+        <strong style="font-family:var(--font-head);font-size:22px;color:var(--ink);letter-spacing:0.02em;text-transform:uppercase;font-weight:900;">Izwe 2 Projects</strong>
+        <button class="mob-close" onclick="document.getElementById('mobMenu').classList.remove('open')" aria-label="Close menu">&times;</button>
     </div>
     <a href="index.html#about" onclick="document.getElementById('mobMenu').classList.remove('open')">About</a>
     <a href="services.html" onclick="document.getElementById('mobMenu').classList.remove('open')">Services</a>
     <a href="index.html#projects" onclick="document.getElementById('mobMenu').classList.remove('open')">Projects</a>
     <a href="index.html#areas" onclick="document.getElementById('mobMenu').classList.remove('open')">Areas</a>
     <a href="index.html#testimonials" onclick="document.getElementById('mobMenu').classList.remove('open')">Reviews</a>
-    <a href="contact.html" onclick="document.getElementById('mobMenu').classList.remove('open')" style="color:var(--redf);margin-top:16px;">Get a Quote &rarr;</a>
+    <a href="contact.html" onclick="document.getElementById('mobMenu').classList.remove('open')" style="color:var(--red);margin-top:20px;">Get a Free Quote &rarr;</a>
 </div>
 
 <!-- PAGE HERO -->
-<div class="page-hero">
+<div class="page-hero" aria-label="Services page header">
     <div class="container">
-        <div class="ph-breadcrumb">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
             <a href="index.html">Home</a>
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg>
             <span>Services</span>
-        </div>
-        <div style="height:24px;"></div>
-        <div class="ph-label">What We Do</div>
+        </nav>
+        <div class="label-tag" style="background:rgba(255,255,255,0.1);color:white;border-color:rgba(255,255,255,0.2);">What We Do</div>
         <h1 class="ph-title">Our <em>8</em><br>Services</h1>
         <p class="ph-sub">From solid foundations to finished interiors — every trade you need, under one roof. Serving Vredenburg, Saldanha, Langebaan and the wider West Coast.</p>
-        <div class="ph-nav">
+        <div class="ph-nav" role="navigation" aria-label="Jump to service">
             <a href="#building">Building</a>
             <a href="#tiling">Tiling</a>
             <a href="#carpentry">Carpentry</a>
@@ -352,8 +332,8 @@
 </div>
 
 <!-- TRUST STRIP -->
-<div class="trust-strip">
-    <div class="container">
+<div class="trust-strip" aria-label="Key statistics">
+    <div class="container" style="padding:0 48px;">
         <div class="trust-grid">
             <div class="trust-item"><div class="trust-num">10+</div><div class="trust-label">Years Experience</div></div>
             <div class="trust-item"><div class="trust-num">150+</div><div class="trust-label">Projects Completed</div></div>
@@ -363,16 +343,16 @@
     </div>
 </div>
 
-<!-- SERVICE 01: BUILDING -->
-<section class="svc-section" id="building">
+<!-- 01: BUILDING -->
+<section class="svc-section" id="building" aria-labelledby="building-heading">
     <div class="container">
         <div class="svc-inner">
             <div class="svc-info fu">
                 <div class="svc-num-big">01</div>
-                <div class="svc-label">Service 01</div>
-                <h2 class="svc-title">Building &amp; New Construction</h2>
+                <div class="svc-sub-label">Service 01</div>
+                <h2 id="building-heading" class="svc-title">Building &amp; New Construction</h2>
                 <p class="svc-desc">Whether you need a new home, a business premises, or a complete commercial build from the ground up, Izwe 2 Projects handles the full scope. We manage every stage — from foundation to final handover — so you don't have to coordinate multiple contractors.</p>
-                <p class="svc-desc">Our building work covers residential homes, outbuildings, extensions, and light commercial/industrial structures across the Vredenburg and West Coast area.</p>
+                <p class="svc-desc">Our building work covers residential homes, outbuildings, extensions, and light commercial/industrial structures across Vredenburg and the West Coast.</p>
                 <ul class="included-list">
                     <li>Foundation and slab work</li>
                     <li>Brick and block laying</li>
@@ -382,32 +362,36 @@
                     <li>Full project management from start to finish</li>
                     <li>Roofing structures (in conjunction with roofing team)</li>
                 </ul>
-                <a href="https://wa.me/27766714106?text=Hi%2C%20I'm%20interested%20in%20a%20quote%20for%20Building%20%2F%20New%20Construction" class="wa-btn" target="_blank" rel="noopener">
+                <a href="https://wa.me/27766714106?text=Hi%2C%20I'm%20interested%20in%20a%20quote%20for%20Building%20%2F%20New%20Construction" class="wa-btn" target="_blank" rel="noopener noreferrer">
                     <svg viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
                     Get a Building Quote
                 </a>
             </div>
             <div class="svc-visual fu d1">
                 <div class="svc-img-wrap">
-                    <img src="resident1.jpg" alt="Residential building construction by Izwe 2 Projects West Coast"
-                         onerror="this.parentElement.classList.add('img-failed');this.style.display='none'">
-                    <div class="svc-img-overlay"></div>
+                    <img src="resident1.jpg" alt="Residential building construction by Izwe 2 Projects on the West Coast" onerror="this.parentElement.style.display='none';this.parentElement.nextElementSibling.style.display='flex'">
                     <div class="svc-img-tag">Building</div>
+                </div>
+                <div class="svc-placeholder" style="display:none;">
+                    <div class="svc-ph-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+                    <div class="svc-ph-title">Building</div>
+                    <div class="svc-ph-sub">Photo coming soon</div>
+                    <a href="https://wa.me/27766714106?text=Hi%2C%20I'd%20like%20a%20building%20quote" class="svc-ph-wa" target="_blank" rel="noopener noreferrer">WhatsApp for a Quote</a>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- SERVICE 02: TILING -->
-<section class="svc-section" id="tiling">
+<!-- 02: TILING -->
+<section class="svc-section" id="tiling" aria-labelledby="tiling-heading">
     <div class="container">
         <div class="svc-inner">
             <div class="svc-info fu">
                 <div class="svc-num-big">02</div>
-                <div class="svc-label">Service 02</div>
-                <h2 class="svc-title">Tiling</h2>
-                <p class="svc-desc">Precision tiling that lasts. We tile floors and walls for showers, bathrooms, kitchens, patios, braai areas, and commercial spaces — using the correct adhesives and grout for the surface type and environment.</p>
+                <div class="svc-sub-label">Service 02</div>
+                <h2 id="tiling-heading" class="svc-title">Tiling</h2>
+                <p class="svc-desc">Precision tiling that lasts. We tile floors and walls for showers, bathrooms, kitchens, patios, braai areas, and commercial spaces — using the correct adhesives and grout for each surface type and environment.</p>
                 <p class="svc-desc">Our tilers work to tight tolerances and deliver a clean, level finish every time. Serving homes and businesses across Vredenburg, Saldanha, Langebaan and the wider West Coast.</p>
                 <ul class="included-list">
                     <li>Bathroom and shower tiling</li>
@@ -418,32 +402,36 @@
                     <li>Large-format tile installation</li>
                     <li>Tile repairs and re-grouting</li>
                 </ul>
-                <a href="https://wa.me/27766714106?text=Hi%2C%20I'm%20interested%20in%20a%20quote%20for%20Tiling" class="wa-btn" target="_blank" rel="noopener">
+                <a href="https://wa.me/27766714106?text=Hi%2C%20I'm%20interested%20in%20a%20quote%20for%20Tiling" class="wa-btn" target="_blank" rel="noopener noreferrer">
                     <svg viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
                     Get a Tiling Quote
                 </a>
             </div>
             <div class="svc-visual fu d1">
                 <div class="svc-img-wrap">
-                    <img src="Showertiles.jpg" alt="Shower tiling installation by Izwe 2 Projects Saldanha West Coast"
-                         onerror="this.parentElement.classList.add('img-failed');this.style.display='none'">
-                    <div class="svc-img-overlay"></div>
+                    <img src="Showertiles.jpg" alt="Professional shower and bathroom tiling by Izwe 2 Projects Saldanha" onerror="this.parentElement.style.display='none';this.parentElement.nextElementSibling.style.display='flex'">
                     <div class="svc-img-tag">Tiling</div>
+                </div>
+                <div class="svc-placeholder" style="display:none;">
+                    <div class="svc-ph-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="9" height="9"/><rect x="13" y="3" width="9" height="9"/><rect x="2" y="13" width="9" height="9"/><rect x="13" y="13" width="9" height="9"/></svg></div>
+                    <div class="svc-ph-title">Tiling</div>
+                    <div class="svc-ph-sub">Photo coming soon</div>
+                    <a href="https://wa.me/27766714106?text=Hi%2C%20I'd%20like%20a%20tiling%20quote" class="svc-ph-wa" target="_blank" rel="noopener noreferrer">WhatsApp for a Quote</a>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- SERVICE 03: CARPENTRY -->
-<section class="svc-section" id="carpentry">
+<!-- 03: CARPENTRY -->
+<section class="svc-section" id="carpentry" aria-labelledby="carpentry-heading">
     <div class="container">
         <div class="svc-inner">
             <div class="svc-info fu">
                 <div class="svc-num-big">03</div>
-                <div class="svc-label">Service 03</div>
-                <h2 class="svc-title">Carpentry</h2>
-                <p class="svc-desc">Skilled carpentry work for residential and commercial projects — from fitting door frames and hanging doors to installing ceilings, built-in cupboards and all structural timber work.</p>
+                <div class="svc-sub-label">Service 03</div>
+                <h2 id="carpentry-heading" class="svc-title">Carpentry</h2>
+                <p class="svc-desc">Skilled carpentry for residential and commercial projects — from fitting door frames and hanging doors to installing ceilings, built-in cupboards and all structural timber work.</p>
                 <p class="svc-desc">We work with both softwood and hardwood, sourcing quality timber suited to the coastal West Coast environment where salt air demands the right materials and finishes.</p>
                 <ul class="included-list">
                     <li>Door frames, doors and door hardware fitting</li>
@@ -454,37 +442,31 @@
                     <li>Wooden staircases and handrails</li>
                     <li>Skirting boards and architraves</li>
                 </ul>
-                <a href="https://wa.me/27766714106?text=Hi%2C%20I'm%20interested%20in%20a%20quote%20for%20Carpentry" class="wa-btn" target="_blank" rel="noopener">
+                <a href="https://wa.me/27766714106?text=Hi%2C%20I'm%20interested%20in%20a%20quote%20for%20Carpentry" class="wa-btn" target="_blank" rel="noopener noreferrer">
                     <svg viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
                     Get a Carpentry Quote
                 </a>
             </div>
-            <!-- FIX: Replaced bare grey placeholder with branded card -->
             <div class="svc-visual fu d1">
                 <div class="svc-placeholder">
-                    <div class="svc-ph-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
-                    </div>
+                    <div class="svc-ph-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg></div>
                     <div class="svc-ph-title">Carpentry</div>
                     <div class="svc-ph-sub">Photo coming soon</div>
-                    <a href="https://wa.me/27766714106?text=Hi%2C%20I'm%20interested%20in%20a%20Carpentry%20quote" class="svc-ph-wa" target="_blank" rel="noopener">
-                        <svg viewBox="0 0 24 24" fill="#4cce7e"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-                        WhatsApp for a Quote
-                    </a>
+                    <a href="https://wa.me/27766714106?text=Hi%2C%20I'd%20like%20a%20carpentry%20quote" class="svc-ph-wa" target="_blank" rel="noopener noreferrer">WhatsApp for a Quote</a>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- SERVICE 04: FLOOR SCREEDING -->
-<section class="svc-section" id="screeding">
+<!-- 04: FLOOR SCREEDING -->
+<section class="svc-section" id="screeding" aria-labelledby="screeding-heading">
     <div class="container">
         <div class="svc-inner">
             <div class="svc-info fu">
                 <div class="svc-num-big">04</div>
-                <div class="svc-label">Service 04</div>
-                <h2 class="svc-title">Floor Screeding</h2>
+                <div class="svc-sub-label">Service 04</div>
+                <h2 id="screeding-heading" class="svc-title">Floor Screeding</h2>
                 <p class="svc-desc">A proper screed is the foundation of every quality floor finish. We lay smooth, level floor screeds that provide the perfect base for tiles, epoxy coatings, vinyl, or polished concrete — ensuring your final floor surface looks great and lasts for years.</p>
                 <p class="svc-desc">We handle screeding for new builds, renovations, and commercial floor preparations across the West Coast, including Vredenburg and Saldanha.</p>
                 <ul class="included-list">
@@ -496,39 +478,33 @@
                     <li>Commercial and industrial screeding</li>
                     <li>Patching and repair screeds</li>
                 </ul>
-                <a href="https://wa.me/27766714106?text=Hi%2C%20I'm%20interested%20in%20a%20quote%20for%20Floor%20Screeding" class="wa-btn" target="_blank" rel="noopener">
+                <a href="https://wa.me/27766714106?text=Hi%2C%20I'm%20interested%20in%20a%20quote%20for%20Floor%20Screeding" class="wa-btn" target="_blank" rel="noopener noreferrer">
                     <svg viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
                     Get a Screeding Quote
                 </a>
             </div>
-            <!-- FIX: Branded placeholder -->
             <div class="svc-visual fu d1">
                 <div class="svc-placeholder">
-                    <div class="svc-ph-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-                    </div>
+                    <div class="svc-ph-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></div>
                     <div class="svc-ph-title">Floor Screeding</div>
                     <div class="svc-ph-sub">Photo coming soon</div>
-                    <a href="https://wa.me/27766714106?text=Hi%2C%20I'm%20interested%20in%20a%20Floor%20Screeding%20quote" class="svc-ph-wa" target="_blank" rel="noopener">
-                        <svg viewBox="0 0 24 24" fill="#4cce7e"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-                        WhatsApp for a Quote
-                    </a>
+                    <a href="https://wa.me/27766714106?text=Hi%2C%20I'd%20like%20a%20floor%20screeding%20quote" class="svc-ph-wa" target="_blank" rel="noopener noreferrer">WhatsApp for a Quote</a>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- SERVICE 05: DECKING -->
-<section class="svc-section" id="decking">
+<!-- 05: DECKING -->
+<section class="svc-section" id="decking" aria-labelledby="decking-heading">
     <div class="container">
         <div class="svc-inner">
             <div class="svc-info fu">
                 <div class="svc-num-big">05</div>
-                <div class="svc-label">Service 05</div>
-                <h2 class="svc-title">Decking</h2>
-                <p class="svc-desc">A quality deck transforms your outdoor space — perfect for the West Coast lifestyle. We design and build timber and composite decks for entertainment areas, braai patios, poolsides, and seaside properties that can handle the coastal environment.</p>
-                <p class="svc-desc">Salt air and sun are tough on outdoor timber. We specify the right treated timber or composite materials for each project so your deck stays beautiful year after year in Langebaan, Saldanha, or anywhere on the West Coast.</p>
+                <div class="svc-sub-label">Service 05</div>
+                <h2 id="decking-heading" class="svc-title">Decking</h2>
+                <p class="svc-desc">A quality deck transforms your outdoor space — perfect for the West Coast lifestyle. We design and build timber and composite decks for entertainment areas, braai patios, poolsides and seaside properties built to handle the coastal environment.</p>
+                <p class="svc-desc">Salt air and sun are tough on outdoor timber. We specify the right treated timber or composite materials for each project so your deck stays beautiful year after year.</p>
                 <ul class="included-list">
                     <li>Hardwood and treated pine decking</li>
                     <li>Composite / low-maintenance decking</li>
@@ -538,38 +514,32 @@
                     <li>Handrails and balustrades</li>
                     <li>Deck repairs and restoration</li>
                 </ul>
-                <a href="https://wa.me/27766714106?text=Hi%2C%20I'm%20interested%20in%20a%20quote%20for%20Decking" class="wa-btn" target="_blank" rel="noopener">
+                <a href="https://wa.me/27766714106?text=Hi%2C%20I'm%20interested%20in%20a%20quote%20for%20Decking" class="wa-btn" target="_blank" rel="noopener noreferrer">
                     <svg viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
                     Get a Decking Quote
                 </a>
             </div>
-            <!-- FIX: Branded placeholder -->
             <div class="svc-visual fu d1">
                 <div class="svc-placeholder">
-                    <div class="svc-ph-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg>
-                    </div>
+                    <div class="svc-ph-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg></div>
                     <div class="svc-ph-title">Decking</div>
                     <div class="svc-ph-sub">Photo coming soon</div>
-                    <a href="https://wa.me/27766714106?text=Hi%2C%20I'm%20interested%20in%20a%20Decking%20quote" class="svc-ph-wa" target="_blank" rel="noopener">
-                        <svg viewBox="0 0 24 24" fill="#4cce7e"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-                        WhatsApp for a Quote
-                    </a>
+                    <a href="https://wa.me/27766714106?text=Hi%2C%20I'd%20like%20a%20decking%20quote" class="svc-ph-wa" target="_blank" rel="noopener noreferrer">WhatsApp for a Quote</a>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- SERVICE 06: PAINTING -->
-<section class="svc-section" id="painting">
+<!-- 06: PAINTING -->
+<section class="svc-section" id="painting" aria-labelledby="painting-heading">
     <div class="container">
         <div class="svc-inner">
             <div class="svc-info fu">
                 <div class="svc-num-big">06</div>
-                <div class="svc-label">Service 06</div>
-                <h2 class="svc-title">Painting</h2>
-                <p class="svc-desc">The final coat makes or breaks a build. Our painting team delivers clean, consistent finishes on interior walls and ceilings, and durable exterior coats that stand up to the West Coast's harsh sun, wind, and salt air.</p>
+                <div class="svc-sub-label">Service 06</div>
+                <h2 id="painting-heading" class="svc-title">Painting</h2>
+                <p class="svc-desc">The final coat makes or breaks a build. Our painting team delivers clean, consistent finishes on interior walls and ceilings, and durable exterior coats that stand up to the West Coast's harsh sun, wind and salt air.</p>
                 <p class="svc-desc">We surface-prepare properly — fixing cracks, sealing, and priming before any paint goes on — because a lasting finish starts well before the brush touches the wall.</p>
                 <ul class="included-list">
                     <li>Interior walls and ceilings — new builds and renovations</li>
@@ -580,31 +550,35 @@
                     <li>Crack and defect repair before painting</li>
                     <li>Fascias, gutters and outbuilding painting</li>
                 </ul>
-                <a href="https://wa.me/27766714106?text=Hi%2C%20I'm%20interested%20in%20a%20quote%20for%20Painting" class="wa-btn" target="_blank" rel="noopener">
+                <a href="https://wa.me/27766714106?text=Hi%2C%20I'm%20interested%20in%20a%20quote%20for%20Painting" class="wa-btn" target="_blank" rel="noopener noreferrer">
                     <svg viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
                     Get a Painting Quote
                 </a>
             </div>
             <div class="svc-visual fu d1">
                 <div class="svc-img-wrap">
-                    <img src="paintedwall.jpg" alt="Professional wall plastering and painting by Izwe 2 Projects Vredenburg"
-                         onerror="this.parentElement.classList.add('img-failed');this.style.display='none'">
-                    <div class="svc-img-overlay"></div>
+                    <img src="paintedwall.jpg" alt="Professional wall plastering and painting by Izwe 2 Projects Vredenburg" onerror="this.parentElement.style.display='none';this.parentElement.nextElementSibling.style.display='flex'">
                     <div class="svc-img-tag">Painting</div>
+                </div>
+                <div class="svc-placeholder" style="display:none;">
+                    <div class="svc-ph-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.24 12.24a6 6 0 00-8.49-8.49L5 10.5V19h8.5z"/><line x1="16" y1="8" x2="2" y2="22"/></svg></div>
+                    <div class="svc-ph-title">Painting</div>
+                    <div class="svc-ph-sub">Photo coming soon</div>
+                    <a href="https://wa.me/27766714106?text=Hi%2C%20I'd%20like%20a%20painting%20quote" class="svc-ph-wa" target="_blank" rel="noopener noreferrer">WhatsApp for a Quote</a>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- SERVICE 07: WATERPROOFING -->
-<section class="svc-section" id="waterproofing">
+<!-- 07: WATERPROOFING -->
+<section class="svc-section" id="waterproofing" aria-labelledby="waterproofing-heading">
     <div class="container">
         <div class="svc-inner">
             <div class="svc-info fu">
                 <div class="svc-num-big">07</div>
-                <div class="svc-label">Service 07</div>
-                <h2 class="svc-title">Waterproofing</h2>
+                <div class="svc-sub-label">Service 07</div>
+                <h2 id="waterproofing-heading" class="svc-title">Waterproofing</h2>
                 <p class="svc-desc">Water ingress is the number one cause of structural damage in the Western Cape. On the West Coast, where salty air and seasonal rain are relentless, proper waterproofing isn't optional — it's essential.</p>
                 <p class="svc-desc">We waterproof roofs, wet areas, basements, retaining walls and balconies using proven systems that hold up to West Coast weather conditions. If you're seeing damp, leaks, or rising moisture — call us before it gets worse.</p>
                 <ul class="included-list">
@@ -616,39 +590,33 @@
                     <li>Crystalline and membrane waterproofing systems</li>
                     <li>Leak detection and remedial waterproofing</li>
                 </ul>
-                <a href="https://wa.me/27766714106?text=Hi%2C%20I'm%20interested%20in%20a%20quote%20for%20Waterproofing" class="wa-btn" target="_blank" rel="noopener">
+                <a href="https://wa.me/27766714106?text=Hi%2C%20I'm%20interested%20in%20a%20quote%20for%20Waterproofing" class="wa-btn" target="_blank" rel="noopener noreferrer">
                     <svg viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
                     Get a Waterproofing Quote
                 </a>
             </div>
-            <!-- FIX: Branded placeholder -->
             <div class="svc-visual fu d1">
                 <div class="svc-placeholder">
-                    <div class="svc-ph-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 11-11.31 0z"/></svg>
-                    </div>
+                    <div class="svc-ph-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 11-11.31 0z"/></svg></div>
                     <div class="svc-ph-title">Waterproofing</div>
                     <div class="svc-ph-sub">Photo coming soon</div>
-                    <a href="https://wa.me/27766714106?text=Hi%2C%20I'm%20interested%20in%20a%20Waterproofing%20quote" class="svc-ph-wa" target="_blank" rel="noopener">
-                        <svg viewBox="0 0 24 24" fill="#4cce7e"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-                        WhatsApp for a Quote
-                    </a>
+                    <a href="https://wa.me/27766714106?text=Hi%2C%20I'd%20like%20a%20waterproofing%20quote" class="svc-ph-wa" target="_blank" rel="noopener noreferrer">WhatsApp for a Quote</a>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- SERVICE 08: RENOVATIONS -->
-<section class="svc-section" id="renovations">
+<!-- 08: RENOVATIONS -->
+<section class="svc-section" id="renovations" aria-labelledby="renovations-heading">
     <div class="container">
         <div class="svc-inner">
             <div class="svc-info fu">
                 <div class="svc-num-big">08</div>
-                <div class="svc-label">Service 08</div>
-                <h2 class="svc-title">Renovations</h2>
+                <div class="svc-sub-label">Service 08</div>
+                <h2 id="renovations-heading" class="svc-title">Renovations</h2>
                 <p class="svc-desc">Transform your existing space without the cost of a new build. Whether it's a kitchen makeover, a bathroom upgrade, an extra room, or a full interior transformation — we manage the entire renovation from demolition to the finished product.</p>
-                <p class="svc-desc">We coordinate all the trades needed — building, tiling, carpentry, screeding, painting and waterproofing — so you deal with one team and get one consistent standard of work throughout your renovation.</p>
+                <p class="svc-desc">We coordinate all the trades needed — building, tiling, carpentry, screeding, painting and waterproofing — so you deal with one team and get one consistent standard of work throughout.</p>
                 <ul class="included-list">
                     <li>Kitchen renovations and upgrades</li>
                     <li>Bathroom and en-suite renovations</li>
@@ -658,17 +626,21 @@
                     <li>Braai and entertainment area builds</li>
                     <li>Property upgrade for resale</li>
                 </ul>
-                <a href="https://wa.me/27766714106?text=Hi%2C%20I'm%20interested%20in%20a%20quote%20for%20Renovations" class="wa-btn" target="_blank" rel="noopener">
+                <a href="https://wa.me/27766714106?text=Hi%2C%20I'm%20interested%20in%20a%20quote%20for%20Renovations" class="wa-btn" target="_blank" rel="noopener noreferrer">
                     <svg viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
                     Get a Renovation Quote
                 </a>
             </div>
             <div class="svc-visual fu d1">
                 <div class="svc-img-wrap">
-                    <img src="BraaiBuild.jpg" alt="Custom braai outdoor entertainment build by Izwe 2 Projects West Coast"
-                         onerror="this.parentElement.classList.add('img-failed');this.style.display='none'">
-                    <div class="svc-img-overlay"></div>
+                    <img src="BraaiBuild.jpg" alt="Custom braai and outdoor entertainment area build by Izwe 2 Projects West Coast" onerror="this.parentElement.style.display='none';this.parentElement.nextElementSibling.style.display='flex'">
                     <div class="svc-img-tag">Renovations</div>
+                </div>
+                <div class="svc-placeholder" style="display:none;">
+                    <div class="svc-ph-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg></div>
+                    <div class="svc-ph-title">Renovations</div>
+                    <div class="svc-ph-sub">Photo coming soon</div>
+                    <a href="https://wa.me/27766714106?text=Hi%2C%20I'd%20like%20a%20renovation%20quote" class="svc-ph-wa" target="_blank" rel="noopener noreferrer">WhatsApp for a Quote</a>
                 </div>
             </div>
         </div>
@@ -679,84 +651,74 @@
 <div class="cta-band">
     <div class="container">
         <div class="cta-inner">
-            <div class="cta-text">
-                <div class="sec-label">Ready to Start?</div>
+            <div class="cta-text fu">
+                <div class="label-tag">Ready to Start?</div>
                 <h2>Let's Build <em>Something</em></h2>
                 <p>Call or WhatsApp Augustine directly for a free, no-obligation quote. We respond fast and come to you anywhere on the West Coast.</p>
             </div>
-            <div class="cta-actions">
+            <div class="cta-actions fu d1">
                 <div class="phone-row">
                     <a href="tel:+27766714106" class="phone-link">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.82 19.79 19.79 0 01.22 1.18 2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.09a16 16 0 006 6l.56-.56a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
                         076 671 4106
                     </a>
-                    <span class="phone-sep">/</span>
+                    <span class="phone-sep">&middot;</span>
                     <a href="tel:+27748847688" class="phone-link">074 884 7688</a>
                 </div>
-                <a href="https://wa.me/27766714106" class="wa-btn" target="_blank" rel="noopener" style="max-width:fit-content;">
+                <a href="https://wa.me/27766714106" class="wa-btn" target="_blank" rel="noopener noreferrer" style="align-self:flex-start;">
                     <svg viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
                     WhatsApp Us Now
                 </a>
-                <a href="contact.html" class="btn-ghost">Fill in a Quote Form &rarr;</a>
+                <a href="contact.html" class="btn-secondary" style="align-self:flex-start;">Fill in a Quote Form &rarr;</a>
             </div>
         </div>
     </div>
 </div>
 
-<!-- FOOTER -->
-<footer>
+<footer role="contentinfo">
     <div class="container">
         <div class="foot-grid">
             <div class="foot-brand">
-                <a href="index.html" class="logo">
-                    <div class="logo-mark"><img src="logo.png" alt="Logo" style="width:38px;height:38px;object-fit:contain;" onerror="this.style.display='none'"></div>
-                    <div class="logo-text"><strong>Izwe 2 Projects</strong><span>General and Civil Works &middot; West Coast</span></div>
+                <a href="index.html" class="logo" aria-label="Izwe 2 Projects Home">
+                    <div class="logo-mark" aria-hidden="true">I2</div>
+                    <div class="logo-text"><strong>Izwe 2 Projects</strong><span>General &amp; Civil Works &middot; West Coast</span></div>
                 </a>
                 <p>Locally operated general and civil construction company serving the West Coast of South Africa. Built on trust. Built to last.</p>
                 <div class="socials">
                     <a href="#" class="soc" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
                     <a href="#" class="soc" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
-                    <a href="https://wa.me/27766714106" class="soc" aria-label="WhatsApp" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg></a>
+                    <a href="https://wa.me/27766714106" class="soc" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg></a>
                 </div>
             </div>
             <div class="foot-col">
                 <h4>Services</h4>
                 <ul class="flinks">
-                    <li><a href="#building">Building</a></li>
-                    <li><a href="#tiling">Tiling</a></li>
-                    <li><a href="#carpentry">Carpentry</a></li>
-                    <li><a href="#screeding">Floor Screeding</a></li>
-                    <li><a href="#decking">Decking</a></li>
-                    <li><a href="#painting">Painting</a></li>
-                    <li><a href="#waterproofing">Waterproofing</a></li>
-                    <li><a href="#renovations">Renovations</a></li>
+                    <li><a href="#building">Building</a></li><li><a href="#tiling">Tiling</a></li>
+                    <li><a href="#carpentry">Carpentry</a></li><li><a href="#screeding">Floor Screeding</a></li>
+                    <li><a href="#decking">Decking</a></li><li><a href="#painting">Painting</a></li>
+                    <li><a href="#waterproofing">Waterproofing</a></li><li><a href="#renovations">Renovations</a></li>
                 </ul>
             </div>
             <div class="foot-col">
                 <h4>Areas</h4>
                 <ul class="flinks">
-                    <li><a href="index.html#areas">Vredenburg</a></li>
-                    <li><a href="index.html#areas">Saldanha</a></li>
-                    <li><a href="index.html#areas">Langebaan</a></li>
-                    <li><a href="index.html#areas">Velddrif</a></li>
-                    <li><a href="index.html#areas">Hopefield</a></li>
-                    <li><a href="index.html#areas">Surrounding Towns</a></li>
+                    <li><a href="index.html#areas">Vredenburg</a></li><li><a href="index.html#areas">Saldanha</a></li>
+                    <li><a href="index.html#areas">Langebaan</a></li><li><a href="index.html#areas">Velddrif</a></li>
+                    <li><a href="index.html#areas">Hopefield</a></li><li><a href="index.html#areas">Surrounding Towns</a></li>
                 </ul>
             </div>
             <div class="foot-col">
                 <h4>Company</h4>
                 <ul class="flinks">
-                    <li><a href="index.html#about">About Us</a></li>
-                    <li><a href="index.html#projects">Our Projects</a></li>
-                    <li><a href="index.html#testimonials">Client Reviews</a></li>
-                    <li><a href="contact.html">Request a Quote</a></li>
+                    <li><a href="index.html#about">About Us</a></li><li><a href="index.html#projects">Our Projects</a></li>
+                    <li><a href="index.html#testimonials">Client Reviews</a></li><li><a href="contact.html">Request a Quote</a></li>
                 </ul>
-                <div style="margin-top:26px;">
+                <div style="margin-top:28px;">
                     <h4>Contact</h4>
-                    <p style="font-size:13.5px;line-height:1.9;color:var(--body);">
-                        <a href="tel:+27766714106" style="color:var(--body);text-decoration:none;">076 671 4106</a><br>
-                        <a href="tel:+27748847688" style="color:var(--body);text-decoration:none;">074 884 7688</a><br>
-                        <a href="mailto:aggustine828@gmail.com" style="color:var(--body);text-decoration:none;">aggustine828@gmail.com</a><br>
+                    <p style="font-size:13.5px;line-height:2;color:rgba(255,255,255,0.45);">
+                        <a href="tel:+27766714106" style="color:rgba(255,255,255,0.45);text-decoration:none;">076 671 4106</a><br>
+                        <a href="tel:+27748847688" style="color:rgba(255,255,255,0.45);text-decoration:none;">074 884 7688</a><br>
+                        <a href="mailto:aggustine828@gmail.com" style="color:rgba(255,255,255,0.45);text-decoration:none;">aggustine828@gmail.com</a><br>
                         Vredenburg, West Coast
                     </p>
                 </div>
@@ -764,23 +726,21 @@
         </div>
         <div class="foot-bottom">
             <p>&copy; 2026 Izwe 2 Projects. All rights reserved.</p>
-            <p>Proudly <span style="color:#4caf7d">South African</span> &middot; <span style="color:var(--redf)">West Coast</span> Built</p>
+            <p>Proudly <span style="color:#4caf7d;">South African</span> &middot; <span style="color:var(--redf);">West Coast</span> Built</p>
         </div>
     </div>
 </footer>
 
-<a href="https://wa.me/27766714106" class="wa-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+<a href="https://wa.me/27766714106" class="wa-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
     <svg viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
 </a>
 
 <script>
     const nav = document.getElementById('mainNav');
-    window.addEventListener('scroll', () => {
-        nav.classList.toggle('scrolled', window.scrollY > 60);
-    });
+    window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 60); }, { passive: true });
     const fus = document.querySelectorAll('.fu');
     const obs = new IntersectionObserver(entries => {
-        entries.forEach(e => { if(e.isIntersecting) { e.target.classList.add('in'); obs.unobserve(e.target); } });
+        entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); obs.unobserve(e.target); } });
     }, { threshold: 0.1 });
     fus.forEach(el => obs.observe(el));
 </script>
