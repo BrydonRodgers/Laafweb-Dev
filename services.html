@@ -3,22 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services | Izwe 2 Projects — Building, Tiling, Carpentry & More — West Coast SA</title>
-    <meta name="description" content="Full list of construction services by Izwe 2 Projects: Building, Tiling, Carpentry, Floor Screeding, Decking, Painting, Waterproofing and Renovations. Serving Vredenburg, Saldanha & the full West Coast.">
-    <meta name="keywords" content="building contractor Vredenburg, tiling Saldanha, carpentry West Coast, floor screeding Vredenburg, decking contractor, painting contractor, waterproofing West Coast SA, renovations Saldanha, construction services Western Cape">
-    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+    <title>Construction Services | Izwe 2 Projects — Building, Tiling, Carpentry, Screeding, Painting & Renovations — West Coast SA</title>
+    <meta name="description" content="Izwe 2 Projects offers professional building, tiling, carpentry, floor screeding, painting and renovation services across Vredenburg, Saldanha, Langebaan and the West Coast. Call 076 671 4106 for a free quote.">
+    <meta name="keywords" content="building contractor Vredenburg, tiling Saldanha, carpentry West Coast, floor screeding Vredenburg, painting contractor Saldanha, renovations West Coast, construction services Western Cape, general contractor Langebaan, renovation company Saldanha Bay, tiling contractor West Coast">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <meta name="author" content="Izwe 2 Projects">
+    <meta name="geo.region" content="ZA-WC">
+    <meta name="geo.placename" content="Vredenburg, West Coast, Western Cape">
     <link rel="canonical" href="https://izwe2projects.co.za/services.html">
-    <meta property="og:title" content="Services | Izwe 2 Projects — West Coast Construction">
-    <meta property="og:description" content="8 construction services across the West Coast — Building, Tiling, Carpentry, Screeding, Decking, Painting, Waterproofing & Renovations. Call 076 671 4106.">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Construction Services | Izwe 2 Projects — West Coast SA">
+    <meta property="og:description" content="Professional building, tiling, carpentry, screeding, painting and renovation services across the West Coast. 10+ years experience. Call 076 671 4106.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://izwe2projects.co.za/services.html">
-    <meta property="og:image" content="https://izwe2projects.co.za/pic1.jpeg">
+    <meta property="og:image" content="https://izwe2projects.co.za/pic1.jpg">
     <meta property="og:locale" content="en_ZA">
+    <meta property="og:site_name" content="Izwe 2 Projects">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Construction Services | Izwe 2 Projects — West Coast SA">
+    <meta name="twitter:description" content="Professional building, tiling, carpentry, screeding, painting and renovation services across the West Coast.">
+    <meta name="twitter:image" content="https://izwe2projects.co.za/pic1.jpg">
+
+    <!-- Schema.org LocalBusiness -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Izwe 2 Projects",
+      "description": "General and civil construction contractor offering building, tiling, carpentry, floor screeding, painting and renovation services on the West Coast of South Africa.",
+      "url": "https://izwe2projects.co.za",
+      "telephone": "+27766714106",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Vredenburg",
+        "addressRegion": "Western Cape",
+        "addressCountry": "ZA"
+      },
+      "areaServed": ["Vredenburg","Saldanha","Langebaan","Velddrif","Hopefield","West Coast"],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Construction Services",
+        "itemListElement": [
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Building & New Construction"}},
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Tiling"}},
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Carpentry"}},
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Floor Screeding"}},
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Painting"}},
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Renovations"}}
+        ]
+      }
+    }
+    </script>
+
     <link rel="icon" type="image/png" href="logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+
     <style>
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -55,11 +99,13 @@
 
         body { background: var(--white); color: var(--body); font-family: var(--font-body); font-size: 16px; line-height: 1.65; overflow-x: hidden; }
 
+        /* SA FLAG BAR */
         .sa-bar { position: fixed; top: 0; left: 0; right: 0; height: 3px; z-index: 300; display: flex; }
         .sa-bar span { flex: 1; }
         .sa-bar .s1 { background: #DE3831; } .sa-bar .s2 { background: #FFB612; } .sa-bar .s3 { background: #007A4D; }
         .sa-bar .s4 { background: #fff; }    .sa-bar .s5 { background: #002395; } .sa-bar .s6 { background: #000; }
 
+        /* NAV */
         nav {
             position: fixed; top: 3px; left: 0; right: 0; z-index: 200;
             height: 72px; display: flex; align-items: center;
@@ -116,6 +162,205 @@
         .trust-item + .trust-item { border-left: 1px solid rgba(255,255,255,0.2); }
         .trust-num { font-family: var(--font-head); font-size: 56px; font-weight: 900; line-height: 1; color: white; }
         .trust-label { font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(255,255,255,0.7); margin-top: 4px; font-weight: 600; }
+
+        /* ═══════════════════════════════════════════
+           HORIZONTAL SCROLLABLE "OUR WORK" GALLERY
+        ═══════════════════════════════════════════ */
+        .our-work-section {
+            background: var(--ink);
+            padding: 72px 0 0;
+            overflow: hidden;
+        }
+        .our-work-head {
+            padding: 0 48px 40px;
+            max-width: 1240px;
+            margin: 0 auto;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            gap: 24px;
+        }
+        .our-work-head-left .label-tag {
+            background: rgba(212,43,53,0.15);
+            color: var(--redf);
+            border-color: rgba(212,43,53,0.3);
+        }
+        .our-work-head h2 {
+            font-family: var(--font-head);
+            font-size: clamp(44px,5.5vw,80px);
+            font-weight: 900;
+            line-height: 0.92;
+            color: white;
+            text-transform: uppercase;
+        }
+        .our-work-head h2 em { font-style: normal; color: var(--redf); }
+        .our-work-head p {
+            color: rgba(255,255,255,0.5);
+            font-size: 14px;
+            margin-top: 12px;
+            line-height: 1.7;
+            max-width: 340px;
+        }
+        .our-work-scroll-hint {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: rgba(255,255,255,0.35);
+            font-size: 11px;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            font-weight: 600;
+            flex-shrink: 0;
+        }
+        .our-work-scroll-hint svg { width: 28px; height: 28px; animation: hintSlide 1.8s ease-in-out infinite; }
+        @keyframes hintSlide {
+            0%, 100% { transform: translateX(0); opacity: 0.4; }
+            50% { transform: translateX(6px); opacity: 1; }
+        }
+
+        /* The scrollable track */
+        .our-work-track-wrap {
+            position: relative;
+        }
+        /* Fade edges */
+        .our-work-track-wrap::before,
+        .our-work-track-wrap::after {
+            content: '';
+            position: absolute;
+            top: 0; bottom: 0;
+            width: 80px;
+            z-index: 2;
+            pointer-events: none;
+        }
+        .our-work-track-wrap::before {
+            left: 0;
+            background: linear-gradient(to right, var(--ink), transparent);
+        }
+        .our-work-track-wrap::after {
+            right: 0;
+            background: linear-gradient(to left, var(--ink), transparent);
+        }
+
+        .our-work-track {
+            display: flex;
+            gap: 16px;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+            padding: 0 48px 40px;
+            scrollbar-width: none;
+            cursor: grab;
+        }
+        .our-work-track::-webkit-scrollbar { display: none; }
+        .our-work-track.dragging { cursor: grabbing; }
+
+        .ow-card {
+            flex-shrink: 0;
+            scroll-snap-align: start;
+            position: relative;
+            border-radius: var(--r3);
+            overflow: hidden;
+            border: 1px solid rgba(255,255,255,0.07);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .ow-card:hover { transform: translateY(-6px); box-shadow: 0 24px 64px rgba(0,0,0,0.6); }
+
+        /* Tall cards */
+        .ow-card.tall { width: 280px; height: 400px; }
+        /* Wide cards */
+        .ow-card.wide { width: 420px; height: 400px; }
+        /* Square cards */
+        .ow-card.sq { width: 320px; height: 400px; }
+
+        .ow-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.55s ease;
+            filter: brightness(0.88);
+        }
+        .ow-card:hover img {
+            transform: scale(1.06);
+            filter: brightness(1);
+        }
+
+        .ow-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(10,8,5,0.85) 0%, rgba(10,8,5,0.1) 50%, transparent 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 22px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .ow-card:hover .ow-overlay { opacity: 1; }
+
+        .ow-cat {
+            display: inline-block;
+            padding: 3px 10px;
+            background: var(--red);
+            color: white;
+            font-size: 9px;
+            font-weight: 700;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            border-radius: 3px;
+            margin-bottom: 6px;
+            width: fit-content;
+        }
+        .ow-name {
+            font-family: var(--font-head);
+            font-size: 18px;
+            font-weight: 800;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 0.02em;
+        }
+
+        /* Always-visible bottom label strip */
+        .ow-label {
+            position: absolute;
+            bottom: 0; left: 0; right: 0;
+            padding: 10px 16px;
+            background: linear-gradient(to top, rgba(10,8,5,0.75), transparent);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .ow-label-cat {
+            font-family: var(--font-head);
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--redf);
+        }
+
+        /* Scroll arrows */
+        .our-work-arrows {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+            padding: 0 48px 48px;
+            max-width: 1240px;
+            margin: 0 auto;
+        }
+        .ow-arrow {
+            width: 44px; height: 44px;
+            background: rgba(255,255,255,0.08);
+            border: 1.5px solid rgba(255,255,255,0.15);
+            border-radius: 50%;
+            color: white;
+            cursor: pointer;
+            display: flex; align-items: center; justify-content: center;
+            transition: background 0.2s, border-color 0.2s;
+            font-size: 18px;
+            line-height: 1;
+        }
+        .ow-arrow:hover { background: var(--red); border-color: var(--red); }
 
         /* SERVICE SECTIONS */
         .svc-section { padding: 96px 0; border-bottom: 1.5px solid var(--border); }
@@ -182,157 +427,6 @@
         .svc-photo-thumb.empty:hover { transform: none; box-shadow: none; }
         .svc-photo-thumb.empty span { font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--light); }
 
-        /* ═══ GALLERY SECTION — enhanced visibility ═══ */
-        #gallery {
-            background: var(--ink);
-            padding: 0;
-            position: relative;
-            overflow: hidden;
-        }
-        /* Big bold intro banner */
-        .gallery-intro {
-            background: linear-gradient(135deg, var(--ink) 0%, #2a1f14 60%, #1a0d08 100%);
-            padding: 100px 0 72px;
-            position: relative;
-            overflow: hidden;
-        }
-        .gallery-intro::before {
-            content: 'GALLERY';
-            position: absolute;
-            top: 50%; left: 50%;
-            transform: translate(-50%, -50%);
-            font-family: var(--font-head);
-            font-size: clamp(120px, 18vw, 220px);
-            font-weight: 900;
-            color: rgba(255,255,255,0.025);
-            letter-spacing: -0.02em;
-            white-space: nowrap;
-            pointer-events: none;
-            line-height: 1;
-        }
-        .gallery-intro::after {
-            content: '';
-            position: absolute;
-            bottom: 0; left: 0; right: 0;
-            height: 5px;
-            background: linear-gradient(to right, var(--red), var(--redf) 50%, transparent);
-        }
-        .gallery-hd { text-align: center; position: relative; z-index: 1; }
-        .gallery-hd .label-tag { background: rgba(212,43,53,0.15); color: var(--redf); border-color: rgba(212,43,53,0.3); display: inline-flex; font-size: 11px; letter-spacing: 0.22em; }
-        .gallery-hd h2 { font-family: var(--font-head); font-size: clamp(56px,7vw,96px); font-weight: 900; line-height: 0.92; color: white; text-transform: uppercase; margin-bottom: 20px; }
-        .gallery-hd h2 em { font-style: normal; color: var(--redf); }
-        .gallery-hd p { color: rgba(255,255,255,0.55); font-size: 16px; max-width: 480px; margin: 0 auto 0; line-height: 1.75; }
-
-        /* Stats row inside gallery */
-        .gallery-stats {
-            display: flex;
-            justify-content: center;
-            gap: 0;
-            margin-top: 52px;
-            border-top: 1px solid rgba(255,255,255,0.08);
-            border-bottom: 1px solid rgba(255,255,255,0.08);
-        }
-        .gallery-stat {
-            flex: 1;
-            max-width: 200px;
-            text-align: center;
-            padding: 28px 16px;
-            border-right: 1px solid rgba(255,255,255,0.08);
-        }
-        .gallery-stat:last-child { border-right: none; }
-        .gallery-stat-num { font-family: var(--font-head); font-size: 44px; font-weight: 900; color: var(--redf); line-height: 1; }
-        .gallery-stat-label { font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.4); margin-top: 4px; font-weight: 600; }
-
-        /* Filter bar */
-        .gallery-filters-wrap {
-            background: rgba(255,255,255,0.03);
-            border-bottom: 1px solid rgba(255,255,255,0.08);
-            padding: 24px 0;
-            position: sticky;
-            top: 75px;
-            z-index: 10;
-            backdrop-filter: blur(20px);
-        }
-        .gallery-filters {
-            display: flex; justify-content: center; gap: 8px;
-            flex-wrap: wrap;
-        }
-        .gf-btn {
-            padding: 10px 22px;
-            background: rgba(255,255,255,0.06);
-            border: 1.5px solid rgba(255,255,255,0.12);
-            border-radius: 30px;
-            font-family: var(--font-body); font-size: 12px; font-weight: 600;
-            letter-spacing: 0.08em; text-transform: uppercase;
-            color: rgba(255,255,255,0.5);
-            cursor: pointer; transition: all 0.2s;
-        }
-        .gf-btn:hover { background: rgba(255,255,255,0.14); color: white; border-color: rgba(255,255,255,0.25); }
-        .gf-btn.active { background: var(--red); border-color: var(--red); color: white; box-shadow: 0 4px 16px rgba(212,43,53,0.4); }
-
-        /* Masonry grid wrapper */
-        .gallery-grid-wrap {
-            padding: 48px 0 80px;
-            background: var(--ink);
-        }
-
-        /* Masonry columns */
-        .masonry-grid { column-count: 3; column-gap: 14px; }
-        .masonry-item {
-            break-inside: avoid;
-            margin-bottom: 14px;
-            position: relative;
-            border-radius: var(--r2);
-            overflow: hidden;
-            cursor: pointer;
-            background: rgba(255,255,255,0.05);
-            border: 1px solid rgba(255,255,255,0.06);
-            transition: transform 0.25s, box-shadow 0.25s;
-        }
-        .masonry-item:hover { transform: translateY(-4px); box-shadow: 0 16px 48px rgba(0,0,0,0.5); }
-        .masonry-item img { width: 100%; display: block; object-fit: cover; transition: transform 0.55s ease; filter: brightness(0.92); }
-        .masonry-item:hover img { transform: scale(1.05); filter: brightness(1); }
-        .masonry-item.hidden-item { display: none; }
-
-        .masonry-overlay {
-            position: absolute; inset: 0;
-            background: linear-gradient(to top, rgba(15,12,8,0.88) 0%, rgba(15,12,8,0.1) 55%, transparent 100%);
-            opacity: 0; transition: opacity 0.25s;
-            display: flex; flex-direction: column; justify-content: flex-end;
-            padding: 20px;
-        }
-        .masonry-item:hover .masonry-overlay { opacity: 1; }
-        .masonry-tag { display: inline-block; padding: 3px 10px; background: var(--red); color: white; font-size: 9px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; border-radius: 3px; margin-bottom: 6px; width: fit-content; }
-        .masonry-name { font-family: var(--font-head); font-size: 17px; font-weight: 800; color: white; text-transform: uppercase; letter-spacing: 0.02em; }
-
-        .masonry-item.empty-card { cursor: default; display: flex; align-items: center; justify-content: center; min-height: 180px; }
-        .masonry-item.empty-card:hover { transform: none; box-shadow: none; }
-        .empty-card-inner { text-align: center; padding: 24px; }
-        .empty-card-inner p { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.25); margin-top: 8px; }
-
-        /* LIGHTBOX */
-        .lightbox {
-            display: none; position: fixed; inset: 0; z-index: 1000;
-            background: rgba(10,8,5,0.96); backdrop-filter: blur(12px);
-            align-items: center; justify-content: center; padding: 20px;
-            animation: lbFadeIn 0.25s ease;
-        }
-        .lightbox.open { display: flex; }
-        @keyframes lbFadeIn { from { opacity: 0; } to { opacity: 1; } }
-        .lb-inner { position: relative; max-width: 1100px; width: 100%; }
-        .lb-img-wrap { border-radius: var(--r2); overflow: hidden; box-shadow: 0 32px 100px rgba(0,0,0,0.7); background: var(--ink); }
-        .lb-img-wrap img { width: 100%; max-height: 85vh; object-fit: contain; display: block; }
-        .lb-caption { padding: 16px 4px 0; display: flex; justify-content: space-between; align-items: center; }
-        .lb-cap-text { font-family: var(--font-head); font-size: 18px; font-weight: 700; color: white; text-transform: uppercase; letter-spacing: 0.04em; }
-        .lb-cap-tag { font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.4); margin-top: 3px; }
-        .lb-close { position: absolute; top: -48px; right: 0; background: rgba(255,255,255,0.1); border: none; color: white; width: 40px; height: 40px; border-radius: 50%; font-size: 22px; line-height: 1; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background 0.2s; }
-        .lb-close:hover { background: var(--red); }
-        .lb-nav { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.15); color: white; width: 48px; height: 48px; border-radius: 50%; font-size: 22px; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background 0.2s; }
-        .lb-nav:hover { background: var(--red); border-color: var(--red); }
-        .lb-prev { left: -70px; }
-        .lb-next { right: -70px; }
-        .lb-counter { font-size: 12px; letter-spacing: 0.12em; color: rgba(255,255,255,0.4); text-align: right; }
-
         /* CTA BAND */
         .cta-band { background: var(--off); padding: 96px 0; border-top: 1.5px solid var(--border); }
         .cta-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
@@ -346,8 +440,6 @@
         .phone-link:hover { color: var(--ink); }
         .phone-link svg { width: 16px; height: 16px; }
         .phone-sep { color: var(--border); font-size: 20px; }
-        .btn-primary { display: inline-flex; align-items: center; gap: 10px; background: var(--red); color: white; padding: 15px 34px; border-radius: var(--r2); font-family: var(--font-head); font-size: 16px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none; box-shadow: 0 6px 24px rgba(212,43,53,0.35); transition: background 0.2s, transform 0.15s; }
-        .btn-primary:hover { background: var(--redf); transform: translateY(-2px); }
         .btn-secondary { display: inline-flex; align-items: center; gap: 10px; background: white; color: var(--ink); padding: 15px 34px; border-radius: var(--r2); font-family: var(--font-head); font-size: 16px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none; border: 2px solid var(--border); transition: border-color 0.2s, box-shadow 0.2s; }
         .btn-secondary:hover { border-color: var(--ink); box-shadow: var(--shadow-sm); }
 
@@ -374,16 +466,31 @@
         .fu.in { opacity: 1; transform: translateY(0); }
         .fu.d1 { transition-delay: 0.1s; } .fu.d2 { transition-delay: 0.2s; }
 
+        /* LIGHTBOX */
+        .lightbox { display: none; position: fixed; inset: 0; z-index: 1000; background: rgba(10,8,5,0.96); backdrop-filter: blur(12px); align-items: center; justify-content: center; padding: 20px; animation: lbFadeIn 0.25s ease; }
+        .lightbox.open { display: flex; }
+        @keyframes lbFadeIn { from { opacity: 0; } to { opacity: 1; } }
+        .lb-inner { position: relative; max-width: 1100px; width: 100%; }
+        .lb-img-wrap { border-radius: var(--r2); overflow: hidden; box-shadow: 0 32px 100px rgba(0,0,0,0.7); background: var(--ink); }
+        .lb-img-wrap img { width: 100%; max-height: 85vh; object-fit: contain; display: block; }
+        .lb-caption { padding: 16px 4px 0; display: flex; justify-content: space-between; align-items: center; }
+        .lb-cap-text { font-family: var(--font-head); font-size: 18px; font-weight: 700; color: white; text-transform: uppercase; letter-spacing: 0.04em; }
+        .lb-cap-tag { font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.4); margin-top: 3px; }
+        .lb-close { position: absolute; top: -48px; right: 0; background: rgba(255,255,255,0.1); border: none; color: white; width: 40px; height: 40px; border-radius: 50%; font-size: 22px; line-height: 1; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background 0.2s; }
+        .lb-close:hover { background: var(--red); }
+        .lb-nav { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.15); color: white; width: 48px; height: 48px; border-radius: 50%; font-size: 22px; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background 0.2s; }
+        .lb-nav:hover { background: var(--red); border-color: var(--red); }
+        .lb-prev { left: -70px; }
+        .lb-next { right: -70px; }
+        .lb-counter { font-size: 12px; letter-spacing: 0.12em; color: rgba(255,255,255,0.4); text-align: right; }
+
         /* RESPONSIVE */
         @media (max-width: 1100px) {
             .trust-grid { grid-template-columns: repeat(2,1fr); }
             .trust-item:nth-child(3) { border-left: none; border-top: 1px solid rgba(255,255,255,0.2); }
             .trust-item:nth-child(4) { border-top: 1px solid rgba(255,255,255,0.2); }
             .foot-grid { grid-template-columns: 1fr 1fr; gap: 36px; }
-            .masonry-grid { column-count: 2; }
-            .lb-prev { left: -56px; }
-            .lb-next { right: -56px; }
-            .gallery-stat { max-width: 160px; }
+            .lb-prev { left: -56px; } .lb-next { right: -56px; }
         }
         @media (max-width: 860px) {
             nav { padding: 0 20px; } .nav-links { display: none; } .nav-mob-btn { display: flex; }
@@ -395,18 +502,17 @@
             .svc-section { padding: 64px 0; }
             .cta-inner { grid-template-columns: 1fr; gap: 40px; }
             .ph-nav a { font-size: 11px; padding: 7px 14px; }
-            .masonry-grid { column-count: 2; }
             .svc-photos-strip { grid-template-columns: repeat(2, 1fr); }
             .lb-prev, .lb-next { display: none; }
-            .gallery-intro { padding: 72px 0 52px; }
-            .gallery-stats { flex-wrap: wrap; }
-            .gallery-stat { min-width: 120px; border-bottom: 1px solid rgba(255,255,255,0.08); }
+            .our-work-head { padding: 0 20px 32px; flex-direction: column; align-items: flex-start; }
+            .our-work-track { padding: 0 20px 32px; }
+            .our-work-arrows { padding: 0 20px 40px; }
+            .ow-card.tall, .ow-card.wide, .ow-card.sq { width: 240px; height: 320px; }
         }
         @media (max-width: 560px) {
             .foot-grid { grid-template-columns: 1fr; }
             .trust-grid { grid-template-columns: 1fr 1fr; }
             .trust-item:nth-child(3) { border-left: none; border-top: 1px solid rgba(255,255,255,0.2); }
-            .masonry-grid { column-count: 1; }
             .svc-photos-strip { grid-template-columns: repeat(2, 1fr); }
         }
     </style>
@@ -426,7 +532,6 @@
     <ul class="nav-links" role="list">
         <li><a href="index.html#about">About</a></li>
         <li><a href="services.html" class="active">Services</a></li>
-        <li><a href="#gallery">Gallery</a></li>
         <li><a href="index.html#areas">Areas</a></li>
         <li><a href="index.html#testimonials">Reviews</a></li>
         <li><a href="contact.html" class="nav-cta">Free Quote</a></li>
@@ -445,7 +550,6 @@
     </div>
     <a href="index.html#about" onclick="document.getElementById('mobMenu').classList.remove('open')">About</a>
     <a href="services.html" onclick="document.getElementById('mobMenu').classList.remove('open')">Services</a>
-    <a href="#gallery" onclick="document.getElementById('mobMenu').classList.remove('open')">Gallery</a>
     <a href="index.html#areas" onclick="document.getElementById('mobMenu').classList.remove('open')">Areas</a>
     <a href="index.html#testimonials" onclick="document.getElementById('mobMenu').classList.remove('open')">Reviews</a>
     <a href="contact.html" onclick="document.getElementById('mobMenu').classList.remove('open')" style="color:var(--red);margin-top:20px;">Get a Free Quote &rarr;</a>
@@ -460,18 +564,15 @@
             <span>Services</span>
         </nav>
         <div class="label-tag" style="background:rgba(255,255,255,0.1);color:white;border-color:rgba(255,255,255,0.2);">What We Do</div>
-        <h1 class="ph-title">Our <em>8</em><br>Services</h1>
+        <h1 class="ph-title">Our <em>6</em><br>Services</h1>
         <p class="ph-sub">From solid foundations to finished interiors — every trade you need, under one roof. Serving Vredenburg, Saldanha, Langebaan and the wider West Coast.</p>
         <div class="ph-nav" role="navigation" aria-label="Jump to service">
             <a href="#building">Building</a>
             <a href="#tiling">Tiling</a>
             <a href="#carpentry">Carpentry</a>
             <a href="#screeding">Floor Screeding</a>
-            <a href="#decking">Decking</a>
             <a href="#painting">Painting</a>
-            <a href="#waterproofing">Waterproofing</a>
             <a href="#renovations">Renovations</a>
-            <a href="#gallery" style="background:rgba(212,43,53,0.25);border-color:rgba(212,43,53,0.4);color:white;">📷 Photo Gallery</a>
         </div>
     </div>
 </div>
@@ -482,11 +583,257 @@
         <div class="trust-grid">
             <div class="trust-item"><div class="trust-num">10+</div><div class="trust-label">Years Experience</div></div>
             <div class="trust-item"><div class="trust-num">150+</div><div class="trust-label">Projects Completed</div></div>
-            <div class="trust-item"><div class="trust-num">8</div><div class="trust-label">Services Offered</div></div>
+            <div class="trust-item"><div class="trust-num">6</div><div class="trust-label">Services Offered</div></div>
             <div class="trust-item"><div class="trust-num">8</div><div class="trust-label">Towns Served</div></div>
         </div>
     </div>
 </div>
+
+<!-- ═══════════════════════════════════════════════════════
+     HORIZONTAL SCROLLABLE "OUR WORK" GALLERY
+     All images: jpg format, WhatsApp images renamed cleanly
+════════════════════════════════════════════════════════ -->
+<section class="our-work-section" aria-label="Our project photo gallery">
+    <div class="our-work-head">
+        <div class="our-work-head-left">
+            <div class="label-tag">Our Work</div>
+            <h2>Project <em>Gallery</em></h2>
+            <p>A look at some of the work we've completed across the West Coast — scroll to explore.</p>
+        </div>
+        <div class="our-work-scroll-hint" aria-hidden="true">
+            <span>Scroll</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </div>
+    </div>
+
+    <div class="our-work-track-wrap">
+        <div class="our-work-track" id="owTrack" role="list">
+
+            <!-- All images normalised to .jpg. WhatsApp images renamed:
+                 wa1 = WhatsApp Image 2026-04-07 at 21.04.02 (1).jpeg
+                 wa2 = WhatsApp Image 2026-04-07 at 21.04.02.jpeg
+                 wa3 = WhatsApp Image 2026-04-07 at 21.04.10 (1).jpeg
+                 wa4 = WhatsApp Image 2026-04-07 at 21.04.11 (1).jpeg
+                 wa5 = WhatsApp Image 2026-04-07 at 21.04.11.jpeg
+                 wa6 = WhatsApp Image 2026-04-07 at 21.04.13.jpeg
+                 wa7 = WhatsApp Image 2026-04-07 at 21.04.14 (2).jpeg
+                 wa8 = WhatsApp Image 2026-04-07 at 21.04.14.jpeg
+
+                 Rename those files on disk to wa1.jpg … wa8.jpg
+            -->
+
+            <div class="ow-card wide" role="listitem" onclick="owLightbox(this)" aria-label="Open photo">
+                <img src="pic1.jpg" alt="Izwe 2 Projects West Coast construction work" loading="lazy">
+                <div class="ow-overlay"><span class="ow-cat">Building</span><div class="ow-name">West Coast Project</div></div>
+                <div class="ow-label"><span class="ow-label-cat">Building</span></div>
+            </div>
+
+            <div class="ow-card tall" role="listitem" onclick="owLightbox(this)" aria-label="Open photo">
+                <img src="Showertiles.jpg" alt="Professional shower tiling Saldanha" loading="lazy">
+                <div class="ow-overlay"><span class="ow-cat">Tiling</span><div class="ow-name">Shower Tiling</div></div>
+                <div class="ow-label"><span class="ow-label-cat">Tiling</span></div>
+            </div>
+
+            <div class="ow-card sq" role="listitem" onclick="owLightbox(this)" aria-label="Open photo">
+                <img src="90buildbraai.jpg" alt="Braai and entertainment area build West Coast" loading="lazy">
+                <div class="ow-overlay"><span class="ow-cat">Renovations</span><div class="ow-name">Braai Entertainment Area</div></div>
+                <div class="ow-label"><span class="ow-label-cat">Renovations</span></div>
+            </div>
+
+            <div class="ow-card tall" role="listitem" onclick="owLightbox(this)" aria-label="Open photo">
+                <img src="wa1.jpg" alt="Construction project West Coast" loading="lazy">
+                <div class="ow-overlay"><span class="ow-cat">Building</span><div class="ow-name">Site Work</div></div>
+                <div class="ow-label"><span class="ow-label-cat">Building</span></div>
+            </div>
+
+            <div class="ow-card wide" role="listitem" onclick="owLightbox(this)" aria-label="Open photo">
+                <img src="tiling.jpg" alt="Floor tiling project Vredenburg" loading="lazy">
+                <div class="ow-overlay"><span class="ow-cat">Tiling</span><div class="ow-name">Floor Tiling</div></div>
+                <div class="ow-label"><span class="ow-label-cat">Tiling</span></div>
+            </div>
+
+            <div class="ow-card sq" role="listitem" onclick="owLightbox(this)" aria-label="Open photo">
+                <img src="wa2.jpg" alt="Izwe 2 Projects construction" loading="lazy">
+                <div class="ow-overlay"><span class="ow-cat">Building</span><div class="ow-name">Construction Detail</div></div>
+                <div class="ow-label"><span class="ow-label-cat">Building</span></div>
+            </div>
+
+            <div class="ow-card tall" role="listitem" onclick="owLightbox(this)" aria-label="Open photo">
+                <img src="paintedwall.jpg" alt="Professional painting Vredenburg West Coast" loading="lazy">
+                <div class="ow-overlay"><span class="ow-cat">Painting</span><div class="ow-name">Exterior Painting</div></div>
+                <div class="ow-label"><span class="ow-label-cat">Painting</span></div>
+            </div>
+
+            <div class="ow-card sq" role="listitem" onclick="owLightbox(this)" aria-label="Open photo">
+                <img src="wa3.jpg" alt="Construction project West Coast SA" loading="lazy">
+                <div class="ow-overlay"><span class="ow-cat">Building</span><div class="ow-name">Project Progress</div></div>
+                <div class="ow-label"><span class="ow-label-cat">Building</span></div>
+            </div>
+
+            <div class="ow-card wide" role="listitem" onclick="owLightbox(this)" aria-label="Open photo">
+                <img src="renovation3.jpg" alt="Bathroom renovation West Coast" loading="lazy">
+                <div class="ow-overlay"><span class="ow-cat">Renovations</span><div class="ow-name">Bathroom Renovation</div></div>
+                <div class="ow-label"><span class="ow-label-cat">Renovations</span></div>
+            </div>
+
+            <div class="ow-card tall" role="listitem" onclick="owLightbox(this)" aria-label="Open photo">
+                <img src="wa4.jpg" alt="Izwe 2 Projects West Coast build" loading="lazy">
+                <div class="ow-overlay"><span class="ow-cat">Building</span><div class="ow-name">New Build</div></div>
+                <div class="ow-label"><span class="ow-label-cat">Building</span></div>
+            </div>
+
+            <div class="ow-card sq" role="listitem" onclick="owLightbox(this)" aria-label="Open photo">
+                <img src="ptiling3.jpg" alt="Precision tiling Saldanha Bay" loading="lazy">
+                <div class="ow-overlay"><span class="ow-cat">Tiling</span><div class="ow-name">Precision Tiling</div></div>
+                <div class="ow-label"><span class="ow-label-cat">Tiling</span></div>
+            </div>
+
+            <div class="ow-card wide" role="listitem" onclick="owLightbox(this)" aria-label="Open photo">
+                <img src="wa5.jpg" alt="Construction site West Coast SA" loading="lazy">
+                <div class="ow-overlay"><span class="ow-cat">Building</span><div class="ow-name">Site Detail</div></div>
+                <div class="ow-label"><span class="ow-label-cat">Building</span></div>
+            </div>
+
+            <div class="ow-card tall" role="listitem" onclick="owLightbox(this)" aria-label="Open photo">
+                <img src="pic2.jpg" alt="Interior finishing West Coast" loading="lazy">
+                <div class="ow-overlay"><span class="ow-cat">Renovations</span><div class="ow-name">Interior Finishing</div></div>
+                <div class="ow-label"><span class="ow-label-cat">Renovations</span></div>
+            </div>
+
+            <div class="ow-card sq" role="listitem" onclick="owLightbox(this)" aria-label="Open photo">
+                <img src="carpentry3.jpg" alt="Ceiling carpentry Vredenburg" loading="lazy">
+                <div class="ow-overlay"><span class="ow-cat">Carpentry</span><div class="ow-name">Ceiling Work</div></div>
+                <div class="ow-label"><span class="ow-label-cat">Carpentry</span></div>
+            </div>
+
+            <div class="ow-card wide" role="listitem" onclick="owLightbox(this)" aria-label="Open photo">
+                <img src="wa6.jpg" alt="Izwe 2 Projects recent project" loading="lazy">
+                <div class="ow-overlay"><span class="ow-cat">Building</span><div class="ow-name">Recent Project</div></div>
+                <div class="ow-label"><span class="ow-label-cat">Building</span></div>
+            </div>
+
+            <div class="ow-card tall" role="listitem" onclick="owLightbox(this)" aria-label="Open photo">
+                <img src="tiling4.jpg" alt="Patio tiling West Coast" loading="lazy">
+                <div class="ow-overlay"><span class="ow-cat">Tiling</span><div class="ow-name">Patio Tiling</div></div>
+                <div class="ow-label"><span class="ow-label-cat">Tiling</span></div>
+            </div>
+
+            <div class="ow-card sq" role="listitem" onclick="owLightbox(this)" aria-label="Open photo">
+                <img src="wa7.jpg" alt="Construction detail West Coast SA" loading="lazy">
+                <div class="ow-overlay"><span class="ow-cat">Building</span><div class="ow-name">Construction Work</div></div>
+                <div class="ow-label"><span class="ow-label-cat">Building</span></div>
+            </div>
+
+            <div class="ow-card wide" role="listitem" onclick="owLightbox(this)" aria-label="Open photo">
+                <img src="building3.jpg" alt="Building project Vredenburg West Coast" loading="lazy">
+                <div class="ow-overlay"><span class="ow-cat">Building</span><div class="ow-name">New Construction</div></div>
+                <div class="ow-label"><span class="ow-label-cat">Building</span></div>
+            </div>
+
+            <div class="ow-card tall" role="listitem" onclick="owLightbox(this)" aria-label="Open photo">
+                <img src="wa8.jpg" alt="Izwe 2 Projects latest work" loading="lazy">
+                <div class="ow-overlay"><span class="ow-cat">Building</span><div class="ow-name">Latest Project</div></div>
+                <div class="ow-label"><span class="ow-label-cat">Building</span></div>
+            </div>
+
+            <div class="ow-card sq" role="listitem" onclick="owLightbox(this)" aria-label="Open photo">
+                <img src="renovation4.jpg" alt="Kitchen upgrade renovation West Coast" loading="lazy">
+                <div class="ow-overlay"><span class="ow-cat">Renovations</span><div class="ow-name">Kitchen Upgrade</div></div>
+                <div class="ow-label"><span class="ow-label-cat">Renovations</span></div>
+            </div>
+
+            <div class="ow-card wide" role="listitem" onclick="owLightbox(this)" aria-label="Open photo">
+                <img src="pic3.jpg" alt="Tiling and plastering West Coast" loading="lazy">
+                <div class="ow-overlay"><span class="ow-cat">Tiling</span><div class="ow-name">Tiling &amp; Plastering</div></div>
+                <div class="ow-label"><span class="ow-label-cat">Tiling</span></div>
+            </div>
+
+            <div class="ow-card tall" role="listitem" onclick="owLightbox(this)" aria-label="Open photo">
+                <img src="tiling5.jpg" alt="Wall tiling Saldanha" loading="lazy">
+                <div class="ow-overlay"><span class="ow-cat">Tiling</span><div class="ow-name">Wall Tiling</div></div>
+                <div class="ow-label"><span class="ow-label-cat">Tiling</span></div>
+            </div>
+
+            <div class="ow-card sq" role="listitem" onclick="owLightbox(this)" aria-label="Open photo">
+                <img src="pic4.jpg" alt="West Coast construction site" loading="lazy">
+                <div class="ow-overlay"><span class="ow-cat">Building</span><div class="ow-name">West Coast Site</div></div>
+                <div class="ow-label"><span class="ow-label-cat">Building</span></div>
+            </div>
+
+            <div class="ow-card wide" role="listitem" onclick="owLightbox(this)" aria-label="Open photo">
+                <img src="carpentry4.jpg" alt="Built-in wardrobe carpentry Vredenburg" loading="lazy">
+                <div class="ow-overlay"><span class="ow-cat">Carpentry</span><div class="ow-name">Built-in Wardrobe</div></div>
+                <div class="ow-label"><span class="ow-label-cat">Carpentry</span></div>
+            </div>
+
+            <div class="ow-card tall" role="listitem" onclick="owLightbox(this)" aria-label="Open photo">
+                <img src="tiling6.jpg" alt="Commercial tiling West Coast" loading="lazy">
+                <div class="ow-overlay"><span class="ow-cat">Tiling</span><div class="ow-name">Commercial Tiling</div></div>
+                <div class="ow-label"><span class="ow-label-cat">Tiling</span></div>
+            </div>
+
+            <div class="ow-card sq" role="listitem" onclick="owLightbox(this)" aria-label="Open photo">
+                <img src="pic5.jpg" alt="Project detail West Coast SA" loading="lazy">
+                <div class="ow-overlay"><span class="ow-cat">Renovations</span><div class="ow-name">Project Detail</div></div>
+                <div class="ow-label"><span class="ow-label-cat">Renovations</span></div>
+            </div>
+
+            <div class="ow-card wide" role="listitem" onclick="owLightbox(this)" aria-label="Open photo">
+                <img src="building4.jpg" alt="Brickwork Vredenburg West Coast" loading="lazy">
+                <div class="ow-overlay"><span class="ow-cat">Building</span><div class="ow-name">Brickwork Detail</div></div>
+                <div class="ow-label"><span class="ow-label-cat">Building</span></div>
+            </div>
+
+            <div class="ow-card tall" role="listitem" onclick="owLightbox(this)" aria-label="Open photo">
+                <img src="renovation5.jpg" alt="Open-plan conversion renovation Saldanha" loading="lazy">
+                <div class="ow-overlay"><span class="ow-cat">Renovations</span><div class="ow-name">Open-Plan Conversion</div></div>
+                <div class="ow-label"><span class="ow-label-cat">Renovations</span></div>
+            </div>
+
+            <div class="ow-card sq" role="listitem" onclick="owLightbox(this)" aria-label="Open photo">
+                <img src="pic7.jpg" alt="Construction work West Coast SA" loading="lazy">
+                <div class="ow-overlay"><span class="ow-cat">Building</span><div class="ow-name">Construction Work</div></div>
+                <div class="ow-label"><span class="ow-label-cat">Building</span></div>
+            </div>
+
+            <div class="ow-card wide" role="listitem" onclick="owLightbox(this)" aria-label="Open photo">
+                <img src="building5.jpg" alt="New build project West Coast" loading="lazy">
+                <div class="ow-overlay"><span class="ow-cat">Building</span><div class="ow-name">New Build</div></div>
+                <div class="ow-label"><span class="ow-label-cat">Building</span></div>
+            </div>
+
+            <div class="ow-card tall" role="listitem" onclick="owLightbox(this)" aria-label="Open photo">
+                <img src="pic8.jpg" alt="Site progress West Coast SA" loading="lazy">
+                <div class="ow-overlay"><span class="ow-cat">Building</span><div class="ow-name">Site Progress</div></div>
+                <div class="ow-label"><span class="ow-label-cat">Building</span></div>
+            </div>
+
+            <div class="ow-card sq" role="listitem" onclick="owLightbox(this)" aria-label="Open photo">
+                <img src="pic9.jpg" alt="Interior painting West Coast" loading="lazy">
+                <div class="ow-overlay"><span class="ow-cat">Painting</span><div class="ow-name">Interior Coat</div></div>
+                <div class="ow-label"><span class="ow-label-cat">Painting</span></div>
+            </div>
+
+            <div class="ow-card wide" role="listitem" onclick="owLightbox(this)" aria-label="Open photo">
+                <img src="pic10.jpg" alt="Painting project West Coast SA" loading="lazy">
+                <div class="ow-overlay"><span class="ow-cat">Painting</span><div class="ow-name">Painting Project</div></div>
+                <div class="ow-label"><span class="ow-label-cat">Painting</span></div>
+            </div>
+
+            <div class="ow-card tall" role="listitem" onclick="owLightbox(this)" aria-label="Open photo">
+                <img src="resident1.jpg" alt="Residential build West Coast SA" loading="lazy">
+                <div class="ow-overlay"><span class="ow-cat">Building</span><div class="ow-name">Residential Build</div></div>
+                <div class="ow-label"><span class="ow-label-cat">Building</span></div>
+            </div>
+
+        </div><!-- /our-work-track -->
+    </div><!-- /track-wrap -->
+
+    <div class="our-work-arrows">
+        <button class="ow-arrow" id="owPrev" aria-label="Scroll gallery left">&#8592;</button>
+        <button class="ow-arrow" id="owNext" aria-label="Scroll gallery right">&#8594;</button>
+    </div>
+</section>
 
 <!-- ══ 01: BUILDING ══ -->
 <section class="svc-section" id="building" aria-labelledby="building-heading">
@@ -514,16 +861,16 @@
                 <div class="svc-photos">
                     <div class="svc-photos-label">Project Photos</div>
                     <div class="svc-photos-strip">
-                        <div class="svc-photo-thumb" onclick="openLightbox('building',0)" data-src="building3.jpg" data-cat="building" data-name="Building Site">
-                            <img src="building3.jpg" alt="Building site" onerror="this.parentElement.classList.add('empty');this.remove();this.parentElement.innerHTML='<span>Photo coming soon</span>';this.parentElement.onclick=null;">
+                        <div class="svc-photo-thumb">
+                            <img src="building3.jpg" alt="Building site Vredenburg" onerror="this.parentElement.classList.add('empty');this.remove();this.parentElement.innerHTML='<span>Photo coming soon</span>';this.parentElement.onclick=null;">
                             <div class="thumb-overlay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
                         </div>
-                        <div class="svc-photo-thumb" onclick="openLightbox('building',1)" data-src="building4.jpg" data-cat="building" data-name="Brickwork">
-                            <img src="building4.jpg" alt="Brickwork" onerror="this.parentElement.classList.add('empty');this.remove();this.parentElement.innerHTML='<span>Photo coming soon</span>';this.parentElement.onclick=null;">
+                        <div class="svc-photo-thumb">
+                            <img src="building4.jpg" alt="Brickwork West Coast" onerror="this.parentElement.classList.add('empty');this.remove();this.parentElement.innerHTML='<span>Photo coming soon</span>';this.parentElement.onclick=null;">
                             <div class="thumb-overlay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
                         </div>
-                        <div class="svc-photo-thumb" onclick="openLightbox('building',2)" data-src="building5.jpg" data-cat="building" data-name="Construction">
-                            <img src="building5.jpg" alt="Construction" onerror="this.parentElement.classList.add('empty');this.remove();this.parentElement.innerHTML='<span>Photo coming soon</span>';this.parentElement.onclick=null;">
+                        <div class="svc-photo-thumb">
+                            <img src="building5.jpg" alt="Construction West Coast SA" onerror="this.parentElement.classList.add('empty');this.remove();this.parentElement.innerHTML='<span>Photo coming soon</span>';this.parentElement.onclick=null;">
                             <div class="thumb-overlay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
                         </div>
                     </div>
@@ -571,28 +918,28 @@
                 <div class="svc-photos">
                     <div class="svc-photos-label">Project Photos</div>
                     <div class="svc-photos-strip">
-                        <div class="svc-photo-thumb" onclick="openLightbox('tiling',0)" data-src="Showertiles.jpg" data-cat="tiling" data-name="Shower Tiling">
-                            <img src="Showertiles.jpg" alt="Shower tiling" onerror="this.parentElement.classList.add('empty');this.remove();this.parentElement.innerHTML='<span>Photo coming soon</span>';this.parentElement.onclick=null;">
+                        <div class="svc-photo-thumb">
+                            <img src="Showertiles.jpg" alt="Shower tiling Saldanha" onerror="this.parentElement.classList.add('empty');this.remove();this.parentElement.innerHTML='<span>Photo coming soon</span>';this.parentElement.onclick=null;">
                             <div class="thumb-overlay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
                         </div>
-                        <div class="svc-photo-thumb" onclick="openLightbox('tiling',1)" data-src="tiling.jpeg" data-cat="tiling" data-name="Floor Tiling">
-                            <img src="tiling.jpeg" alt="Floor tiling" onerror="this.parentElement.classList.add('empty');this.remove();this.parentElement.innerHTML='<span>Photo coming soon</span>';this.parentElement.onclick=null;">
+                        <div class="svc-photo-thumb">
+                            <img src="tiling.jpg" alt="Floor tiling Vredenburg" onerror="this.parentElement.classList.add('empty');this.remove();this.parentElement.innerHTML='<span>Photo coming soon</span>';this.parentElement.onclick=null;">
                             <div class="thumb-overlay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
                         </div>
-                        <div class="svc-photo-thumb" onclick="openLightbox('tiling',2)" data-src="ptiling3.jpg" data-cat="tiling" data-name="Tiling Work">
-                            <img src="ptiling3.jpg" alt="Tiling project" onerror="this.parentElement.classList.add('empty');this.remove();this.parentElement.innerHTML='<span>Photo coming soon</span>';this.parentElement.onclick=null;">
+                        <div class="svc-photo-thumb">
+                            <img src="ptiling3.jpg" alt="Precision tiling West Coast" onerror="this.parentElement.classList.add('empty');this.remove();this.parentElement.innerHTML='<span>Photo coming soon</span>';this.parentElement.onclick=null;">
                             <div class="thumb-overlay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
                         </div>
-                        <div class="svc-photo-thumb" onclick="openLightbox('tiling',3)" data-src="tiling4.jpg" data-cat="tiling" data-name="Patio Tiling">
-                            <img src="tiling4.jpg" alt="Patio tiling" onerror="this.parentElement.classList.add('empty');this.remove();this.parentElement.innerHTML='<span>Photo coming soon</span>';this.parentElement.onclick=null;">
+                        <div class="svc-photo-thumb">
+                            <img src="tiling4.jpg" alt="Patio tiling West Coast" onerror="this.parentElement.classList.add('empty');this.remove();this.parentElement.innerHTML='<span>Photo coming soon</span>';this.parentElement.onclick=null;">
                             <div class="thumb-overlay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
                         </div>
-                        <div class="svc-photo-thumb" onclick="openLightbox('tiling',4)" data-src="tiling5.jpg" data-cat="tiling" data-name="Wall Tiling">
-                            <img src="tiling5.jpg" alt="Wall tiling" onerror="this.parentElement.classList.add('empty');this.remove();this.parentElement.innerHTML='<span>Photo coming soon</span>';this.parentElement.onclick=null;">
+                        <div class="svc-photo-thumb">
+                            <img src="tiling5.jpg" alt="Wall tiling West Coast SA" onerror="this.parentElement.classList.add('empty');this.remove();this.parentElement.innerHTML='<span>Photo coming soon</span>';this.parentElement.onclick=null;">
                             <div class="thumb-overlay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
                         </div>
-                        <div class="svc-photo-thumb" onclick="openLightbox('tiling',5)" data-src="tiling6.jpg" data-cat="tiling" data-name="Commercial Tiling">
-                            <img src="tiling6.jpg" alt="Commercial tiling" onerror="this.parentElement.classList.add('empty');this.remove();this.parentElement.innerHTML='<span>Photo coming soon</span>';this.parentElement.onclick=null;">
+                        <div class="svc-photo-thumb">
+                            <img src="tiling6.jpg" alt="Commercial tiling Saldanha Bay" onerror="this.parentElement.classList.add('empty');this.remove();this.parentElement.innerHTML='<span>Photo coming soon</span>';this.parentElement.onclick=null;">
                             <div class="thumb-overlay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
                         </div>
                     </div>
@@ -640,19 +987,23 @@
                 <div class="svc-photos">
                     <div class="svc-photos-label">Project Photos</div>
                     <div class="svc-photos-strip">
-                        <div class="svc-photo-thumb" onclick="openLightbox('carpentry',0)" data-src="carpentry3.jpg" data-cat="carpentry" data-name="Ceiling Work">
-                            <img src="carpentry3.jpg" alt="Ceiling work" onerror="this.parentElement.classList.add('empty');this.remove();this.parentElement.innerHTML='<span>Photo coming soon</span>';this.parentElement.onclick=null;">
+                        <div class="svc-photo-thumb">
+                            <img src="carpentry3.jpg" alt="Ceiling carpentry Vredenburg" onerror="this.parentElement.classList.add('empty');this.remove();this.parentElement.innerHTML='<span>Photo coming soon</span>';this.parentElement.onclick=null;">
                             <div class="thumb-overlay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
                         </div>
-                        <div class="svc-photo-thumb" onclick="openLightbox('carpentry',1)" data-src="carpentry4.jpg" data-cat="carpentry" data-name="Built-in Wardrobe">
-                            <img src="carpentry4.jpg" alt="Built-in wardrobe" onerror="this.parentElement.classList.add('empty');this.remove();this.parentElement.innerHTML='<span>Photo coming soon</span>';this.parentElement.onclick=null;">
+                        <div class="svc-photo-thumb">
+                            <img src="carpentry4.jpg" alt="Built-in wardrobe West Coast" onerror="this.parentElement.classList.add('empty');this.remove();this.parentElement.innerHTML='<span>Photo coming soon</span>';this.parentElement.onclick=null;">
                             <div class="thumb-overlay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="svc-visual fu d1">
-                <div class="svc-placeholder">
+                <div class="svc-img-wrap">
+                    <img src="carpentry3.jpg" alt="Carpentry ceiling work by Izwe 2 Projects West Coast" onerror="this.parentElement.style.display='none';this.parentElement.nextElementSibling.style.display='flex'">
+                    <div class="svc-img-tag">Carpentry</div>
+                </div>
+                <div class="svc-placeholder" style="display:none;">
                     <div class="svc-ph-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg></div>
                     <div class="svc-ph-title">Carpentry</div>
                     <div class="svc-ph-sub">Photo coming soon</div>
@@ -699,49 +1050,13 @@
     </div>
 </section>
 
-<!-- ══ 05: DECKING ══ -->
-<section class="svc-section" id="decking" aria-labelledby="decking-heading">
+<!-- ══ 05: PAINTING ══ -->
+<section class="svc-section" id="painting" aria-labelledby="painting-heading">
     <div class="container">
         <div class="svc-inner">
             <div class="svc-info fu">
                 <div class="svc-num-big">05</div>
                 <div class="svc-sub-label">Service 05</div>
-                <h2 id="decking-heading" class="svc-title">Decking</h2>
-                <p class="svc-desc">A quality deck transforms your outdoor space — perfect for the West Coast lifestyle. We design and build timber and composite decks for entertainment areas, braai patios, poolsides and seaside properties built to handle the coastal environment.</p>
-                <p class="svc-desc">Salt air and sun are tough on outdoor timber. We specify the right treated timber or composite materials for each project so your deck stays beautiful year after year.</p>
-                <ul class="included-list">
-                    <li>Hardwood and treated pine decking</li>
-                    <li>Composite / low-maintenance decking</li>
-                    <li>Braai and entertainment deck areas</li>
-                    <li>Pool and garden decks</li>
-                    <li>Elevated and multi-level decks</li>
-                    <li>Handrails and balustrades</li>
-                    <li>Deck repairs and restoration</li>
-                </ul>
-                <a href="https://wa.me/27766714106?text=Hi%2C%20I'm%20interested%20in%20a%20quote%20for%20Decking" class="wa-btn" target="_blank" rel="noopener noreferrer">
-                    <svg viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-                    Get a Decking Quote
-                </a>
-            </div>
-            <div class="svc-visual fu d1">
-                <div class="svc-placeholder">
-                    <div class="svc-ph-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg></div>
-                    <div class="svc-ph-title">Decking</div>
-                    <div class="svc-ph-sub">Photo coming soon</div>
-                    <a href="https://wa.me/27766714106?text=Hi%2C%20I'd%20like%20a%20decking%20quote" class="svc-ph-wa" target="_blank" rel="noopener noreferrer">WhatsApp for a Quote</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ══ 06: PAINTING ══ -->
-<section class="svc-section" id="painting" aria-labelledby="painting-heading">
-    <div class="container">
-        <div class="svc-inner">
-            <div class="svc-info fu">
-                <div class="svc-num-big">06</div>
-                <div class="svc-sub-label">Service 06</div>
                 <h2 id="painting-heading" class="svc-title">Painting</h2>
                 <p class="svc-desc">The final coat makes or breaks a build. Our painting team delivers clean, consistent finishes on interior walls and ceilings, and durable exterior coats that stand up to the West Coast's harsh sun, wind and salt air.</p>
                 <p class="svc-desc">We surface-prepare properly — fixing cracks, sealing, and priming before any paint goes on — because a lasting finish starts well before the brush touches the wall.</p>
@@ -761,8 +1076,16 @@
                 <div class="svc-photos">
                     <div class="svc-photos-label">Project Photos</div>
                     <div class="svc-photos-strip">
-                        <div class="svc-photo-thumb" onclick="openLightbox('painting',0)" data-src="paintedwall.jpg" data-cat="painting" data-name="Painted Wall">
-                            <img src="paintedwall.jpg" alt="Painted wall" onerror="this.parentElement.classList.add('empty');this.remove();this.parentElement.innerHTML='<span>Photo coming soon</span>';this.parentElement.onclick=null;">
+                        <div class="svc-photo-thumb">
+                            <img src="paintedwall.jpg" alt="Painted wall West Coast SA" onerror="this.parentElement.classList.add('empty');this.remove();this.parentElement.innerHTML='<span>Photo coming soon</span>';this.parentElement.onclick=null;">
+                            <div class="thumb-overlay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
+                        </div>
+                        <div class="svc-photo-thumb">
+                            <img src="pic9.jpg" alt="Interior painting West Coast" onerror="this.parentElement.classList.add('empty');this.remove();this.parentElement.innerHTML='<span>Photo coming soon</span>';this.parentElement.onclick=null;">
+                            <div class="thumb-overlay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
+                        </div>
+                        <div class="svc-photo-thumb">
+                            <img src="pic10.jpg" alt="Painting project Vredenburg" onerror="this.parentElement.classList.add('empty');this.remove();this.parentElement.innerHTML='<span>Photo coming soon</span>';this.parentElement.onclick=null;">
                             <div class="thumb-overlay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
                         </div>
                     </div>
@@ -784,49 +1107,13 @@
     </div>
 </section>
 
-<!-- ══ 07: WATERPROOFING ══ -->
-<section class="svc-section" id="waterproofing" aria-labelledby="waterproofing-heading">
-    <div class="container">
-        <div class="svc-inner">
-            <div class="svc-info fu">
-                <div class="svc-num-big">07</div>
-                <div class="svc-sub-label">Service 07</div>
-                <h2 id="waterproofing-heading" class="svc-title">Waterproofing</h2>
-                <p class="svc-desc">Water ingress is the number one cause of structural damage in the Western Cape. On the West Coast, where salty air and seasonal rain are relentless, proper waterproofing isn't optional — it's essential.</p>
-                <p class="svc-desc">We waterproof roofs, wet areas, basements, retaining walls and balconies using proven systems that hold up to West Coast weather conditions. If you're seeing damp, leaks, or rising moisture — call us before it gets worse.</p>
-                <ul class="included-list">
-                    <li>Flat roof and pitched roof waterproofing</li>
-                    <li>Bathroom and shower waterproofing (pre-tile)</li>
-                    <li>Balcony and terrace waterproofing</li>
-                    <li>External wall damp treatment</li>
-                    <li>Basement and below-slab waterproofing</li>
-                    <li>Crystalline and membrane waterproofing systems</li>
-                    <li>Leak detection and remedial waterproofing</li>
-                </ul>
-                <a href="https://wa.me/27766714106?text=Hi%2C%20I'm%20interested%20in%20a%20quote%20for%20Waterproofing" class="wa-btn" target="_blank" rel="noopener noreferrer">
-                    <svg viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-                    Get a Waterproofing Quote
-                </a>
-            </div>
-            <div class="svc-visual fu d1">
-                <div class="svc-placeholder">
-                    <div class="svc-ph-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 11-11.31 0z"/></svg></div>
-                    <div class="svc-ph-title">Waterproofing</div>
-                    <div class="svc-ph-sub">Photo coming soon</div>
-                    <a href="https://wa.me/27766714106?text=Hi%2C%20I'd%20like%20a%20waterproofing%20quote" class="svc-ph-wa" target="_blank" rel="noopener noreferrer">WhatsApp for a Quote</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ══ 08: RENOVATIONS ══ -->
+<!-- ══ 06: RENOVATIONS ══ -->
 <section class="svc-section" id="renovations" aria-labelledby="renovations-heading">
     <div class="container">
         <div class="svc-inner">
             <div class="svc-info fu">
-                <div class="svc-num-big">08</div>
-                <div class="svc-sub-label">Service 08</div>
+                <div class="svc-num-big">06</div>
+                <div class="svc-sub-label">Service 06</div>
                 <h2 id="renovations-heading" class="svc-title">Renovations</h2>
                 <p class="svc-desc">Transform your existing space without the cost of a new build. Whether it's a kitchen makeover, a bathroom upgrade, an extra room, or a full interior transformation — we manage the entire renovation from demolition to the finished product.</p>
                 <p class="svc-desc">We coordinate all the trades needed — building, tiling, carpentry, screeding, painting and waterproofing — so you deal with one team and get one consistent standard of work throughout.</p>
@@ -846,20 +1133,20 @@
                 <div class="svc-photos">
                     <div class="svc-photos-label">Project Photos</div>
                     <div class="svc-photos-strip">
-                        <div class="svc-photo-thumb" onclick="openLightbox('renovations',0)" data-src="90buildbraai.jpg" data-cat="renovations" data-name="Braai Build">
-                            <img src="90buildbraai.jpg" alt="Braai and entertainment area" onerror="this.parentElement.classList.add('empty');this.remove();this.parentElement.innerHTML='<span>Photo coming soon</span>';this.parentElement.onclick=null;">
+                        <div class="svc-photo-thumb">
+                            <img src="90buildbraai.jpg" alt="Braai entertainment area West Coast" onerror="this.parentElement.classList.add('empty');this.remove();this.parentElement.innerHTML='<span>Photo coming soon</span>';this.parentElement.onclick=null;">
                             <div class="thumb-overlay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
                         </div>
-                        <div class="svc-photo-thumb" onclick="openLightbox('renovations',1)" data-src="renovation3.jpg" data-cat="renovations" data-name="Bathroom Renovation">
-                            <img src="renovation3.jpg" alt="Bathroom renovation" onerror="this.parentElement.classList.add('empty');this.remove();this.parentElement.innerHTML='<span>Photo coming soon</span>';this.parentElement.onclick=null;">
+                        <div class="svc-photo-thumb">
+                            <img src="renovation3.jpg" alt="Bathroom renovation Saldanha" onerror="this.parentElement.classList.add('empty');this.remove();this.parentElement.innerHTML='<span>Photo coming soon</span>';this.parentElement.onclick=null;">
                             <div class="thumb-overlay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
                         </div>
-                        <div class="svc-photo-thumb" onclick="openLightbox('renovations',2)" data-src="renovation4.jpg" data-cat="renovations" data-name="Kitchen Upgrade">
-                            <img src="renovation4.jpg" alt="Kitchen upgrade" onerror="this.parentElement.classList.add('empty');this.remove();this.parentElement.innerHTML='<span>Photo coming soon</span>';this.parentElement.onclick=null;">
+                        <div class="svc-photo-thumb">
+                            <img src="renovation4.jpg" alt="Kitchen upgrade West Coast" onerror="this.parentElement.classList.add('empty');this.remove();this.parentElement.innerHTML='<span>Photo coming soon</span>';this.parentElement.onclick=null;">
                             <div class="thumb-overlay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
                         </div>
-                        <div class="svc-photo-thumb" onclick="openLightbox('renovations',3)" data-src="renovation5.jpg" data-cat="renovations" data-name="Open-Plan Conversion">
-                            <img src="renovation5.jpg" alt="Open-plan conversion" onerror="this.parentElement.classList.add('empty');this.remove();this.parentElement.innerHTML='<span>Photo coming soon</span>';this.parentElement.onclick=null;">
+                        <div class="svc-photo-thumb">
+                            <img src="renovation5.jpg" alt="Open-plan conversion Vredenburg" onerror="this.parentElement.classList.add('empty');this.remove();this.parentElement.innerHTML='<span>Photo coming soon</span>';this.parentElement.onclick=null;">
                             <div class="thumb-overlay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
                         </div>
                     </div>
@@ -881,168 +1168,12 @@
     </div>
 </section>
 
-<!-- ══ FULL PHOTO GALLERY — enhanced ══ -->
-<section id="gallery" aria-labelledby="gallery-heading">
-
-    <!-- Bold intro banner -->
-    <div class="gallery-intro">
-        <div class="container">
-            <div class="gallery-hd fu">
-                <div class="label-tag">Our Work</div>
-                <h2 id="gallery-heading">Project <em>Gallery</em></h2>
-                <p>A look at some of the work we've completed across the West Coast</p>
-            </div>
-            <div class="gallery-stats fu d1">
-                <div class="gallery-stat"><div class="gallery-stat-num">150+</div><div class="gallery-stat-label">Projects Done</div></div>
-                <div class="gallery-stat"><div class="gallery-stat-num">10+</div><div class="gallery-stat-label">Years Active</div></div>
-                <div class="gallery-stat"><div class="gallery-stat-num">5</div><div class="gallery-stat-label">Services Shown</div></div>
-                <div class="gallery-stat"><div class="gallery-stat-num">8</div><div class="gallery-stat-label">Towns Served</div></div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Sticky filter bar — Building, Tiling, Carpentry, Painting, Renovations only -->
-    <div class="gallery-filters-wrap">
-        <div class="gallery-filters" role="group" aria-label="Filter gallery">
-            <button class="gf-btn active" onclick="filterGallery(this,'all')">All Projects</button>
-            <button class="gf-btn" onclick="filterGallery(this,'building')">Building</button>
-            <button class="gf-btn" onclick="filterGallery(this,'tiling')">Tiling</button>
-            <button class="gf-btn" onclick="filterGallery(this,'carpentry')">Carpentry</button>
-            <button class="gf-btn" onclick="filterGallery(this,'painting')">Painting</button>
-            <button class="gf-btn" onclick="filterGallery(this,'renovations')">Renovations</button>
-        </div>
-    </div>
-
-    <!-- Masonry grid — no screeding, waterproofing or decking items -->
-    <div class="gallery-grid-wrap">
-        <div class="container">
-            <div class="masonry-grid" id="masonryGrid">
-
-                <!-- Building -->
-                <div class="masonry-item fu" data-cat="building" onclick="openGalleryLightbox(this)">
-                    <img src="resident1.jpg" alt="Residential build West Coast" style="height:320px;" onerror="this.style.display='none'">
-                    <div class="masonry-overlay"><span class="masonry-tag">Building</span><div class="masonry-name">Residential Build</div></div>
-                </div>
-                <div class="masonry-item fu d1" data-cat="building" onclick="openGalleryLightbox(this)">
-                    <img src="building3.jpg" alt="Building project" style="height:250px;" onerror="this.style.display='none'">
-                    <div class="masonry-overlay"><span class="masonry-tag">Building</span><div class="masonry-name">New Construction</div></div>
-                </div>
-                <div class="masonry-item fu d2" data-cat="building" onclick="openGalleryLightbox(this)">
-                    <img src="building4.jpg" alt="Brickwork detail" style="height:210px;" onerror="this.style.display='none'">
-                    <div class="masonry-overlay"><span class="masonry-tag">Building</span><div class="masonry-name">Brickwork Detail</div></div>
-                </div>
-                <div class="masonry-item fu" data-cat="building" onclick="openGalleryLightbox(this)">
-                    <img src="building5.jpg" alt="New build" style="height:290px;" onerror="this.style.display='none'">
-                    <div class="masonry-overlay"><span class="masonry-tag">Building</span><div class="masonry-name">New Build</div></div>
-                </div>
-                <div class="masonry-item fu d1" data-cat="building" onclick="openGalleryLightbox(this)">
-                    <img src="pic1.jpeg" alt="Izwe 2 Projects West Coast construction" style="height:270px;" onerror="this.style.display='none'">
-                    <div class="masonry-overlay"><span class="masonry-tag">Building</span><div class="masonry-name">West Coast Project</div></div>
-                </div>
-                <div class="masonry-item fu d2" data-cat="building" onclick="openGalleryLightbox(this)">
-                    <img src="pic4.jpeg" alt="Construction site" style="height:250px;" onerror="this.style.display='none'">
-                    <div class="masonry-overlay"><span class="masonry-tag">Building</span><div class="masonry-name">West Coast Site</div></div>
-                </div>
-                <div class="masonry-item fu" data-cat="building" onclick="openGalleryLightbox(this)">
-                    <img src="pic7.jpeg" alt="Building work" style="height:230px;" onerror="this.style.display='none'">
-                    <div class="masonry-overlay"><span class="masonry-tag">Building</span><div class="masonry-name">Construction Work</div></div>
-                </div>
-                <div class="masonry-item fu d1" data-cat="building" onclick="openGalleryLightbox(this)">
-                    <img src="pic8.jpeg" alt="Building project" style="height:260px;" onerror="this.style.display='none'">
-                    <div class="masonry-overlay"><span class="masonry-tag">Building</span><div class="masonry-name">Site Progress</div></div>
-                </div>
-
-                <!-- Tiling -->
-                <div class="masonry-item fu" data-cat="tiling" onclick="openGalleryLightbox(this)">
-                    <img src="Showertiles.jpg" alt="Shower tiling" style="height:300px;" onerror="this.style.display='none'">
-                    <div class="masonry-overlay"><span class="masonry-tag">Tiling</span><div class="masonry-name">Shower Tiling</div></div>
-                </div>
-                <div class="masonry-item fu d1" data-cat="tiling" onclick="openGalleryLightbox(this)">
-                    <img src="tiling.jpeg" alt="Floor tiling" style="height:230px;" onerror="this.style.display='none'">
-                    <div class="masonry-overlay"><span class="masonry-tag">Tiling</span><div class="masonry-name">Floor Tiling</div></div>
-                </div>
-                <div class="masonry-item fu d2" data-cat="tiling" onclick="openGalleryLightbox(this)">
-                    <img src="ptiling3.jpg" alt="Tiling project" style="height:260px;" onerror="this.style.display='none'">
-                    <div class="masonry-overlay"><span class="masonry-tag">Tiling</span><div class="masonry-name">Precision Tiling</div></div>
-                </div>
-                <div class="masonry-item fu d1" data-cat="tiling" onclick="openGalleryLightbox(this)">
-                    <img src="tiling4.jpg" alt="Patio tiling" style="height:220px;" onerror="this.style.display='none'">
-                    <div class="masonry-overlay"><span class="masonry-tag">Tiling</span><div class="masonry-name">Patio Tiling</div></div>
-                </div>
-                <div class="masonry-item fu d2" data-cat="tiling" onclick="openGalleryLightbox(this)">
-                    <img src="tiling5.jpg" alt="Wall tiling" style="height:250px;" onerror="this.style.display='none'">
-                    <div class="masonry-overlay"><span class="masonry-tag">Tiling</span><div class="masonry-name">Wall Tiling</div></div>
-                </div>
-                <div class="masonry-item fu" data-cat="tiling" onclick="openGalleryLightbox(this)">
-                    <img src="tiling6.jpg" alt="Commercial tiling" style="height:270px;" onerror="this.style.display='none'">
-                    <div class="masonry-overlay"><span class="masonry-tag">Tiling</span><div class="masonry-name">Commercial Tiling</div></div>
-                </div>
-                <div class="masonry-item fu d1" data-cat="tiling" onclick="openGalleryLightbox(this)">
-                    <img src="pic3.jpeg" alt="Tiling and plastering" style="height:220px;" onerror="this.style.display='none'">
-                    <div class="masonry-overlay"><span class="masonry-tag">Tiling</span><div class="masonry-name">Tiling &amp; Plastering</div></div>
-                </div>
-
-                <!-- Carpentry -->
-                <div class="masonry-item fu" data-cat="carpentry" onclick="openGalleryLightbox(this)">
-                    <img src="carpentry3.jpg" alt="Ceiling work" style="height:250px;" onerror="this.style.display='none'">
-                    <div class="masonry-overlay"><span class="masonry-tag">Carpentry</span><div class="masonry-name">Ceiling Work</div></div>
-                </div>
-                <div class="masonry-item fu d1" data-cat="carpentry" onclick="openGalleryLightbox(this)">
-                    <img src="carpentry4.jpg" alt="Built-in wardrobe" style="height:210px;" onerror="this.style.display='none'">
-                    <div class="masonry-overlay"><span class="masonry-tag">Carpentry</span><div class="masonry-name">Built-in Wardrobe</div></div>
-                </div>
-
-                <!-- Painting -->
-                <div class="masonry-item fu" data-cat="painting" onclick="openGalleryLightbox(this)">
-                    <img src="paintedwall.jpg" alt="Painted wall" style="height:260px;" onerror="this.style.display='none'">
-                    <div class="masonry-overlay"><span class="masonry-tag">Painting</span><div class="masonry-name">Exterior Painting</div></div>
-                </div>
-                <div class="masonry-item fu d1" data-cat="painting" onclick="openGalleryLightbox(this)">
-                    <img src="pic9.jpeg" alt="Interior painting" style="height:220px;" onerror="this.style.display='none'">
-                    <div class="masonry-overlay"><span class="masonry-tag">Painting</span><div class="masonry-name">Interior Coat</div></div>
-                </div>
-                <div class="masonry-item fu d2" data-cat="painting" onclick="openGalleryLightbox(this)">
-                    <img src="pic10.jpeg" alt="Painting project" style="height:240px;" onerror="this.style.display='none'">
-                    <div class="masonry-overlay"><span class="masonry-tag">Painting</span><div class="masonry-name">Painting Project</div></div>
-                </div>
-
-                <!-- Renovations -->
-                <div class="masonry-item fu" data-cat="renovations" onclick="openGalleryLightbox(this)">
-                    <img src="90buildbraai.jpg" alt="Braai entertainment area" style="height:310px;" onerror="this.style.display='none'">
-                    <div class="masonry-overlay"><span class="masonry-tag">Renovations</span><div class="masonry-name">Braai Entertainment Area</div></div>
-                </div>
-                <div class="masonry-item fu d1" data-cat="renovations" onclick="openGalleryLightbox(this)">
-                    <img src="renovation3.jpg" alt="Bathroom renovation" style="height:250px;" onerror="this.style.display='none'">
-                    <div class="masonry-overlay"><span class="masonry-tag">Renovations</span><div class="masonry-name">Bathroom Renovation</div></div>
-                </div>
-                <div class="masonry-item fu d2" data-cat="renovations" onclick="openGalleryLightbox(this)">
-                    <img src="renovation4.jpg" alt="Kitchen upgrade" style="height:230px;" onerror="this.style.display='none'">
-                    <div class="masonry-overlay"><span class="masonry-tag">Renovations</span><div class="masonry-name">Kitchen Upgrade</div></div>
-                </div>
-                <div class="masonry-item fu" data-cat="renovations" onclick="openGalleryLightbox(this)">
-                    <img src="renovation5.jpg" alt="Open-plan conversion" style="height:260px;" onerror="this.style.display='none'">
-                    <div class="masonry-overlay"><span class="masonry-tag">Renovations</span><div class="masonry-name">Open-Plan Conversion</div></div>
-                </div>
-                <div class="masonry-item fu d1" data-cat="renovations" onclick="openGalleryLightbox(this)">
-                    <img src="pic2.jpeg" alt="Interior finishing" style="height:240px;" onerror="this.style.display='none'">
-                    <div class="masonry-overlay"><span class="masonry-tag">Renovations</span><div class="masonry-name">Interior Finishing</div></div>
-                </div>
-                <div class="masonry-item fu d2" data-cat="renovations" onclick="openGalleryLightbox(this)">
-                    <img src="pic5.jpeg" alt="Project detail" style="height:220px;" onerror="this.style.display='none'">
-                    <div class="masonry-overlay"><span class="masonry-tag">Renovations</span><div class="masonry-name">Project Detail</div></div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- LIGHTBOX -->
+<!-- LIGHTBOX (gallery) -->
 <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" onclick="closeLightboxOnBg(event)">
     <div class="lb-inner">
         <button class="lb-close" onclick="closeLightbox()" aria-label="Close">&times;</button>
-        <button class="lb-nav lb-prev" onclick="navigateLightbox(-1)" aria-label="Previous photo">&#8592;</button>
-        <button class="lb-nav lb-next" onclick="navigateLightbox(1)" aria-label="Next photo">&#8594;</button>
+        <button class="lb-nav lb-prev" onclick="navigateLightbox(-1)" aria-label="Previous">&#8592;</button>
+        <button class="lb-nav lb-next" onclick="navigateLightbox(1)" aria-label="Next">&#8594;</button>
         <div class="lb-img-wrap">
             <img id="lbImg" src="" alt="">
         </div>
@@ -1102,25 +1233,32 @@
             <div class="foot-col">
                 <h4>Services</h4>
                 <ul class="flinks">
-                    <li><a href="#building">Building</a></li><li><a href="#tiling">Tiling</a></li>
-                    <li><a href="#carpentry">Carpentry</a></li><li><a href="#screeding">Floor Screeding</a></li>
-                    <li><a href="#decking">Decking</a></li><li><a href="#painting">Painting</a></li>
-                    <li><a href="#waterproofing">Waterproofing</a></li><li><a href="#renovations">Renovations</a></li>
+                    <li><a href="#building">Building</a></li>
+                    <li><a href="#tiling">Tiling</a></li>
+                    <li><a href="#carpentry">Carpentry</a></li>
+                    <li><a href="#screeding">Floor Screeding</a></li>
+                    <li><a href="#painting">Painting</a></li>
+                    <li><a href="#renovations">Renovations</a></li>
                 </ul>
             </div>
             <div class="foot-col">
                 <h4>Areas</h4>
                 <ul class="flinks">
-                    <li><a href="index.html#areas">Vredenburg</a></li><li><a href="index.html#areas">Saldanha</a></li>
-                    <li><a href="index.html#areas">Langebaan</a></li><li><a href="index.html#areas">Velddrif</a></li>
-                    <li><a href="index.html#areas">Hopefield</a></li><li><a href="index.html#areas">Surrounding Towns</a></li>
+                    <li><a href="index.html#areas">Vredenburg</a></li>
+                    <li><a href="index.html#areas">Saldanha</a></li>
+                    <li><a href="index.html#areas">Langebaan</a></li>
+                    <li><a href="index.html#areas">Velddrif</a></li>
+                    <li><a href="index.html#areas">Hopefield</a></li>
+                    <li><a href="index.html#areas">Surrounding Towns</a></li>
                 </ul>
             </div>
             <div class="foot-col">
                 <h4>Company</h4>
                 <ul class="flinks">
-                    <li><a href="index.html#about">About Us</a></li><li><a href="index.html#projects">Our Projects</a></li>
-                    <li><a href="index.html#testimonials">Client Reviews</a></li><li><a href="contact.html">Request a Quote</a></li>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="index.html#projects">Our Projects</a></li>
+                    <li><a href="index.html#testimonials">Client Reviews</a></li>
+                    <li><a href="contact.html">Request a Quote</a></li>
                 </ul>
                 <div style="margin-top:28px;">
                     <h4>Contact</h4>
@@ -1144,86 +1282,84 @@
 </a>
 
 <script>
-    // Nav scroll
-    const nav = document.getElementById('mainNav');
-    window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 60); }, { passive: true });
+// ── Nav scroll shadow ──
+const nav = document.getElementById('mainNav');
+window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 60); }, { passive: true });
 
-    // Scroll animations
-    const fus = document.querySelectorAll('.fu');
-    const obs = new IntersectionObserver(entries => {
-        entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); obs.unobserve(e.target); } });
-    }, { threshold: 0.08 });
-    fus.forEach(el => obs.observe(el));
+// ── Scroll-in animations ──
+const fus = document.querySelectorAll('.fu');
+const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); obs.unobserve(e.target); } });
+}, { threshold: 0.08 });
+fus.forEach(el => obs.observe(el));
 
-    // ── GALLERY FILTER ──
-    function filterGallery(btn, cat) {
-        document.querySelectorAll('.gf-btn').forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        document.querySelectorAll('.masonry-item').forEach(item => {
-            item.style.display = (cat === 'all' || item.dataset.cat === cat) ? '' : 'none';
-        });
-    }
+// ── Horizontal gallery: arrow buttons ──
+const track = document.getElementById('owTrack');
+const scrollAmt = 600;
+document.getElementById('owNext').addEventListener('click', () => {
+    track.scrollBy({ left: scrollAmt, behavior: 'smooth' });
+});
+document.getElementById('owPrev').addEventListener('click', () => {
+    track.scrollBy({ left: -scrollAmt, behavior: 'smooth' });
+});
 
-    // ── LIGHTBOX ──
-    let lbItems = [];
-    let lbIndex = 0;
+// ── Horizontal gallery: drag to scroll ──
+let isDown = false, startX, scrollLeft;
+track.addEventListener('mousedown', e => {
+    isDown = true; track.classList.add('dragging');
+    startX = e.pageX - track.offsetLeft;
+    scrollLeft = track.scrollLeft;
+});
+track.addEventListener('mouseleave', () => { isDown = false; track.classList.remove('dragging'); });
+track.addEventListener('mouseup', () => { isDown = false; track.classList.remove('dragging'); });
+track.addEventListener('mousemove', e => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - track.offsetLeft;
+    track.scrollLeft = scrollLeft - (x - startX) * 1.2;
+});
 
-    function openGalleryLightbox(el) {
-        const img = el.querySelector('img');
-        if (!img || img.style.display === 'none') return;
-        lbItems = Array.from(document.querySelectorAll('.masonry-item')).filter(i => {
-            const im = i.querySelector('img');
-            return im && im.style.display !== 'none' && i.style.display !== 'none';
-        });
-        lbIndex = lbItems.indexOf(el);
-        showLightboxItem(lbIndex);
-    }
+// ── Gallery lightbox ──
+let lbItems = [], lbIndex = 0;
 
-    function openLightbox(cat, idx) {
-        lbItems = Array.from(document.querySelectorAll('.masonry-item')).filter(i => {
-            const im = i.querySelector('img');
-            return i.dataset.cat === cat && im && im.style.display !== 'none';
-        });
-        lbIndex = Math.min(idx, lbItems.length - 1);
-        if (lbItems.length === 0) return;
-        showLightboxItem(lbIndex);
-    }
+function owLightbox(card) {
+    const img = card.querySelector('img');
+    if (!img) return;
+    lbItems = Array.from(document.querySelectorAll('.ow-card')).filter(c => c.querySelector('img'));
+    lbIndex = lbItems.indexOf(card);
+    showLb(lbIndex);
+}
 
-    function showLightboxItem(i) {
-        if (!lbItems.length) return;
-        const el  = lbItems[i];
-        const img = el.querySelector('img');
-        const name = el.querySelector('.masonry-name')?.textContent || '';
-        const tag  = el.querySelector('.masonry-tag')?.textContent || '';
-        document.getElementById('lbImg').src = img.src;
-        document.getElementById('lbImg').alt = img.alt;
-        document.getElementById('lbName').textContent = name;
-        document.getElementById('lbTag').textContent = tag;
-        document.getElementById('lbCounter').textContent = `${i + 1} / ${lbItems.length}`;
-        document.getElementById('lightbox').classList.add('open');
-        document.body.style.overflow = 'hidden';
-    }
+function showLb(i) {
+    const card = lbItems[i];
+    const img  = card.querySelector('img');
+    const name = card.querySelector('.ow-name')?.textContent || '';
+    const cat  = card.querySelector('.ow-cat')?.textContent || '';
+    document.getElementById('lbImg').src = img.src;
+    document.getElementById('lbImg').alt = img.alt;
+    document.getElementById('lbName').textContent = name;
+    document.getElementById('lbTag').textContent  = cat;
+    document.getElementById('lbCounter').textContent = `${i + 1} / ${lbItems.length}`;
+    document.getElementById('lightbox').classList.add('open');
+    document.body.style.overflow = 'hidden';
+}
 
-    function closeLightbox() {
-        document.getElementById('lightbox').classList.remove('open');
-        document.body.style.overflow = '';
-    }
+function closeLightbox() {
+    document.getElementById('lightbox').classList.remove('open');
+    document.body.style.overflow = '';
+}
+function closeLightboxOnBg(e) { if (e.target === document.getElementById('lightbox')) closeLightbox(); }
+function navigateLightbox(dir) {
+    lbIndex = (lbIndex + dir + lbItems.length) % lbItems.length;
+    showLb(lbIndex);
+}
 
-    function closeLightboxOnBg(e) {
-        if (e.target === document.getElementById('lightbox')) closeLightbox();
-    }
-
-    function navigateLightbox(dir) {
-        lbIndex = (lbIndex + dir + lbItems.length) % lbItems.length;
-        showLightboxItem(lbIndex);
-    }
-
-    document.addEventListener('keydown', e => {
-        if (!document.getElementById('lightbox').classList.contains('open')) return;
-        if (e.key === 'ArrowLeft') navigateLightbox(-1);
-        if (e.key === 'ArrowRight') navigateLightbox(1);
-        if (e.key === 'Escape') closeLightbox();
-    });
+document.addEventListener('keydown', e => {
+    if (!document.getElementById('lightbox').classList.contains('open')) return;
+    if (e.key === 'ArrowLeft')  navigateLightbox(-1);
+    if (e.key === 'ArrowRight') navigateLightbox(1);
+    if (e.key === 'Escape')     closeLightbox();
+});
 </script>
 </body>
 </html>
